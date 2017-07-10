@@ -1,10 +1,12 @@
-extends _layouts/home
+extends _layouts/deadline2017
 
-block head_end
-	link(rel="stylesheet" href="/css/style.css") 
+append head_end
+    link(rel="stylesheet" href="/css/style.css")
 
-block content
-	include _partials/header
+append body_end
+    script(type="text/javascript" src="/js/script.js")
 
-block body_end
-	script(type="text/javascript" src="/js/script.js")
+include _partials/header
+include _partials/about
+include _partials/location
+include _partials/impressions
