@@ -7,9 +7,10 @@ section#impressions(aria-label="impressions")
         each image in impressions.slider.content
             img.impressions__slider__slide(src=image.src alt=image.alt)
 
-append head_end
+    //- append head_end
     link(rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css")
-append body_end
+    //- append body_end
+
     script(type="text/javascript" src="assets/vendor/jquery/jquery-3.2.1.min.js")
     script(type="text/javascript" src="assets/vendor/slick/slick.min.js")
     script.

@@ -1,10 +1,23 @@
 {
   "title": "Deadline 2017",
-
+  "navigation":{
+    "isActive":true,
+    "hideFromNavigation":true
+  },
+  "header":{
+    "isActive":true,
+    "hideFromNavigation":true
+  },
   "about":{
     "isActive":true,
+    "hideFromNavigation":true,
     "title":"about__title",
     "content":"about__contents"
+  },
+  "livestream": {
+    "isActive": true,
+    "hideFromNavigation":true,
+    "title": "livestream"
   },
   "location":{
     "isActive":true,
@@ -18,6 +31,7 @@
   },
   "impressions":{
     "isActive":true,
+    "hideFromNavigation":true,
     "title": "impressions__title",
     "content": "impressions__content",
     "slider":{
@@ -85,5 +99,109 @@
           {"time":"20:30", "type":"event", "description":"Door close"}
         ]
       }]
+  },
+  "register":{
+    "isActive":true,
+    "title":"register__title",
+    "content":"register__content"
+  },
+  "seminar":{
+    "isActive":true,
+    "title":"seminar__title",
+    "content":"seminar__content"
+  },
+  "compos":{
+    "isActive":true,
+    "title":"Competitions",
+    "content":[
+      {
+        "title":"General Rules",
+        "content":[
+          "Your contribution must not have been released before.",
+          "Contributions must be handed in before the respective compo deadline.",
+          "Remote entries are allowed in all compos. Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 1st Oct. 2016, 12:00 noon (UTC+1)",
+          "Please note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.",
+          "The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.",
+          "In case of too few compo entries for one compo (less than three) the party organizers can cancel or combine competitions.",
+          "By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.",
+          "Entries containing content which violates German law or are unsuitable will be disqualified.",
+          "If your entry contains commercial material it will be disqualified as well.",
+          "Projector: 16:9 and supports 1080p (60hz) native resolution",
+          "If you have questions about these rules, contact the organizers at contact@demoparty.berlin"]
+      },
+      {
+        "title":"Remote Entries",
+        "content": ["You can’t make it to the party, but would like to participate?\nWe accept remote entries for all compos!\nYou can send us your entry to any of the competitions via mail to contact@demoparty.berlin\nThe deadline for remote entry submission is 1st Oct. 2016, 12:00 noon (UTC+1)\nPlease note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.\nLivestream\nWe will try our best to have a livestream available again  – in previous years we always managed to have a reliable stream, thanks to our friends at Viprinet."]
+      },
+      {
+        "title":"Executable Competitions",
+        "content":[{
+          "title": "PC Demo",
+          "content":[
+            "We have a Windows compomachine with the following specs:<ul>",
+            "CPU: Core i7",
+            "RAM: 16GB RAM",
+            "Graphics: NVIDIA Titan Black w/ 6GB RAM",
+            "OS: Win8.1 64bit with then latest DirectX and stable NVidia drivers.",
+            "Kindly provided by Tastatur und Maus e.V. Thanks! <3",
+            "If you plan to release a MaxOS X or Linux production please contact us before the party so that we can make sure we have the right OS ready for you.",
+            "Maximum total size on disk after unpacking 512 MiB",
+            "Maximum running time is 10 minutes.]"
+          ]
+        },
+        {
+          "title":"PC 64 Intro",
+          "content":[
+            "Maximum file size of intro executable is 64 KB (65.536 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.",
+            "Maximum running time is 10 minutes."
+          ]
+        },
+        {
+          "title":"PC 4 Intro",
+          "content":[
+            "Maximum file size of intro executable is 4 KB (4.096 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.",
+            "Maximum running time is 10 minutes."
+          ]
+        },
+        {
+          "title":"Javascript Demo",
+          "content":[
+            "Intros and Demos of all filesizes allowed.",
+            "Size of the entry will be displayed on the beam-slide.",
+            "Entries will be shown on the newest version of Chrome, Firefox or Edge Browser, please specify which one is preferred.",
+            "Maximum running time is 10 minutes."
+          ]
+        },
+        {
+          "title":"Oldschool Platforms",
+          "content":[
+            "We can provide a C64 (new or old SID + 1541 (II) or Chameleon or 1541U2), Atari Falcon 060, Plus4 (with 1551 or 1541), or Amiga.",
+            "Your entry needs to be provided on disks or as an image file.",
+            "Every other oldschool platform with 8 and 16 bit is allowed as well – but please bring your own hardware then.",
+            "Please inform us as soon as you know what hardware you need.",
+            "If another system is needed, ask us as soon as possible and we will of course try to get the preferred hardware or inform you if we cannot provide it.",
+            "Maximum running time is 10 minutes.",
+            "If possible, please also hand in a video of your entry.",
+            "Please contact us in advance in case of unconventional video signals.",
+            "You can contact us under: contact(at)demoparty.berlin"
+          ]
+        }]
+      }
+    ]
+  },
+  "contact":{
+    "isActive":true,
+    "title":"contact__title"
+  },
+  "sponsors":{
+    "isActive":true,
+    "hideFromNavigation":true,
+    "title":"compos__title"
+  },
+  "history":{
+    "isActive":true,
+    "hideFromNavigation":true,
+    "title":"history__title",
+    "content":[2015,2016,2017]
   }
 }

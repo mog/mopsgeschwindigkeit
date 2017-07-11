@@ -1,17 +1,37 @@
-extends _layouts/deadline2017
+//-extends _layouts/deadline2017
+doctype html
+html
+    head
+        title= title
+        meta(charset="utf-8")
+        link(rel="stylesheet" href="/css/style.css")
+        block head_end
 
-append head_end
-    link(rel="stylesheet" href="/css/style.css")
+    body
+        if navigation.isActive
+            include _components/navigation
+        if header.isActive
+            include _components/header
+        if about.isActive
+            include _components/about
+        if livestream.isActive
+            include _components/livestream
+        if location.isActive
+            include _components/location
+        if impressions.isActive
+            include _components/impressions
+        if timetable.isActive
+            include _components/timetable
+        if register.isActive
+            include _components/register
+        if seminar.isActive
+            include _components/seminar
+        if compos.isActive
+            include _components/compos
+    footer
+        include _components/contact
+        include _components/sponsors
+        include _components/history
 
-append body_end
-    script(type="text/javascript" src="/js/script.js")
+    block body_end
 
-
-    include _components/navigation
-    include _components/header
-    if about.isActive
-        include _components/about
-
-    include _components/location
-    include _components/impressions
-    include _components/timetable

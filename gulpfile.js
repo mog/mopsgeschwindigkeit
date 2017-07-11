@@ -8,7 +8,11 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+
+    //TODO pug has a bug where append/prepend will add lines multiple times in the include, and on the block
+    //this task removes duplicates and only keeps the last - works on <script> and <link> only
+    replace = require('gulp-remove-duplicates');
 
 /*
  * Directories here
@@ -36,6 +40,7 @@ gulp.task('pug', function () {
             process.stderr.write(err.message + '\n');
             this.emit('end');
         })
+        .pipe(replace({keepLast:true}))
         .pipe(gulp.dest(paths.public));
 });
 

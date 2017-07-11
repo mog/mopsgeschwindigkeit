@@ -1,0 +1,30 @@
+{
+  "name": "gulp-remove-duplicates",
+  "version": "0.1.2",
+  "homepage": "",
+  "description": "Removes scripts duplicates from HTML file",
+  "main": "index.js",
+  "author": {
+    "name": "komlev",
+    "email": "komlev88@gmail.com"
+  },
+  "keywords": [
+    "gulp",
+    "remove",
+    "script",
+    "html",
+    "duplicate",
+    "duplicates"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/komlev/grunt-remove-duplicates/issue"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "replacestream": "^4.0.0",
+    "lodash": "^2.4.1",
+    "through2": "^2.0.1"
+  }
+}

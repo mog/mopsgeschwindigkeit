@@ -1,0 +1,167 @@
+section#compos(aria-label="compos")
+    h2=compos.title
+        a.header-anchor(href="#compos" aria-hidden="true")= "¶"
+
+    //each compo in compos.content
+        ul.compo
+            h3=compo.title
+            ul
+                each rule in compo.content
+                    if typeof rule === 'object'
+                        h4=rule.title
+                        ul
+                        each subCompo in rule
+                            li=subCompo
+                    else
+                        li=rule
+    div.compo
+        h3 General Rules
+        ul
+            li Your contribution must not have been released before.
+            li Contributions must be handed in before the respective compo deadline.
+            li Remote entries are allowed in all compos. Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 1st Oct. 2016, 12:00 noon (UTC+1)
+            li Please note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.
+            li The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.
+            li In case of too few compo entries for one compo (less than three) the party organizers can cancel or combine competitions.
+            li By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.
+            li Entries containing content which violates German law or are unsuitable will be disqualified.
+            li If your entry contains commercial material it will be disqualified as well.
+            li Projector: 16:9 and supports 1080p (60hz) native resolution
+            li If you have questions about these rules, contact the organizers at #[a href='contact@demoparty.berlin' contact@demoparty.berlin]
+
+    h3 Remote Entries
+    div You can’t make it to the party, but would like to participate?
+    b We accept remote entries for all compos!
+    div You can send us your entry to any of the competitions via mail to #[a href='contact@demoparty.berlin' contact@demoparty.berlin]
+    div The deadline for remote entry submission is --FIXME 1st Oct. 2016, 12:00 noon (UTC+1)
+    div Please note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.
+    h4 Livestream
+    div We will try our best to have a livestream available again  – in previous years we always managed to have a reliable stream, thanks to our friends at Viprinet
+
+    div.compo
+        h3 Executable Competitions
+
+        h4 PC Demo
+        p We have a Windows compomachine with the following specs:
+            ul
+                li CPU: Core i7
+                li RAM: 16GB RAM
+                li Graphics: NVIDIA Titan Black w/ 6GB RAM
+                li OS: Win8.1 64bit with then latest DirectX and stable NVidia drivers.
+            Kindly provided by Tastatur und Maus e.V. Thanks! <3
+        ul
+            li If you plan to release a MaxOS X or Linux production please contact us before the party so that we can make sure we have the right OS ready for you.
+            li Maximum total size on disk after unpacking 512 MiB
+            li Maximum running time is 10 minutes.
+
+        h4 PC 64K Intro
+        ul
+            li Maximum file size of intro executable is 64 KB (65.536 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.
+            li Maximum running time is 10 minutes.
+
+        h4 PC 4K Intro
+        ul
+            li Maximum file size of intro executable is 4 KB (4.096 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.
+            li Maximum running time is 10 minutes.
+
+        h4 Javascript Compo
+        ul
+            li Intros and Demos of all filesizes allowed.
+            li Size of the entry will be displayed on the beam-slide.
+            li Entries will be shown on the newest version of Chrome, Firefox or Edge Browser, please specify which one is preferred.
+            li Maximum running time is 10 minutes.
+
+        h4 Oldschool Platforms
+        ul
+            li We can provide a C64 (new or old SID + 1541 (II) or Chameleon or 1541U2), Atari Falcon 060, Plus4 (with 1551 or 1541), or Amiga.
+            li Your entry needs to be provided on disks or as an image file.
+            li Every other oldschool platform with 8 and 16 bit is allowed as well – but please bring your own hardware then.
+            li Please inform us as soon as you know what hardware you need.
+            li If another system is needed, ask us as soon as possible and we will of course try to get the preferred hardware or inform you if we cannot provide it.
+            li Maximum running time is 10 minutes.
+            li If possible, please also hand in a video of your entry.
+            li Please contact us in advance in case of unconventional video signals.
+            li You can contact us under: contact(at)demoparty.berlin
+
+    div.compo
+        h3 Other Competitions
+        h4 Video & Animation
+        ul
+            li Maximum running time is 10 minutes
+            li Submissions must include a digital video of your entry
+            li Please make sure your entry can be played by VLC – which will be used for showing the entries.
+
+        h4 Wild
+        ul
+            li Anything possible (It can be run on any other platform, which is not listed in other competitions)
+            li No size limit
+            li Maximum running time is 10 minutes
+            li Either bring the platform and we will try to hook it up, or include a digital video of your entry, or perform it on the stage!
+            li If you provide a video make sure it can be played by VLC
+            li In case of questions contact us at: contact(at)demoparty.berlin
+
+    div.compo
+        h3 Graphic Competitions
+        ul
+            li Up to two entries per artist and graphics competition allowed.
+            li We recommend that you also provide a list of the tools you have used to create your entry
+            li Please make sure that your entry is free of third-party rights!
+
+        h4 Freestyle Graphics
+        ul
+            li You can use every tool you wish (pixel/render/scan & retouch), just be creative.
+            li The entry should be delivered in .png/.bmp/.tga format (lossless)
+            li Maximum resolution/bit depth: 1920×1080 / 24 bit
+            li You must include working stages of your entry.
+            li Note: This is a graphics compo, not a photo compo (we will not accept pure photos)
+
+        h4 Oldschool (Executable) Graphics
+        ul
+            li Entry must be in a native graphics format for an oldskool platform.
+            li Entries for platforms without a standardized image format (Atari XL, C64, …) must be handed in as executable. Otherwise, a picture in a standard image format (e.g. IFF on Amiga) is accepted.
+            li Animations are not allowed (except for scrolling)
+
+        h4 ASCII/ANSI/PETSCII
+        ul
+            li ASCII and ANSI: Maximum width is 80 characters, no maximum height/lines.
+            li PETSCII: Maximum width is 40 characters, maximum height is 25 characters.
+            li No XBIN, custom pallets or Ansimations.
+            li Please declared whether your ASCII should be displayed as PC or Amiga ASCII
+            li PC ASCII is shown using 80×25 VGA mode in the compo
+            li Amiga ASCII will be shown using AcidView’s built-in topaz font in the compo.
+            li If you’re unsure whether your entry will be displayed correctly, provide a PNG as a fallback along with the original file (optional)
+            li Please provide a thumbnail for the voting system (optional)
+            li If there are enough entries, we might split the compo into PC ASCII/ANSI, Amiga ASCII and PETSCII.
+
+        h4 Themed Photo
+        ul
+            li The Theme this year is: --FIXME Secret Cult
+            li It has to be the competitor who took the picture
+            li Retouching and collages are allowed
+            li If it’s not a pure Photo: Do not forget your working stages (without them your entry will be disqualified)
+            li Please do ensure your entry includes the original, unmodified picture(s)
+
+    div.compo
+        h3 Music Competitions
+        ul
+            li Up to two entries per artist and music competition allowed.
+            li The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.
+        h4 Streaming Music
+        ul
+            li Entry must be in MP3, OGG, OPUS or FLAC format.
+            li Maximum playing time is 4 minutes. If your entry is longer it will be faded out between 4:00 and 4:10
+            li Do not use any copyrighted material in your track.
+            li Entries will be played back using the latest XMPlay.
+        h4 Tracked Music
+        ul
+            li Entry must be in on of the following formats: XM, MOD, IT, S3M.
+            li Entries will be played back using the latest XMPlay.
+            li Maximum playing time is 4 minutes. If your entry is longer it will be faded out between 4:00 and 4:10.
+            li Please specify if you want any specific playback settings in XMPlay
+            li The number of channels used will be mentioned on the bigscreen during the competition.
+            li Size Limit : 2 MB
+        h4 SID Music
+        ul
+            li please specify if old or new SID
+            li Size Limit : 2 MB
+            li Maximum playing time is 4 minutes. If your entry is longer it will be faded out between 4:00 and 4:10.

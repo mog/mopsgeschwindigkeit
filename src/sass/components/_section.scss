@@ -2,11 +2,5 @@ section {
   max-width: $max-width;
   margin: 0 auto;
 
-  //@mixin transition {
-  //  @for $i from 2 through 12 {
-  //    &:nth-child(#{$i}) {
-  //      background-color: hsl(0, 100%, 100% * $i);// - #{$i} * 10%);
-  //    }
-  //  }
-  //}
+  //@include transitionHSLUV(10);
 }
