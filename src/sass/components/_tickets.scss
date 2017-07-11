@@ -1,0 +1,44 @@
+.tickets {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+  .ticket {
+    width: 20%;
+    margin-right: .5em;
+    align-self: flex-end;
+
+    &:last-child {
+      margin-right: 0;
+      //width: 50%;
+
+      .ticket__name,
+      .ticket__how {
+        text-align: left;
+      }
+
+      .ticket__price {
+        margin-top: .4em;
+      }
+    }
+
+    &__name {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    &__how {
+      text-align: center;
+      font-style: italic;
+    }
+
+    &__price {
+      font-size: $font--size--4;
+      text-align: center;
+      margin: 1.51em 0 0;
+      border-top: .01em solid;
+      padding-top: .8em;
+    }
+  }
+}

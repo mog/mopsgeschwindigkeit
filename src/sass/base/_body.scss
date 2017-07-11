@@ -1,0 +1,12 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: $color--mute;
+  color: #000;
+  //background-image: url(../img/theme/noise.png);
+}
+
+body {
+  @extend .-dont-break-out;
+  min-width: $min-width;
+}

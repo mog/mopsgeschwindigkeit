@@ -1,0 +1,46 @@
+$component: c-timetable;
+
+.#{$component} {
+
+  @include tablet--up(){
+    @include grid();
+
+    &__day {
+      width: 33%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+
+  &__time {
+    width: 3.5em;
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  &__time,
+  &__description {
+    display:table-cell;
+  }
+
+  .event{
+
+  }
+
+  .compo{
+
+  }
+
+  .seminar{
+
+  }
+
+  .deadline{
+
+  }
+}

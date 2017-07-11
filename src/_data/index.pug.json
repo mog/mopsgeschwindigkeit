@@ -1,10 +1,13 @@
 {
   "title": "Deadline 2017",
+
   "about":{
+    "isActive":true,
     "title":"about__title",
     "content":"about__contents"
   },
   "location":{
+    "isActive":true,
     "title": "location__title",
     "content": "location__content",
     "map":{
@@ -14,20 +17,73 @@
     }
   },
   "impressions":{
+    "isActive":true,
     "title": "impressions__title",
     "content": "impressions__content",
     "slider":{
       "content":[{
-        "img":{
-          "src":"impression/01.jpg",
-          "alt":"this could be a description"
-        }
+          "src":"assets/img/1.jpg",
+          "alt":"desc1"
       },{
-        "img":{
-          "src":"impression/02.jpg",
-          "alt":"this could also be a description"
-        }
+          "src":"assets/img/2.jpg",
+          "alt":"desc2"
+      },{
+          "src":"assets/img/3.jpg",
+          "alt":"desc3"
       }]
     }
+  },
+  "timetable":{
+    "isActive":true,
+    "title": "timetable",
+    "content":[
+      {
+        "name":"2017 / 09 / 29 (Fri)",
+        "events":[
+          {"time":"10:00", "type":"event", "description":"Door Open"},
+          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
+          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
+          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
+          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
+          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
+          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
+          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
+          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
+          {"time":"20:30", "type":"event", "description":"Door close"}
+        ]
+      },
+      {
+        "name":"2017 / 09 / 30 (Sat)",
+        "events":[
+          {"time":"10:00", "type":"event", "description":"Door Open"},
+          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
+          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
+          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
+          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
+          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
+          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
+          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
+          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
+          {"time":"20:30", "type":"event", "description":"Door close"}
+        ]
+      },
+      {
+        "name":"2017 / 10 / 01 (Sat)",
+        "events":[
+          {"time":"10:00", "type":"event", "description":"Door Open"},
+          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
+          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
+          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
+          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
+          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
+          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
+          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
+          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
+          {"time":"20:30", "type":"event", "description":"Door close"}
+        ]
+      }]
   }
 }

@@ -1,0 +1,22 @@
+header {
+  height: $header-height;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  min-height: 368px;
+
+  @include phone(){
+    background-image: url(../img/theme/mobile-background.jpg);
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    bottom: -2rem;
+    transform: rotate(-1deg);
+    background: $color--snuff;
+  }
+}

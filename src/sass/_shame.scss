@@ -1,0 +1,159 @@
+body {
+  @include phone() {
+    font-size: 26px !important;
+  }
+
+  @include tablet--down() {
+
+    & > section {
+      padding: 0 1.5em;
+    }
+  }
+}
+
+@include tablet--up() {
+  .rules ul,
+  .compo ul {
+    //.-column--2 {
+    padding-left: 0;
+    list-style-position: outside;
+    column-count: 2;
+    column-gap: $gutter;
+
+    li {
+      margin-left: 1em;
+      break-inside: avoid-column;
+    }
+    //}
+  }
+}
+
+nav ul {
+  display: inline-block;
+}
+
+@include phone() {
+  nav {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 1em;
+
+    ul {
+      @include grid();
+    }
+
+    li {
+      width: 50%;
+      float: left;
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+      margin-bottom: .5em;
+    }
+  }
+}
+
+@include tablet() {
+  nav {
+    font-size: 1em;
+  }
+}
+
+.-text--small {
+  font-size: .8em;
+}
+
+#location {
+
+  .location__link {
+    float: left;
+    clear: both;
+  }
+
+  @include tablet--up() {
+    .location-wrapper {
+      display: flex;
+    }
+
+    .location__image,
+    .location__text {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+
+  .location__image {
+    overflow: hidden;
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+  }
+
+  img {
+    max-width: none;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+:target::before {
+  content: "";
+  display: block;
+
+  height: 80px;
+  margin: -80px 0 0;
+
+  @include tablet--up() {
+    height: 30px;
+    margin: -30px 0 0;
+  }
+}
+
+#about{
+  @include tablet() {
+    font-size: 1.2em;
+  }
+
+  @include desktop(){
+    font-size: 1.45em;
+    text-align: justify;
+    line-height: normal;
+  }
+}
+
+#social {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1em;
+
+  @include tablet--down() {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 150;
+  }
+
+  i {
+    font-size: 1em;
+  }
+
+  .language--switch {
+    font-size: .5em;
+    line-height: 2em;
+    border: 2px solid;
+    margin: .1em .1em;
+    padding: .5em;
+  }
+}
+
+section{
+  @include tablet--up(){
+    margin-bottom: 6rem;
+  }
+
+  &#social{
+    margin-bottom: 0;
+  }
+}

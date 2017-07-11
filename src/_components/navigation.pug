@@ -1,0 +1,6 @@
+nav
+    ul
+        each key, value in Object.keys(locals).reverse()
+            if locals[key].isActive
+                li
+                    a(href= '#' + key)=key

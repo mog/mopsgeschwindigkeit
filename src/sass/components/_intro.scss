@@ -1,0 +1,61 @@
+.intro {
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 1em;
+
+  @include tablet--up() {
+    //left: 10rem;
+    //top: 12rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 50vh;
+  }
+
+  @include phone(){
+    top: 1em;
+    right: 1em;
+    z-index: 50;
+  }
+
+  &__partyname {
+    @include phone() {
+      font-size: 2.3em;
+    }
+
+    display: inline-block;
+    letter-spacing: -.05em;
+  }
+
+  summary {
+    font-family: Rubik, "sans-serif";
+
+    @include phone() {
+      font-size: $font--size--3 * .5;
+      line-height: $font--size--3 * .5;
+      margin-bottom: 1em;
+    }
+
+    @include tablet--up() {
+      font-size: $font--size--3;
+      line-height: normal;
+    }
+  }
+
+  date, location {
+    float: left;
+    clear: both;
+    @include phone() {
+      font-size: $font--size--4 * .8;
+      line-height: $font--size--4 * .8;
+    }
+    @include tablet--up() {
+      font-size: $font--size--4;
+      line-height: $font--size--4;
+    }
+    font-weight: bold;
+  }
+}

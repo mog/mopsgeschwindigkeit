@@ -1,0 +1,50 @@
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet--up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet--down {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@if $DEBUG {
+  body::after {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    content: "breakpoint";
+
+    @include phone {
+      content: "phone";
+    }
+
+    @include tablet {
+      content: "tablet";
+    }
+
+    @include desktop {
+      content: "desktop";
+    }
+  }
+}

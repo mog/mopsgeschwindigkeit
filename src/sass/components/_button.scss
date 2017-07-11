@@ -1,0 +1,16 @@
+button,.button {
+  //reset
+  border: none;
+  cursor: pointer;
+
+  //style
+  padding: $gutter $gutter*2 $gutter $gutter*2;
+  background: $color--primary;
+
+  //font
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @extend .-icon--arrow--left;
+  @extend .-animation--hover;
+}

@@ -1,0 +1,19 @@
+section#impressions(aria-label="impressions")
+    h2=impressions.title
+        a.header-anchor(href="#impressions" aria-hidden="true")= "¶"
+    p=impressions.content
+
+    div.impressions__slider
+        each image in impressions.slider.content
+            img.impressions__slider__slide(src=image.src alt=image.alt)
+
+append head_end
+    link(rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css")
+append body_end
+    script(type="text/javascript" src="assets/vendor/jquery/jquery-3.2.1.min.js")
+    script(type="text/javascript" src="assets/vendor/slick/slick.min.js")
+    script.
+        //- init slick slider
+        $(document).ready(function () {
+            $('.impressions__slider').slick({});
+        });

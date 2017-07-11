@@ -1,0 +1,13 @@
+section#timetable(aria-label="timetable")
+    h2=timetable.title
+        a.header-anchor(href="#timetable" aria-hidden="true")= "¶"
+    div.c-timetable
+        each day in timetable.content
+            div.c-timetable__day
+                h3= day.name
+                ul.c-timetable__entries
+                    each entry in day.events
+                        li(class=entry.type)
+                            div.c-timetable__time= entry.time
+                            div.c-timetable__description= entry.description
+

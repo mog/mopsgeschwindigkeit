@@ -7,7 +7,8 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    watch = require('gulp-watch');
 
 /*
  * Directories here
@@ -16,7 +17,9 @@ var paths = {
     public: './public/',
     sass: './src/sass/',
     css: './public/css/',
-    data: './src/_data/'
+    data: './src/_data/',
+    assets: './src/_assets/',
+    pubAssets: './public/assets/'
 };
 
 /**
@@ -66,7 +69,7 @@ gulp.task('sass', function () {
             outputStyle: 'compressed'
         }))
         .on('error', sass.logError)
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+        .pipe(prefix(['last 2 versions'], {
             cascade: true
         }))
         .pipe(gulp.dest(paths.css))
@@ -82,10 +85,16 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch(paths.sass + '**/*.scss', ['sass']);
     gulp.watch('./src/**/*.pug', ['rebuild']);
+    gulp.watch(paths.assets + '**/*', ['copyassets']);
+});
+
+gulp.task('copyassets', function() {
+    gulp.src(paths.assets +'**/*')
+    .pipe(gulp.dest(path.pubAssets));
 });
 
 // Build task compile sass and pug.
-gulp.task('build', ['sass', 'pug']);
+gulp.task('build', ['sass', 'pug', "copyassets"]);
 
 /**
  * Default task, running just `gulp` will compile the sass,

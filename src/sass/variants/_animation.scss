@@ -1,0 +1,16 @@
+.-animation--hover {
+    //interaction
+    transition:$transition--speed background;
+    
+    &::before{
+        transition: $transition--speed * 2 transform;
+    }
+    
+    &:hover{
+        background-color:$color--primary--darker;
+        
+        &::before{
+            transform:translateY(-50%) rotateX(180deg) translateX($gutter/2);
+        }
+    }
+}

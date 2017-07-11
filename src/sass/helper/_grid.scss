@@ -1,0 +1,22 @@
+@mixin grid() {
+  //row
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  //so we can have gutter
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
+
+  & > * {
+    float: left;
+    padding-right: $gutter;
+  }
+
+  & > *:last-child {
+    padding-right: 0;
+  }
+}

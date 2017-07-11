@@ -6,7 +6,12 @@ append head_end
 append body_end
     script(type="text/javascript" src="/js/script.js")
 
-include _partials/header
-include _partials/about
-include _partials/location
-include _partials/impressions
+
+    include _components/navigation
+    include _components/header
+    if about.isActive
+        include _components/about
+
+    include _components/location
+    include _components/impressions
+    include _components/timetable

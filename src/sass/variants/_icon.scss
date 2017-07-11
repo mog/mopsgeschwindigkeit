@@ -1,0 +1,15 @@
+.-icon--arrow--left{
+    //icon related
+    position:relative;
+    text-indent:$gutter;
+    &::before{
+        font-size:1rem;
+        line-height: 2rem;
+        text-indent:0;
+        content:"⪧";
+        position:absolute;
+        left:$gutter;
+        top:50%;
+        transform:translateY(-50%);
+    }
+}
