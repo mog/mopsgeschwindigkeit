@@ -10,4 +10,5 @@ body, html {
 body {
   @extend .-dont-break-out;
   min-width: $min-width;
+  padding-top: $navHeight*2;
 }

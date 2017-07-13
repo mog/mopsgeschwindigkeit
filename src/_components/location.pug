@@ -1,5 +1,5 @@
 section#location(aria-label="location")
     h2=location.title
-        a.header-anchor(href="#location" aria-hidden="true")= "¶"
+        a.header-anchor(href="#location" aria-hidden="true")= anchorSymbol
     p=location.content
     iframe(src=location.map.src width=location.map.width height=location.map.height frameborder="0")

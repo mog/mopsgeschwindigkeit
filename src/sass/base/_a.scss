@@ -1,13 +1,15 @@
 a {
   color: #111;
-  text-decoration: none;
-  transition: $transition--speed color, $transition--speed box-shadow;
 
-  @include underline(rgba(0, 0, 0, .25), $color--snuff);
+  transition: $transition--speed color, $transition--speed box-shadow;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip: skip;
+  //@include underline(rgba(0, 0, 0, .25), $color--snuff);
 
   &:hover,
   &:focus {
     color: $color--primary;
-    @include underline($color--primary, $color--snuff);
+    //@include underline($color--primary, $color--snuff);
   }
 }

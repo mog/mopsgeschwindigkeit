@@ -1,7 +1,12 @@
+@import "../sharedConfig.json";
+
 $DEBUG: false;
 
+$navHeight: 80px;
+
 $min-width: 600px;
-$max-width: 1080px;//60rem;
+$max-width: 1080px;
+//60rem;
 $header-height: 80vh;
 
 $tablet-width: 990px;
@@ -15,7 +20,7 @@ $font--size--3: 1.999em;
 $font--size--4: 1.414em;
 $font--size--5: 18px;
 $font--size--6: 18px;
-$font--family--heading: 'Rubik', sans-serif;
+$font--family--heading: 'vcr_osd_monoregular', sans-serif;
 $font--family--base: 'Montserrat', sans-serif;
 
 //  numbers
@@ -25,15 +30,16 @@ $transition--speed: .277s;
 //  colors
 $color--snuff: #F7F7F7;
 
-
 $color--pomegranate: #f44336;
 $color--pomegranate--darker: #d32f2f;
 
 $color--orange-peel: #ff9800;
 $color--orange-peel--darker: #F57C00;
 
-$color--primary: #f00;//$color--pomegranate;
-$color--primary--darker: #e00;//$color--pomegranate--darker;
+$color--primary: #f00;
+//$color--pomegranate;
+$color--primary--darker: #e00;
+//$color--pomegranate--darker;
 
 $color--secondary: $color--orange-peel;
 $color--secondary--darker: $color--orange-peel--darker;

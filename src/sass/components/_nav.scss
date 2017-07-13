@@ -1,10 +1,14 @@
 nav {
   text-align: center;
   margin: 0;
-  padding: 1rem 0;
-
+  //padding: 1rem 0;
+  top:0;
   font-size: $font--size--4;
   z-index: 100;
+  background: rgba(#fab3bb, .9);
+  position: fixed;
+  width: 100%;
+  height: $navHeight;
 
   li {
     margin: 0 .5em;
@@ -12,15 +16,15 @@ nav {
   }
 
   a{
-    @include underline(rgba(0, 0, 0, .25), $color--mute);
+    //@include underline(rgba(0, 0, 0, .25), $color--mute);
   }
 
   &.-is-sticky a {
-    @include underline(rgba(0, 0, 0, .25), #fff);
+    //@include underline(rgba(0, 0, 0, .25), #fff);
 
     &:hover,
     &:focus{
-      @include underline($color--primary, #fff);
+      //@include underline($color--primary, #fff);
     }
   }
 }

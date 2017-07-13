@@ -1,0 +1,29 @@
+@mixin outlineBoxRotated() {
+
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+  }
+
+  @for $i from 1 through 15 {
+    $maxRot: 3.0;
+    &:nth-child(#{$i})::before {
+      $rotation: (random()*$maxRot*2)-$maxRot;
+      $color1: getRandomColor();
+      $colorAsHSLUV: hsluv-from-hex($color1);
+      $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
+      transform: rotate($rotation+deg);
+      border: 20px solid getRandomColor();
+      border-image: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, transparent 80%) 10 stretch;
+
+      height:100%;
+    }
+  }
+}

@@ -1,13 +1,55 @@
 section#timetable(aria-label="timetable")
     h2=timetable.title
-        a.header-anchor(href="#timetable" aria-hidden="true")= "¶"
+        a.header-anchor(href="#timetable" aria-hidden="true")= anchorSymbol
+
     div.c-timetable
+        div.c-timetable__filters
+            each evt in ["all", "event", "deadline", "seminar", "compo"]
+                div(class="c-timetable__filter js-timetable__filter "+ (evt == 'all' ? 'active' : ''))(data-filter=evt)= evt
+
         each day in timetable.content
             div.c-timetable__day
                 h3= day.name
                 ul.c-timetable__entries
                     each entry in day.events
-                        li(class=entry.type)
+                        li(class="c-timetable__entries__entry " + entry.type)
                             div.c-timetable__time= entry.time
                             div.c-timetable__description= entry.description
+    script.
+        $(document).ready(function () {
+            var $allFilters = $(".js-timetable__filter"),
+                $allEntries = $(".c-timetable__entries__entry");
 
+            //- on click elements in the timetable are filtered
+            $allFilters.on("click", function(){
+                var $selectedFilter = $(this),
+                    filter = $selectedFilter.data("filter"),
+                    $showables = $allEntries.filter('.'+filter);
+
+                $allFilters.removeClass('active');
+                $selectedFilter.addClass('active');
+
+                if(filter==="all"){
+                    $allEntries.show();
+                } else {
+                    $allEntries.hide();
+                    $showables.show();
+                }
+            });
+            //- on hover the selected filter will highlight the events
+            $allFilters.on("mouseenter", function(){
+                var $selectedFilter = $(this),
+                    filter = $selectedFilter.data("filter"),
+                    $showables = $allEntries.filter('.'+filter);
+
+                if(filter ==="all")
+                    return;
+
+                $allEntries.addClass('mute');
+                $showables.removeClass('mute');
+            });
+            $allFilters.on("mouseleave", function(){
+                $allEntries.removeClass('mute');
+            });
+
+        });

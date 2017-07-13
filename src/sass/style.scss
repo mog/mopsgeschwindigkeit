@@ -8,6 +8,8 @@
 @import "helper/sticky";
 @import "helper/underline";
 @import "helper/color";
+@import "helper/outline--box-rotated";
+@import "helper/_random--color-from-palette";
 
 @import "base/a";
 @import "base/body";
@@ -26,6 +28,7 @@
 @import "components/registration";
 @import "components/tickets";
 @import "components/impressions";
+@import "components/about";
 
 @import "variants/animation";
 @import "variants/icon";

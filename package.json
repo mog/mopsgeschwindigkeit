@@ -17,7 +17,9 @@
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
-    "mathsass": "^0.10.1"
+    "mathsass": "^0.10.1",
+    "node-sass-json-importer": "^3.0.2",
+    "hsluv-sass": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -30,5 +32,7 @@
     "sass",
     "browsersync"
   ],
-  "dependencies": {}
+  "dependencies": {
+
+  }
 }

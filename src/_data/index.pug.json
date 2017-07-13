@@ -1,5 +1,6 @@
 {
   "title": "Deadline 2017",
+  "anchorSymbol":"«",
   "navigation":{
     "isActive":true,
     "hideFromNavigation":true
@@ -11,7 +12,7 @@
   "about":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title":"about__title",
+    "title":"DeadlineDemopartyBerlin",
     "content":"about__contents"
   },
   "livestream": {
@@ -52,11 +53,11 @@
     "title": "timetable",
     "content":[
       {
-        "name":"2017 / 09 / 29 (Fri)",
+        "name":"Fri 29.09",
         "events":[
           {"time":"10:00", "type":"event", "description":"Door Open"},
           {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
           {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
           {"time":"15:00", "type":"compo", "description":"Wild Compo"},
           {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
@@ -68,11 +69,11 @@
         ]
       },
       {
-        "name":"2017 / 09 / 30 (Sat)",
+        "name":"Sat 30.09",
         "events":[
           {"time":"10:00", "type":"event", "description":"Door Open"},
           {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
           {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
           {"time":"15:00", "type":"compo", "description":"Wild Compo"},
           {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
@@ -84,11 +85,11 @@
         ]
       },
       {
-        "name":"2017 / 10 / 01 (Sat)",
+        "name":"Sun 01.10",
         "events":[
           {"time":"10:00", "type":"event", "description":"Door Open"},
           {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"compo", "description":"GLSL/Demo compo deadline"},
+          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
           {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
           {"time":"15:00", "type":"compo", "description":"Wild Compo"},
           {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
