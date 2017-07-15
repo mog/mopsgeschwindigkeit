@@ -4,27 +4,18 @@ nav {
   //padding: 1rem 0;
   top:0;
   font-size: $font--size--4;
+  font-family: $font--family--heading;
+  text-transform: uppercase;
   z-index: 100;
-  background: rgba(#fab3bb, .9);
+
   position: fixed;
-  width: 100%;
-  height: $navHeight;
+  min-height: $navHeight;
+  left: $bodyBorderWidth;
+  right: $bodyBorderWidth;
+  background: rgba(#fab3bb, .99);
 
   li {
     margin: 0 .5em;
     display: inline-block;
-  }
-
-  a{
-    //@include underline(rgba(0, 0, 0, .25), $color--mute);
-  }
-
-  &.-is-sticky a {
-    //@include underline(rgba(0, 0, 0, .25), #fff);
-
-    &:hover,
-    &:focus{
-      //@include underline($color--primary, #fff);
-    }
   }
 }

@@ -10,3 +10,8 @@
 ## gulp
 - index.pug.json no reload when something is changed
 - new files arr not seen
+
+## site
+- pink oben mehr knallen lassen
+- navi on mobile looks broken
+- transparenter rahmen um sections broken on safari

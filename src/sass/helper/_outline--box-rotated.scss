@@ -19,8 +19,8 @@
       $color1: getRandomColor();
       $colorAsHSLUV: hsluv-from-hex($color1);
       $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
-      transform: rotate($rotation+deg);
-      border: 20px solid getRandomColor();
+      transform: skew($rotation+deg) rotate($rotation+deg);
+      border: 20px solid transparent;
       border-image: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, transparent 80%) 10 stretch;
 
       height:100%;

@@ -11,4 +11,8 @@ body {
   @extend .-dont-break-out;
   min-width: $min-width;
   padding-top: $navHeight*2;
+  border: $bodyBorderWidth solid;
+  border-top:0;
+  border-bottom:0;
+  border-image: linear-gradient(lighten(#fab3bb, 4), lighten(#92fefe, 4)) $bodyBorderWidth/1px stretch;
 }

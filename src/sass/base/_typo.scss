@@ -59,6 +59,38 @@ h2 {
   padding-top: 0.5em;
   margin-bottom: .5em;
   //border-top: .1em solid;
+
+  $maxRot: 2.0;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    //transform: rotate($rotation+deg);
+    padding: 0;
+    top: 30px;
+    left: -20px;
+  }
+
+  @for $i from 1 through 15 {
+    @at-root {
+       section:nth-child(#{$i}){
+        h2::before {
+          $rotation: (random()*$maxRot*2)-$maxRot;
+          $color1: getRandomColor();
+          $colorAsHSLUV: hsluv-from-hex($color1);
+          $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
+          background: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, transparent 80%);
+          transform: translate(0,-40%) rotate($rotation+deg) skew(($rotation)+deg);
+        }
+      }
+    }
+  }
+  position: relative;
+  color: #111;
+  mix-blend-mode: hard-light;
 }
 
 h3 {

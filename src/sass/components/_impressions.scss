@@ -1,5 +1,20 @@
 .impressions__slider{
   .impressions__slider__slide{
-    max-height:320px;
+    max-height:640px;
+  }
+
+  .slick-next,
+  .slick-prev{
+    position: absolute;
+    z-index: 10;
+    top: 33%;
+  }
+
+  .slick-next{
+    right:-90px;
+  }
+
+  .slick-prev{
+    left:-90px;
   }
 }
