@@ -2,7 +2,7 @@ $component: c-timetable;
 
 .#{$component} {
 
-  @include tablet--up(){
+  @include tablet--up() {
     @include grid();
 
     &__day {
@@ -19,34 +19,72 @@ $component: c-timetable;
   &__time {
     width: 3.5em;
     color: #fff;
-    font-weight:bold;
-    background: black;
-    padding-left:3px;
+    font-weight: bold;
+    padding-left: 3px;
     font-family: $font--family--heading;
   }
-  
-  &__filters{
+
+  &__filters {
     width: 100%;
     clear: both;
     float: left;
   }
 
-  &__filter{
-    float:left;
-    margin: 7px;
-    padding:5px 10px;
+  //TODO make checkbox button element?
+  &__filter {
+    text-transform: uppercase;
+    float: left;
+    margin: 7px 14px;
+    padding: 5px 10px 7px 47px;
     width: auto;
-    transition:background-color .277s;
-    border-radius:1px;
-    cursor:pointer;
+    transition: background-color .277s;
+    border-radius: 1px;
+    cursor: pointer;
+    outline: 5px solid #192146;
+    box-shadow: 10px 10px 0 #192146;
+    position: relative;
+    z-index: 1;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      outline: 3px solid #192146;
+    }
+
+    &::before {
+      margin: 3px;
+      width: 28px;
+      height: 82%;
+      background: #192146;
+      opacity: .25;
+      transition: opacity .277s;
+    }
+
+    &:hover{
+      &::before {
+        opacity: .5;
+      }
+    }
+
+    &.active::before {
+      opacity: 1;
+    }
   }
 
-  &__entries__entry{
-    transition:opacity .277s;
-    opacity:1;
+  &__entries__entry {
+    transition: opacity .277s;
+    opacity: 1;
     margin-top: 7px;
-    &.mute{
-      opacity:.25;
+    &.mute {
+      opacity: .25;
     }
   }
 
@@ -55,47 +93,42 @@ $component: c-timetable;
     text-shadow: 0 0 10px darken(#857171, 15);
   }
 
-  &__filter[data-filter="all"].active,
-  &__filter[data-filter="all"]:hover {
+  &__filter[data-filter="all"] {
     background: nth(map_get($palette, "lavender_pink"), 3);
     text-shadow: 0 0 10px darken(#857171, 15);
   }
 
   // red green color blindness has been taken into account when chosing this colours
   .deadline &__time,
-  &__filter[data-filter="deadline"].active,
-  &__filter[data-filter="deadline"]:hover{
+  &__filter[data-filter="deadline"] {
     background: nth(map_get($palette, "sail"), 3);
     text-shadow: 0 0 10px darken(nth(map_get($palette, "sail"), 3), 15);
   }
 
   .event &__time,
-  &__filter[data-filter="event"].active,
-  &__filter[data-filter="event"]:hover {
-    background: #E3C646;//nth(map_get($palette, "lavender_pink"), 3);
-    text-shadow: 0 0 10px darken(#E3C646, 15);//nth(map_get($palette, "lavender_pink"), 3), 15);
+  &__filter[data-filter="event"] {
+    background: #E3C646; //nth(map_get($palette, "lavender_pink"), 3);
+    text-shadow: 0 0 10px darken(#E3C646, 15); //nth(map_get($palette, "lavender_pink"), 3), 15);
   }
 
   .compo &__time,
-  &__filter[data-filter="compo"].active,
-  &__filter[data-filter="compo"]:hover {
+  &__filter[data-filter="compo"] {
     background: nth(map_get($palette, "perfume"), 3);
     text-shadow: 0 0 10px darken(nth(map_get($palette, "perfume"), 3), 15);
   }
 
   .seminar &__time,
-  &__filter[data-filter="seminar"].active,
-  &__filter[data-filter="seminar"]:hover {
+  &__filter[data-filter="seminar"] {
     background: nth(map_get($palette, "astra"), 3);
     text-shadow: 0 0 10px darken(nth(map_get($palette, "astra"), 3), 30);
   }
 
   &__time,
   &__description {
-    display:table-cell;
+    display: table-cell;
   }
 
-  &__description{
+  &__description {
     padding-left: 10px;
   }
 }

@@ -6,19 +6,24 @@ button,.button {
   //style
   padding: $gutter $gutter*2 $gutter $gutter*2;
   background: nth(map_get($palette, "perfume"), 2);
-  box-shadow:10px 10px 0 0 black;
+  box-shadow:10px 10px 0 0 #192146;;
   color: #fff;
   transition: background-color .277s;
 
   //font
   text-transform: uppercase;
   font-weight: bold;
+  font-family: $font--family--heading;
 
   //@extend .-icon--arrow--left;
   //@extend .-animation--hover;
-  outline: 5px solid black;
+  outline: 5px solid #192146;
 
   &:hover{
     background-color:nth(map_get($palette, "perfume"), 3);
+  }
+
+  &--small{
+    padding: 24px 42px;
   }
 }

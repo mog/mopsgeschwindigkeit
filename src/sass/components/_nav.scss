@@ -12,10 +12,30 @@ nav {
   min-height: $navHeight;
   left: $bodyBorderWidth;
   right: $bodyBorderWidth;
-  background: rgba(#fab3bb, .99);
+  background: rgba(250,179,187,0.99);
+
+  @include tablet--up(){
+
+    background: linear-gradient(90deg, rgba(250,179,187,0.99) 80%, transparent);
+
+    body & ul{
+      display: flex;
+      justify-content: space-around;
+      padding-left:0;
+    }
+  }
 
   li {
     margin: 0 .5em;
     display: inline-block;
+  }
+  
+  .logo{
+    width: 33%;
+    margin-bottom:-40px;
+
+    @include phone(){
+      display:none;
+    }
   }
 }

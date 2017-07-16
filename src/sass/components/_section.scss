@@ -1,7 +1,7 @@
 section {
   max-width: $max-width;
   margin: 0 auto;
-
+  padding: 0 42px 32px;
   //@include transitionHSLUV(10);
   @include outlineBoxRotated();
 
@@ -17,7 +17,7 @@ section {
   //}
   //position: relative;
   //z-index: 1;
-//
+  //
   //@for $i from 1 through 15 {
   //  $maxRot: 5;
   //  &:nth-child(#{$i})::before {

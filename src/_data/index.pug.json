@@ -1,6 +1,7 @@
 {
-  "title": "Deadline 2017",
+  "title": "Deadline 2019",
   "anchorSymbol":"«",
+
   "navigation":{
     "isActive":true,
     "hideFromNavigation":true
@@ -38,13 +39,16 @@
     "slider":{
       "content":[{
           "src":"assets/img/1.jpg",
-          "alt":"desc1"
+          "alt":"desc1",
+          "caption": "Foto von der Halle"
       },{
           "src":"assets/img/2.jpg",
-          "alt":"desc2"
+          "alt":"desc2",
+          "caption": "Foto von der Halle 2"
       },{
           "src":"assets/img/3.jpg",
-          "alt":"desc3"
+          "alt":"desc3",
+          "caption": "Foto von der Halle 3"
       }]
     }
   },

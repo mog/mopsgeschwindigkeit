@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:700,500');
+
 //@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @font-face {
@@ -31,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   filter: contrast(1);
+  color: #192146;
   @include phone() {
     text-align: left;
     line-height: 1em;
@@ -58,11 +60,13 @@ h2 {
   margin-top: 2em;
   padding-top: 0.5em;
   margin-bottom: .5em;
+  margin-left: -27px;
   //border-top: .1em solid;
 
-  $maxRot: 2.0;
-
-  &::before {
+  $maxRot: 3.0;
+  $maxRotText:1.5;
+  &::before,
+  &::after {
     content: "";
     width: 100%;
     height: 80%;
@@ -74,22 +78,39 @@ h2 {
     left: -20px;
   }
 
+  &::after {
+    width: 60%
+  }
+
   @for $i from 1 through 15 {
     @at-root {
-       section:nth-child(#{$i}){
+      section:nth-child(#{$i}) {
+        h2 {
+          text-indent: - random(15)+px;
+          transform: translate(0, -40%) rotate((random()*$maxRotText*2)-$maxRotText+deg);
+        }
+
+        $rotation: (random()*$maxRot*2)-$maxRot;
         h2::before {
-          $rotation: (random()*$maxRot*2)-$maxRot;
           $color1: getRandomColor();
           $colorAsHSLUV: hsluv-from-hex($color1);
           $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
           background: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, transparent 80%);
-          transform: translate(0,-40%) rotate($rotation+deg) skew(($rotation)+deg);
+          transform: translate(0, -40%) rotate($rotation+deg) skew(($rotation)+deg);
+        }
+
+        h2::after {
+          $rotation2: $rotation * -1;
+          $color1: getRandomColor();
+          $colorAsHSLUV: hsluv-from-hex($color1);
+          $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
+          background: linear-gradient((45-$rotation2)+deg, $color1, $color2 70%, transparent 80%);
+          transform: translate(0, -40%) rotate($rotation2+deg) skew(($rotation2)+deg);
         }
       }
     }
   }
   position: relative;
-  color: #111;
   mix-blend-mode: hard-light;
 }
 
