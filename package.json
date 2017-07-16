@@ -14,12 +14,13 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-data": "^1.2.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
+    "hsluv-sass": "git://github.com/mog/hsluv-sass",
     "mathsass": "^0.10.1",
-    "node-sass-json-importer": "^3.0.2",
-    "hsluv-sass": "git://github.com/mog/hsluv-sass"
+    "node-sass-json-importer": "^3.0.2"
   },
   "repository": {
     "type": "git",
