@@ -92,7 +92,7 @@ gulp.task('watch', function () {
 
 gulp.task('copyassets', function() {
     gulp.src(paths.assets +'**/*')
-    .pipe(gulp.dest(path.pubAssets));
+    .pipe(gulp.dest(paths.pubAssets));
 });
 
 // Build task compile sass and pug.
