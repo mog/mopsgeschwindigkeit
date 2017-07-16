@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     watch = require('gulp-watch'),
-    importer = require('node-sass-json-importer');
+    importer = require('node-sass-json-importer'),
+    imagemin = require('gulp-imagemin');
 
 /*
  * Directories here
@@ -50,7 +51,7 @@ gulp.task('rebuild', ['pug'], function () {
 /**
  * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'pug'], function () {
+gulp.task('browser-sync', ['sass', 'pug', 'copyassets'], function () {
     browserSync({
         server: {
             baseDir: paths.public
@@ -86,17 +87,18 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch(paths.sass + '**/*.scss', ['sass']);
-    gulp.watch('./src/**/*.pug', ['rebuild']);
+    gulp.watch(['./src/**/*.pug', './src/**/*.json'], ['rebuild']);
     gulp.watch(paths.assets + '**/*', ['copyassets']);
 });
 
 gulp.task('copyassets', function() {
     gulp.src(paths.assets +'**/*')
-    .pipe(gulp.dest(paths.pubAssets));
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.pubAssets));
 });
 
 // Build task compile sass and pug.
-gulp.task('build', ['sass', 'pug', "copyassets"]);
+gulp.task('build', ['sass', 'pug', 'copyassets']);
 
 /**
  * Default task, running just `gulp` will compile the sass,
