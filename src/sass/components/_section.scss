@@ -2,6 +2,15 @@ section {
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 42px 32px;
+
+  min-height: calc(100vh - 12rem);
+
+  &.first {
+    padding-top: $navHeight*2;
+  }
+
+
+
   //@include transitionHSLUV(10);
   @include outlineBoxRotated();
 
