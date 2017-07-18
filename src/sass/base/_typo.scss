@@ -94,7 +94,7 @@ h2 {
           $color1: getRandomColor();
           $colorAsHSLUV: hsluv-from-hex($color1);
           $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
-          background: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, transparent 80%);
+          background: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, rgba($color2, 0) 80%);
           transform: translate(0, -40%) rotate($rotation+deg) skew(($rotation)+deg);
         }
 
@@ -103,7 +103,7 @@ h2 {
           $color1: getRandomColor();
           $colorAsHSLUV: hsluv-from-hex($color1);
           $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
-          background: linear-gradient((45-$rotation2)+deg, $color1, $color2 70%, transparent 80%);
+          background: linear-gradient((45-$rotation2)+deg, $color1, $color2 70%, rgba($color2, 0) 80%);
           transform: translate(0, -40%) rotate($rotation2+deg) skew(($rotation2)+deg);
         }
       }
