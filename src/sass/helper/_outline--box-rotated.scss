@@ -11,6 +11,7 @@
     z-index: -1;
     position: absolute;
     left: 0;
+    background: linear-gradient(45deg, #fff, rgba(255,255,255,.0));
   }
 
   @for $i from 1 through 15 {
