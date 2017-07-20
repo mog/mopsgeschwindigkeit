@@ -12,7 +12,6 @@ body {
   @extend .-dont-break-out;
   height:100%;
   min-width: $min-width;
-  padding-top: $navHeight*2;
   border: $bodyBorderWidth solid;
   border-top: 0;
   border-bottom: 0;

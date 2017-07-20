@@ -10,7 +10,11 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     watch = require('gulp-watch'),
     importer = require('node-sass-json-importer'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    gutil = require('gulp-util'),
+    browserify = require('gulp-browserify'),
+    through = require('through2'),
+    uglify = require('uglify-es');
 
 /*
  * Directories here
@@ -21,9 +25,64 @@ var paths = {
     css: './public/css/',
     data: './src/_data/',
     assets: './src/_assets/',
-    pubAssets: './public/assets/'
+    pubAssets: './public/assets/',
+    scripts: './src/_scripts/',
+    pubScripts: './public/js/'
 };
 
+/**
+ * Uglify generated js
+ */
+gulp.task('uglify', ['browserify'], function () {
+    return gulp.src(paths.pubScripts+'*.js')
+        .pipe(
+            through.obj((file,enc,cb) => {
+                var minres = uglify.minify(file.contents.toString());
+                if (minres.error) {
+                    process.stderr.write(
+                        minres.error.message +
+                        ' in ' +
+                        minres.error.filename +
+                        ':' +
+                        minres.error.line +
+                        ' ' +
+                        minres.error.col +
+                        ':' +
+                        minres.error.pos +
+                        '\n'
+                    );
+                } else {
+                    var olength = file.contents.byteLength;
+                    file.contents = Buffer.from(minres.code);
+                    gutil.log(
+                        `Compressed ${file.path.split('/').pop()}`,
+                        gutil.colors.gray(`(saved ${olength - file.contents.byteLength} bytes - ${(100-(file.contents.byteLength/olength)*100).toFixed(2)}%)`)
+                    );
+                }
+                cb(null, file);
+            })
+        )
+        .on('error', function (err) {
+            process.stderr.write(err.message + '\n');
+            this.emit('end');
+        })
+        .pipe(gulp.dest(paths.pubScripts));
+});
+
+/**
+ * Compile page.js into public js file
+ */
+gulp.task('browserify', function () {
+    return gulp.src(paths.scripts + '*.js')
+        .pipe(browserify({
+            bare: true
+        }))
+        .on('error', function (err) {
+            process.stderr.write(err.message + '\n');
+            this.emit('end');
+        })
+        .pipe(gulp.dest(paths.pubScripts));
+});
 /**
  * Compile .pug files and pass in data from json file
  * matching file name. index.pug - index.pug.json
@@ -51,7 +110,7 @@ gulp.task('rebuild', ['pug'], function () {
 /**
  * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'pug', 'copyassets'], function () {
+gulp.task('browser-sync', ['sass', 'browserify', 'pug', 'copyassets'], function () {
     browserSync({
         server: {
             baseDir: paths.public
@@ -87,6 +146,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch(paths.sass + '**/*.scss', ['sass']);
+    gulp.watch(paths.scripts + '**/*.js', ['browserify','uglify']);
     gulp.watch(['./src/**/*.pug', './src/**/*.json'], ['rebuild']);
     gulp.watch(paths.assets + '**/*', ['copyassets']);
 });
@@ -98,7 +158,7 @@ gulp.task('copyassets', function() {
 });
 
 // Build task compile sass and pug.
-gulp.task('build', ['sass', 'pug', 'copyassets']);
+gulp.task('build', ['sass', 'browserify', 'uglify', 'pug', 'copyassets']);
 
 /**
  * Default task, running just `gulp` will compile the sass,

@@ -11,16 +11,22 @@
   },
   "devDependencies": {
     "browser-sync": "^2.9.3",
+    "gl-matrix": "^2.3.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-data": "^1.2.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "hsluv-sass": "git://github.com/mog/hsluv-sass",
     "mathsass": "^0.10.1",
-    "node-sass-json-importer": "^3.0.2"
+    "node-sass-json-importer": "^3.0.2",
+    "seedrandom": "^2.4.3",
+    "through2": "^2.0.3",
+    "uglify-es": "^3.0.25"
   },
   "repository": {
     "type": "git",
