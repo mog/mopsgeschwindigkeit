@@ -1,5 +1,5 @@
 {
-  "title": "Deadline 2019",
+  "title": "Deadline 2017",
   "anchorSymbol":"«",
 
   "navigation":{
@@ -38,17 +38,57 @@
     "content": "impressions__content",
     "slider":{
       "content":[{
-          "src":"assets/img/1.jpg",
-          "alt":"desc1",
-          "caption": "Foto von der Halle"
+          "src":"assets/img/imp1.jpg",
+          "alt":"photo by keyJ",
+          "caption": "Come to the ORWOhaus to party with us"
       },{
-          "src":"assets/img/2.jpg",
-          "alt":"desc2",
-          "caption": "Foto von der Halle 2"
+          "src":"assets/img/imp2.jpg",
+          "alt":"photo by vickey",
+          "caption": "Be greeted by the friendly Info-Desk"
       },{
-          "src":"assets/img/3.jpg",
-          "alt":"desc3",
-          "caption": "Foto von der Halle 3"
+          "src":"assets/img/imp3.jpg",
+          "alt":"photo by ted",
+          "caption": "Watch the competitions in the main hall"
+	  },{
+          "src":"assets/img/imp4.jpg",
+          "alt":"photo by ted",
+          "caption": "Enjoy our great Live-Acts"
+	  },{
+          "src":"assets/img/imp5.jpg",
+          "alt":"photo by ted",
+          "caption": "Relax in the meadows or camp outside"
+	  },{
+          "src":"assets/img/imp6.jpg",
+          "alt":"photo by ted",
+          "caption": "Dance your ass off to our DJ-Sets"
+	  },{
+          "src":"assets/img/imp7.jpg",
+          "alt":"photo by vickey",
+          "caption": "Tell or hear great stories at the bonfire"
+	  },{
+          "src":"assets/img/imp8.jpg",
+          "alt":"photo by dojoe",
+          "caption": "Meet friends and have a great time. Cheers!"
+	  },{
+          "src":"assets/img/imp9.jpg",
+          "alt":"photo by ted",
+          "caption": "Take part and win the competition!"
+	  },{
+          "src":"assets/img/imp10.jpg",
+          "alt":"photo by ted",
+          "caption": "Relax outside"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by Saga Musix",
+          "caption": "Show us your joystick-skills!"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by nodepond",
+          "caption": "Party to 8-bit-sounds!"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by T$",
+          "caption": "Take a break at the terrace."
       }]
     }
   },
