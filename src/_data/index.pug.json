@@ -99,49 +99,42 @@
       {
         "name":"Fri 29.09",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"14:00", "type":"event", "description":"Doors Open"},
+          {"time":"15:00", "type":"event", "description":"TBD - Demoshow - Oldschool Demos"},
+		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
+		  {"time":"18:00", "type":"event", "description":"TBD - Seminar Slot"},
+          {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
+		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos},
+          {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+		  {"time":"24:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
       {
         "name":"Sat 30.09",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
+          {"time":"13:00", "type":"deadline", "description":"Remote Entries"},
+		  {"time":"13:00", "type":"deadline", "description":"Music Compos"},
+          {"time":"14:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
+          {"time":"16:00", "type":"compo", "description":"Music Competitions"},
+          {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
+		  {"time":"17:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"19:00", "type":"deadline", "description":"Executable Demo Compos"},
+          {"time":"19:00", "type":"compo", "description":"Graphic Compos"},
+          {"time":"20:00", "type":"compo", "description":"Wild + Animation Compos"},
+          {"time":"22:00", "type":"compo", "description":"Executable Demo Compos"}
+		  {"time":"23:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+		  {"time":"01:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
       {
         "name":"Sun 01.10",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"09:00", "type":"deadline", "description":"Voting Deadline"},
+          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
+          {"time":"12:00", "type":"event", "description":"Prizegiving Ceremony"},
+          {"time":"13:00", "type":"event", "description":"End of Party / Chillout at the bar"}
         ]
       }]
   },
