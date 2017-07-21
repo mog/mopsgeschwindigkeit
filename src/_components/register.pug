@@ -1,4 +1,39 @@
 section#register(aria-label="register")
     h2=register.title
         a.header-anchor(href="#register" aria-hidden="true")= anchorSymbol
-    p=register.content
+    p.
+        Let your friends know you'll attend.<br>
+
+    form(action="//deadline.untergrund.net/api/" name="register")
+        input(name="nick" placeholder="nick")
+        input(name="group" placeholder="group")
+        input(name="email" type="email" placeholder="email")
+        button.button--small.js-submit-registration.
+            submit
+        div.registrations.js-registrations
+    script.
+        $(document).ready(function () {
+            console.log("::", $('form[name=register]'));
+            $('form[name=register]').submit(function(){
+            console.log("submit");
+                $.post($(this).attr('action'), $(this).serialize(), function(json) {
+                    showContent(json);
+                }, 'json');
+                return false;
+            });
+
+            function showContent(json){
+                console.log(json);
+                var list = "";
+                json.registrations.map(function(reg){
+                    var groups = "";
+                    if(reg.groups){
+                        groups = '<div class="groups">'+ reg.groups +'</div>';
+                    }
+
+                    list += '<div class="human"><div class="nick">'+ reg.nick  +'</div>' + groups +'</div>';
+                });
+
+                $('.js-registrations').empty().append(list);
+            }
+        });
