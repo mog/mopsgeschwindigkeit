@@ -1,5 +1,5 @@
 {
-  "title": "Deadline 2019",
+  "title": "Deadline 2017",
   "anchorSymbol":"«",
 
   "navigation":{
@@ -38,17 +38,57 @@
     "content": "impressions__content",
     "slider":{
       "content":[{
-          "src":"assets/img/1.jpg",
-          "alt":"desc1",
-          "caption": "Foto von der Halle"
+          "src":"assets/img/imp1.jpg",
+          "alt":"photo by keyJ",
+          "caption": "Come to the ORWOhaus to party with us"
       },{
-          "src":"assets/img/2.jpg",
-          "alt":"desc2",
-          "caption": "Foto von der Halle 2"
+          "src":"assets/img/imp2.jpg",
+          "alt":"photo by vickey",
+          "caption": "Be greeted by the friendly Info-Desk"
       },{
-          "src":"assets/img/3.jpg",
-          "alt":"desc3",
-          "caption": "Foto von der Halle 3"
+          "src":"assets/img/imp3.jpg",
+          "alt":"photo by ted",
+          "caption": "Watch the competitions in the main hall"
+	  },{
+          "src":"assets/img/imp4.jpg",
+          "alt":"photo by ted",
+          "caption": "Enjoy our great Live-Acts"
+	  },{
+          "src":"assets/img/imp5.jpg",
+          "alt":"photo by ted",
+          "caption": "Relax in the meadows or camp outside"
+	  },{
+          "src":"assets/img/imp6.jpg",
+          "alt":"photo by ted",
+          "caption": "Dance your ass off to our DJ-Sets"
+	  },{
+          "src":"assets/img/imp7.jpg",
+          "alt":"photo by vickey",
+          "caption": "Tell or hear great stories at the bonfire"
+	  },{
+          "src":"assets/img/imp8.jpg",
+          "alt":"photo by dojoe",
+          "caption": "Meet friends and have a great time. Cheers!"
+	  },{
+          "src":"assets/img/imp9.jpg",
+          "alt":"photo by ted",
+          "caption": "Take part and win the competition!"
+	  },{
+          "src":"assets/img/imp10.jpg",
+          "alt":"photo by ted",
+          "caption": "Relax outside"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by Saga Musix",
+          "caption": "Show us your joystick-skills!"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by nodepond",
+          "caption": "Party to 8-bit-sounds!"
+	  },{
+          "src":"assets/img/imp11.jpg",
+          "alt":"photo by T$",
+          "caption": "Take a break at the terrace."
       }]
     }
   },
@@ -59,49 +99,42 @@
       {
         "name":"Fri 29.09",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"14:00", "type":"event", "description":"Doors Open"},
+          {"time":"15:00", "type":"event", "description":"TBD - Demoshow - Oldschool Demos"},
+		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
+		  {"time":"18:00", "type":"event", "description":"TBD - Seminar Slot"},
+          {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
+		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos},
+          {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+		  {"time":"24:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
       {
         "name":"Sat 30.09",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
+          {"time":"13:00", "type":"deadline", "description":"Remote Entries"},
+		  {"time":"13:00", "type":"deadline", "description":"Music Compos"},
+          {"time":"14:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
+          {"time":"16:00", "type":"compo", "description":"Music Competitions"},
+          {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
+		  {"time":"17:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"19:00", "type":"deadline", "description":"Executable Demo Compos"},
+          {"time":"19:00", "type":"compo", "description":"Graphic Compos"},
+          {"time":"20:00", "type":"compo", "description":"Wild + Animation Compos"},
+          {"time":"22:00", "type":"compo", "description":"Executable Demo Compos"}
+		  {"time":"23:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+		  {"time":"01:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
       {
         "name":"Sun 01.10",
         "events":[
-          {"time":"10:00", "type":"event", "description":"Door Open"},
-          {"time":"11:00", "type":"event", "description":"Demoshow - Best demo of 2016"},
-          {"time":"13:00", "type":"deadline", "description":"GLSL/Demo compo deadline"},
-          {"time":"14:00", "type":"seminar", "description":"Seminar: Secrets of Parthenon Renderer"},
-          {"time":"15:00", "type":"compo", "description":"Wild Compo"},
-          {"time":"15:30", "type":"event", "description":"DJ Event - DJ:fl1ne"},
-          {"time":"16:00", "type":"compo", "description":"GLSL Compo"},
-          {"time":"17:30", "type":"compo", "description":"Demo Compo"},
-          {"time":"19:00", "type":"deadline", "description":"Vote deadline"},
-          {"time":"19:30", "type":"event", "description":"Prizegiving / Closing Ceremony"},
-          {"time":"20:30", "type":"event", "description":"Door close"}
+          {"time":"09:00", "type":"deadline", "description":"Voting Deadline"},
+          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
+          {"time":"12:00", "type":"event", "description":"Prizegiving Ceremony"},
+          {"time":"13:00", "type":"event", "description":"End of Party / Chillout at the bar"}
         ]
       }]
   },
@@ -124,8 +157,8 @@
         "content":[
           "Your contribution must not have been released before.",
           "Contributions must be handed in before the respective compo deadline.",
-          "Remote entries are allowed in all compos. Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 1st Oct. 2016, 12:00 noon (UTC+1)",
-          "Please note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.",
+          "Remote entries are allowed in all compos. Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 30th Sept. 2017, 13:00 (UTC+1)",
+          "Please note: For remote entries we can’t guarantee you to get physical prizes. We will try to send you the prize or bring it to another demoparty, eg. Revision.",
           "The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.",
           "In case of too few compo entries for one compo (less than three) the party organizers can cancel or combine competitions.",
           "By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.",
