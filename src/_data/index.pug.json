@@ -140,8 +140,7 @@
   },
   "register":{
     "isActive":true,
-    "title":"register__title",
-    "content":"register__content"
+    "title":"register"
   },
   "seminar":{
     "isActive":true,

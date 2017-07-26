@@ -5,25 +5,29 @@ section#register(aria-label="register")
         Let your friends know you'll attend.<br>
 
     form(action="//deadline.untergrund.net/api/" name="register")
-        input(name="nick" placeholder="nick")
-        input(name="group" placeholder="group")
-        input(name="email" type="email" placeholder="email")
+        input(name="nick" placeholder="nick (needed)")
+        input(name="group" placeholder="group (joined)")
+        input(name="email" type="email" placeholder="email (not shown)")
         button.button--small.js-submit-registration.
             submit
         div.registrations.js-registrations
     script.
         $(document).ready(function () {
-            console.log("::", $('form[name=register]'));
+            var url = $('form[name=register]').attr('action');
+
+            //press x to json
+            $.getJSON(url, function( json ) {
+                showContent(json);
+            });
+
             $('form[name=register]').submit(function(){
-            console.log("submit");
-                $.post($(this).attr('action'), $(this).serialize(), function(json) {
+                $.post(url, $(this).serialize(), function(json) {
                     showContent(json);
                 }, 'json');
                 return false;
             });
 
             function showContent(json){
-                console.log(json);
                 var list = "";
                 json.registrations.map(function(reg){
                     var groups = "";
