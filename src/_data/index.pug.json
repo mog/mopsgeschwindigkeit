@@ -34,8 +34,8 @@
   "impressions":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title": "impressions__title",
-    "content": "impressions__content",
+    "title": "impressions",
+    "content": "SHOW ME WHAT YOU GOT! I WANT TO SEE WHAT YOU GOT!",
     "slider":{
       "content":[{
           "src":"assets/img/imp1.jpg",
