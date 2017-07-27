@@ -2,7 +2,7 @@ section#register(aria-label="register")
     h2=register.title
         a.header-anchor(href="#register" aria-hidden="true")= anchorSymbol
     p.
-        Let your friends know you'll attend.<br>
+        Let your friends know you'll attend. So far <span class="js-registration-count"></span> humans already did!
 
     form(action="//deadline.untergrund.net/api/" name="register")
         input(name="nick" placeholder="nick (needed)")
@@ -13,14 +13,16 @@ section#register(aria-label="register")
         div.registrations.js-registrations
     script.
         $(document).ready(function () {
-            var url = $('form[name=register]').attr('action');
+            var $form = $('form[name=register]'),
+                $regCountElement = $('.js-registration-count'),
+                url = $form.attr('action');
 
             //press x to json
             $.getJSON(url, function( json ) {
                 showContent(json);
             });
 
-            $('form[name=register]').submit(function(){
+            $form.submit(function(){
                 $.post(url, $(this).serialize(), function(json) {
                     showContent(json);
                 }, 'json');
@@ -38,6 +40,13 @@ section#register(aria-label="register")
                     list += '<div class="human"><div class="nick">'+ reg.nick  +'</div>' + groups +'</div>';
                 });
 
+                updateVisitorCount(json);
+
                 $('.js-registrations').empty().append(list);
+            }
+
+            function updateVisitorCount(json){
+                var count = (json.registrations || []).length;
+                $regCountElement.text(count);
             }
         });
