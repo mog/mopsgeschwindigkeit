@@ -19,8 +19,15 @@
     z-index: 10;
   }
 
-  .slick-slide{
+  .slick-slide {
     border: 13px solid #fff;
+  }
+
+  &.slick-initialized .slick-slide{
+    //center vertically
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   @include phone() {
