@@ -34,8 +34,8 @@
   "impressions":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title": "impressions__title",
-    "content": "impressions__content",
+    "title": "impressions",
+    "content": "SHOW ME WHAT YOU GOT! I WANT TO SEE WHAT YOU GOT!",
     "slider":{
       "content":[{
           "src":"assets/img/imp1.jpg",
@@ -82,11 +82,11 @@
           "alt":"photo by Saga Musix",
           "caption": "Show us your joystick-skills!"
 	  },{
-          "src":"assets/img/imp11.jpg",
+          "src":"assets/img/imp12.jpg",
           "alt":"photo by nodepond",
           "caption": "Party to 8-bit-sounds!"
 	  },{
-          "src":"assets/img/imp11.jpg",
+          "src":"assets/img/imp13.jpg",
           "alt":"photo by T$",
           "caption": "Take a break at the terrace."
       }]
@@ -104,8 +104,8 @@
 		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
 		  {"time":"18:00", "type":"event", "description":"TBD - Seminar Slot"},
           {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
-		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos},
-          {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos"},
+          {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"},
 		  {"time":"24:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
@@ -123,8 +123,8 @@
           {"time":"19:00", "type":"deadline", "description":"Executable Demo Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Compos"},
           {"time":"20:00", "type":"compo", "description":"Wild + Animation Compos"},
-          {"time":"22:00", "type":"compo", "description":"Executable Demo Compos"}
-		  {"time":"23:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
+          {"time":"22:00", "type":"compo", "description":"Executable Demo Compos"},
+		  {"time":"23:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"},
 		  {"time":"01:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"}
         ]
       },
@@ -140,8 +140,7 @@
   },
   "register":{
     "isActive":true,
-    "title":"register__title",
-    "content":"register__content"
+    "title":"register"
   },
   "seminar":{
     "isActive":true,

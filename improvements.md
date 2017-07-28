@@ -5,13 +5,13 @@
     Prepend and append have a bug, where doing this from an include results in duplicated code. As the tags do get appended and prependen, but a copy of that also remains at the same position 
 - yaml for components header for documentation purposes
     Maybe there's a plugin?
-    
+
+## sass
+- y u so slow, is it hsluv?
 
 ## gulp
 - index.pug.json no reload when something is changed
 - new files arr not seen
 
 ## site
-- pink oben mehr knallen lassen
 - navi on mobile looks broken
-- transparenter rahmen um sections broken on safari

@@ -6,7 +6,7 @@ section#impressions(aria-label="impressions")
     div.impressions__slider
         each image in impressions.slider.content
             figure.impressions__slider__slide
-                img.impressions__slider__slide__image(src=image.src alt=image.alt)
+                img.impressions__slider__slide__image(data-lazy=image.src alt=image.alt)
                 figcaption.impressions__slider__slide__caption= image.caption
 
     //- append head_end
@@ -19,7 +19,7 @@ section#impressions(aria-label="impressions")
         //- init slick slider
         $(document).ready(function () {
             $('.impressions__slider').slick({
-                //variableWidth: true,
+                lazyLoad: 'ondemand',
                 nextArrow:'<button type="button" class="slick-next button--small">></button>',
                 prevArrow:'<button type="button" class="slick-prev button--small"><</button>'
             });
