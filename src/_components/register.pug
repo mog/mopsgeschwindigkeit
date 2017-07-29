@@ -27,11 +27,12 @@ section#register(aria-label="register")
                     showContent(json);
                 }, 'json');
                 return false;
+
             });
 
             function showContent(json){
                 var list = "";
-                json.registrations.map(function(reg){
+                json.registrations.reverse().map(function(reg){
                     var groups = "";
                     if(reg.groups){
                         groups = '<div class="groups">'+ reg.groups +'</div>';
