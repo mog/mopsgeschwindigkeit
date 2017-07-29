@@ -2,18 +2,6 @@ section#compos(aria-label="compos")
     h2=compos.title
         a.header-anchor(href="#compos" aria-hidden="true")= anchorSymbol
 
-    //each compo in compos.content
-        ul.compo
-            h3=compo.title
-            ul
-                each rule in compo.content
-                    if typeof rule === 'object'
-                        h4=rule.title
-                        ul
-                        each subCompo in rule
-                            li=subCompo
-                    else
-                        li=rule
     div.compo
         h3 General Rules
         ul
@@ -23,7 +11,7 @@ section#compos(aria-label="compos")
             li By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.
             li Entries containing content which violates German law or are unsuitable will be disqualified.
             li If your entry contains commercial material it will be disqualified as well.
-			li The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.
+            li The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.
             li If you have questions about these rules, contact the organizers at #[a href='contact@demoparty.berlin' contact@demoparty.berlin]
 
     h3 Remote Entries
