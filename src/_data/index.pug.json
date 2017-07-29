@@ -156,26 +156,27 @@
         "content":[
           "Your contribution must not have been released before.",
           "Contributions must be handed in before the respective compo deadline.",
-          "Remote entries are allowed in all compos. Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 30th Sept. 2017, 13:00 (UTC+1)",
-          "Please note: For remote entries we can’t guarantee you to get physical prizes. We will try to send you the prize or bring it to another demoparty, eg. Revision.",
           "The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.",
           "In case of too few compo entries for one compo (less than three) the party organizers can cancel or combine competitions.",
           "By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.",
           "Entries containing content which violates German law or are unsuitable will be disqualified.",
           "If your entry contains commercial material it will be disqualified as well.",
-          "Projector: 16:9 and supports 1080p (60hz) native resolution",
           "If you have questions about these rules, contact the organizers at contact@demoparty.berlin"]
       },
       {
         "title":"Remote Entries",
-        "content": ["You can’t make it to the party, but would like to participate?\nWe accept remote entries for all compos!\nYou can send us your entry to any of the competitions via mail to contact@demoparty.berlin\nThe deadline for remote entry submission is 1st Oct. 2016, 12:00 noon (UTC+1)\nPlease note: For remote entries we can’t guarantee you to get physical prizes or prize money. We will try however to atleast send you a winner-certificate.\nLivestream\nWe will try our best to have a livestream available again  – in previous years we always managed to have a reliable stream, thanks to our friends at Viprinet."]
+        "content": [
+		"You can’t make it to the party, but would like to participate? We accept remote entries for all compos!",
+		"Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 30th Sept. 2017, 13:00 (UTC+1)",
+		"Please note: For remote entries we will try to send you the prize or bring it to another demoparty, eg. Revision. This usually works out well, but no guarantee.",
+		We will try our best to have a livestream available again  – in previous years we always managed to have a reliable stream, thanks to our friends at Viprinet."]
       },
       {
         "title":"Executable Competitions",
         "content":[{
           "title": "PC Demo",
           "content":[
-            "We have a Windows compomachine with the following specs:<ul>",
+            "We have a Windows compomachine with the following specs: (not final yet)<ul>",
             "CPU: Core i7",
             "RAM: 16GB RAM",
             "Graphics: NVIDIA Titan Black w/ 6GB RAM",
@@ -220,7 +221,7 @@
             "Maximum running time is 10 minutes.",
             "If possible, please also hand in a video of your entry.",
             "Please contact us in advance in case of unconventional video signals.",
-            "You can contact us under: contact(at)demoparty.berlin"
+            "You can contact us under: contact@demoparty.berlin"
           ]
         }]
       }
