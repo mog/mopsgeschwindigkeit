@@ -1,13 +1,17 @@
 //-extends _layouts/deadline2017
 doctype html
-html
+html(lang="en")
     head
         title= title
         meta(charset="utf-8")
+        meta(name="viewport" content="width=960, initial-scale=1")
+        meta(name="theme-color" content="#317EFB")
+        link(rel="manifest" href="manifest.json")
         link(rel="stylesheet" href="css/style.css")
         block head_end
 
     body
+
         include _components/background
 
         if navigation.isActive
@@ -34,6 +38,42 @@ html
         include _components/contact
         include _components/sponsors
         include _components/history
+
+    script(type="text/javascript" src="assets/vendor/intersectionObserver/intersection-observer.js")
+    script.
+        var observer = new IntersectionObserver(onChange),
+            elements = document.querySelectorAll('.-js-lazy-load');
+        for(var i = 0; i < elements.length; i++){
+            observer.observe(elements[i]);
+        }
+
+        function onChange(changes) {
+            changes.map(function (change) {
+                console.log(change.target);
+                if(change.isIntersecting){
+
+                    console.log(change.target.getAttribute("data-lazy-id"));
+                    switch(change.target.getAttribute("data-lazy-id")){
+                        case "impression":
+                            Impression.load();
+                            break;
+
+                        case "registration":
+                            Registration.load();
+                            break;
+
+                        case "location":
+                            Location.load();
+                            break;
+
+                        case "navigation":
+                            Navigation.load();
+                            break;
+                    }
+                    observer.unobserve(change.target);
+                }
+            });
+        };
     //
         This website has been built in mopsgeschwindigkeit®
 
