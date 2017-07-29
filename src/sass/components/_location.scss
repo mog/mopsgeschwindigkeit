@@ -1,0 +1,23 @@
+.location__list {
+  padding: 0 1em;
+  margin: 0;
+}
+
+.map__link {
+  margin-top: 1em;
+  @include tablet--up() {
+    float: left;
+    width: 50%;
+  }
+}
+
+.map__description {
+  @include tablet--up() {
+    float: left;
+    width: 50%;
+  }
+}
+
+.map__image {
+  width: 100%;
+}

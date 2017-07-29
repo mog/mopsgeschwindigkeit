@@ -25,9 +25,15 @@ $component: c-timetable;
   }
 
   &__filters {
-    width: 100%;
-    clear: both;
-    float: left;
+    @include phone() {
+      padding-bottom: 20px;
+      display: inline-block;
+    }
+    @include tablet--up() {
+      width: 100%;
+      clear: both;
+      float: left;
+    }
   }
 
   //TODO make checkbox button element?
@@ -68,7 +74,7 @@ $component: c-timetable;
       transition: opacity .277s;
     }
 
-    &:hover{
+    &:hover {
       &::before {
         opacity: .5;
       }

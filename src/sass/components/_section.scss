@@ -3,34 +3,36 @@ section {
   margin: 0 auto;
   padding: 0 42px 32px;
 
-  min-height: calc(100vh - 12rem);
-
-  &.first {
-    padding-top: $navHeight*2;
+  //--start push down, so anchors are not behind navbar
+  @include phone() {
+    padding-top: 250px;
+    margin-bottom: 100px;
+    &:before{
+      height: 90%!important;
+    }
+  }
+  @include tablet--up() {
+    padding-top: 140px;
+    margin-bottom: 100px;
+  }
+  h2 {
+    margin-top: -20px;
   }
 
+  &.first {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  //-- end pushdown
 
+  @include phone() {
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+  }
 
-  //@include transitionHSLUV(10);
+  @include tablet--up() {
+    min-height: calc(100vh - 12rem);
+  }
+
   @include outlineBoxRotated();
-
-  //&:before {
-  //  content: "";
-  //  outline: 20px solid red;
-  //  width: 100%;
-  //  height: 100%;
-  //  display: block;
-  //  //transform: rotate((random(10)-5)+deg);
-  //  z-index: -1;
-  //  position: absolute;
-  //}
-  //position: relative;
-  //z-index: 1;
-  //
-  //@for $i from 1 through 15 {
-  //  $maxRot: 5;
-  //  &:nth-child(#{$i})::before {
-  //    transform: rotate((random($maxRot*2)-$maxRot)+deg);
-  //  }
-  //}
 }

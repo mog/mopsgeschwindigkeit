@@ -13,7 +13,7 @@
   "about":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title":"DeadlineDemopartyBerlin",
+    "title":"Deadline<br>Demoparty<br>Berlin",
     "content":"about__contents"
   },
   "livestream": {
@@ -23,12 +23,14 @@
   },
   "location":{
     "isActive":true,
-    "title": "location__title",
-    "content": "location__content",
+    "title": "location",
     "map":{
       "src":"https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2426.7846711830553%212d13.529529999999996%213d52.53732999999993%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x47a84c05c8fd04cd%3A0xc77d389550445adc%212sFrank-Zappa-Stra%C3%9Fe+19%2C+12681+Berlin%2C+Deutschland%215e0%213m2%211sde%212sde%214v1407183513715",
       "width":"100%",
-      "height":"100%"
+      "height":"100%",
+      "static":{
+        "src":""
+      }
     }
   },
   "impressions":{
@@ -181,7 +183,7 @@
             "RAM: 16GB RAM",
             "Graphics: NVIDIA Titan Black w/ 6GB RAM",
             "OS: Win8.1 64bit with then latest DirectX and stable NVidia drivers.",
-            "Kindly provided by Tastatur und Maus e.V. Thanks! <3",
+            "Kindly provided by Tastatur und Maus e.V. Thanks! &lt;3",
             "If you plan to release a MaxOS X or Linux production please contact us before the party so that we can make sure we have the right OS ready for you.",
             "Maximum total size on disk after unpacking 512 MiB",
             "Maximum running time is 10 minutes.]"

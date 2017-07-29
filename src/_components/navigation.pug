@@ -5,4 +5,13 @@ nav
                 li
                     a(href= '#' + key)=key
         li
-            img.logo(src="assets/img/deadline--logo.png")
+            img.logo(data-lazy-src="assets/img/deadline--logo.png").-js-lazy-load(data-lazy-id="navigation")
+    script.
+        var Navigation = (function () {
+            return {
+                load: function () {
+                    var img = document.querySelector('.logo');
+                    img.src = img.getAttribute('data-lazy-src');
+                }
+            };
+        }());
