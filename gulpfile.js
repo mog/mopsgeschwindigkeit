@@ -14,7 +14,9 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
     through = require('through2'),
-    uglify = require('uglify-es');
+    uglify = require('uglify-es'),
+    critical = require('critical').stream,
+    htmlmin = require('gulp-htmlmin');
 
 /*
  * Directories here
@@ -97,6 +99,28 @@ gulp.task('pug', function () {
             process.stderr.write(err.message + '\n');
             this.emit('end');
         })
+
+        .pipe(gulp.dest(paths.public));
+});
+
+// Generate & Inline Critical-path CSS
+gulp.task('critical', function () {
+    return gulp.src(paths.public+'*.html')
+        .pipe(critical({
+            base: paths.public,
+            inline: true,
+            minify:true,
+            extract: true
+            //,css: [paths.public + 'css/style.css']
+        }))
+        .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            minifyCSS:true,
+            minifyJS:true,
+            sortAttributes:true,
+            sortClassName:true
+        }))
         .pipe(gulp.dest(paths.public));
 });
 
@@ -157,8 +181,14 @@ gulp.task('copyassets', function() {
         .pipe(gulp.dest(paths.pubAssets));
 });
 
+gulp.task('copymanifest', function() {
+    gulp.src('./src/manifest.json')
+        //.pipe(imagemin())
+        .pipe(gulp.dest(paths.public));
+});
+
 // Build task compile sass and pug.
-gulp.task('build', ['sass', 'browserify', 'uglify', 'pug', 'copyassets']);
+gulp.task('build', ['critical', 'sass', 'browserify', 'uglify', 'pug', 'copymanifest', 'copyassets']);
 
 /**
  * Default task, running just `gulp` will compile the sass,
