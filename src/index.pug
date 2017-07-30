@@ -4,15 +4,13 @@ html(lang="en")
     head
         title= title
         meta(charset="utf-8")
-        meta(name="viewport" content="width=960, initial-scale=1")
+        meta(name="viewport" content="width=930, initial-scale=1")
         meta(name="theme-color" content="#317EFB")
         link(rel="manifest" href="manifest.json")
         link(rel="stylesheet" href="css/style.css")
         block head_end
 
     body
-
-
         if navigation.isActive
             include _components/navigation
         if header.isActive
@@ -40,7 +38,6 @@ html(lang="en")
             include _components/history
 
         include _components/background
-
         script(type="text/javascript" src="assets/vendor/intersectionObserver/intersection-observer.js")
         script.
             (function () {
