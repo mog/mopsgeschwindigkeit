@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     path = require('path'),
     data = require('gulp-data'),
     pug = require('gulp-pug'),
-    prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     watch = require('gulp-watch'),
@@ -16,7 +15,19 @@ var gulp = require('gulp'),
     through = require('through2'),
     uglify = require('uglify-es'),
     critical = require('critical').stream,
-    htmlmin = require('gulp-htmlmin');
+    htmlmin = require('gulp-htmlmin'),
+
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    cssnano = require('cssnano'),
+    mqpacker = require("css-mqpacker"),
+    uncss = require("postcss-uncss"),
+
+    del = require('del'),
+
+    gulpSequence = require('gulp-sequence'),
+    imageResize = require('gulp-image-resize'),
+    rename = require("gulp-rename");
 
 /*
  * Directories here
@@ -104,24 +115,29 @@ gulp.task('pug', function () {
 });
 
 // Generate & Inline Critical-path CSS
-gulp.task('critical', function () {
-    return gulp.src(paths.public+'*.html')
+gulp.task('critical', ['pug', 'sass'], function () {
+    return gulp.src(paths.public + '*.html')
         .pipe(critical({
             base: paths.public,
             inline: true,
-            minify:true,
+            minify: true,
             extract: true
-            //,css: [paths.public + 'css/style.css']
         }))
-        .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+        .on('error', function (err) {
+            gutil.log(gutil.colors.red(err.message));
+        })
         .pipe(htmlmin({
             collapseWhitespace: true,
-            minifyCSS:true,
-            minifyJS:true,
-            sortAttributes:true,
-            sortClassName:true
+            minifyCSS: true,
+            minifyJS: true,
+            sortAttributes: true,
+            sortClassName: true
         }))
         .pipe(gulp.dest(paths.public));
+});
+
+gulp.task('clean', function (cb) {
+    return del([paths.public + '**/*.*'], cb);
 });
 
 /**
@@ -143,11 +159,17 @@ gulp.task('browser-sync', ['sass', 'browserify', 'pug', 'copyassets'], function 
     });
 });
 
-/**
- * Compile .scss files into public css directory With autoprefixer no
- * need for vendor prefixes then live reload the browser.
- */
 gulp.task('sass', function () {
+    var postCSSOptions = [
+        autoprefixer({browsers: ['last 1 version']}),
+        cssnano(),
+        mqpacker()
+        , uncss({
+            html: [(paths.public + '*.html')],
+            ignore: [new RegExp('^.register.*'), new RegExp('^.impression.*')]
+        })
+    ];
+
     return gulp.src(paths.sass + '*.scss')
         .pipe(sass({
             includePaths: [paths.sass],
@@ -155,44 +177,51 @@ gulp.task('sass', function () {
             importer: importer
         }))
         .on('error', sass.logError)
-        .pipe(prefix(['last 2 versions'], {
-            cascade: true
-        }))
+        .pipe(postcss(postCSSOptions))
         .pipe(gulp.dest(paths.css))
         .pipe(browserSync.reload({
             stream: true
         }));
 });
 
-/**
- * Watch scss files for changes & recompile
- * Watch .pug files run pug-rebuild then reload BrowserSync
- */
 gulp.task('watch', function () {
     gulp.watch(paths.sass + '**/*.scss', ['sass']);
-    gulp.watch(paths.scripts + '**/*.js', ['browserify','uglify']);
+    gulp.watch(paths.scripts + '**/*.js', ['browserify', 'uglify']);
     gulp.watch(['./src/**/*.pug', './src/**/*.json'], ['rebuild']);
     gulp.watch(paths.assets + '**/*', ['copyassets']);
 });
 
-gulp.task('copyassets', function() {
-    gulp.src(paths.assets +'**/*')
+gulp.task('copyassets', function () {
+    gulp.src([paths.assets + '**/*', '!'+paths.assets + '**/imp*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest(paths.pubAssets));
 });
 
-gulp.task('copymanifest', function() {
+gulp.task('impression', function () {
+    [{width:740, suffix:"--740"}].map((size)=>{
+        gulp.src(paths.assets + '**/imp*.*')
+        .pipe(imageResize({
+            width : size.width,
+            filter:'catrom',
+            upscale : false
+        }))
+        .pipe(rename(function (path) { path.basename += size.suffix; }))
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.pubAssets));
+    });
+});
+
+gulp.task('copymanifest', function () {
     gulp.src('./src/manifest.json')
-        //.pipe(imagemin())
         .pipe(gulp.dest(paths.public));
 });
 
-// Build task compile sass and pug.
-gulp.task('build', ['critical', 'sass', 'browserify', 'uglify', 'pug', 'copymanifest', 'copyassets']);
+gulp.task('copy:trbl', function () {
+    gulp.src(paths.public + '/**/*')
+        .pipe(gulp.dest("P:/var/www/site/trbl/dline2017/"));
+});
 
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync then watch
- * files for changes
- */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['clean', 'browser-sync', 'watch']);
+
+gulp.task('build', gulpSequence('clean', ['copymanifest', 'copyassets', 'impression'], ['pug', 'sass', 'browserify'], 'uglify', 'critical'));
+gulp.task('deploy:trbl', gulpSequence('build', 'copy:trbl'));
