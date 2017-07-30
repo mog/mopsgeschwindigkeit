@@ -1,4 +1,4 @@
-section#register(aria-label="register").-js-lazy-load(data-lazy-id="registration")
+section#register(aria-label="register", data-lazy-load)
     h2=register.title
         a.header-anchor(href="#register" aria-hidden="true")= anchorSymbol
     p.
@@ -12,7 +12,7 @@ section#register(aria-label="register").-js-lazy-load(data-lazy-id="registration
             submit
         div.registrations.js-registrations
     script.
-        var Registration = (function(){
+        (function(){
             var $form = $('form[name=register]'),
                 $regCountElement = $('.js-registration-count'),
                 url = $form.attr('action');
@@ -47,11 +47,9 @@ section#register(aria-label="register").-js-lazy-load(data-lazy-id="registration
                 $regCountElement.text(count);
             }
 
-            return {
-                load:function(){
-                    $.getJSON(url, function(json){
-                        showContent(json);
-                    });
-                }
-            };
-        }());
+            document.getElementById('register').lazyLoad = function () {
+                $.getJSON(url, function(json){
+                    showContent(json);
+                });
+            }
+        })();

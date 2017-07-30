@@ -41,43 +41,24 @@ html(lang="en")
 
         include _components/background
 
-    script(type="text/javascript" src="assets/vendor/intersectionObserver/intersection-observer.js")
-    script.
-        var observer = new IntersectionObserver(onChange),
-            elements = document.querySelectorAll('.-js-lazy-load');
-        for(var i = 0; i < elements.length; i++){
-            observer.observe(elements[i]);
-        }
-
-        function onChange(changes) {
-            changes.map(function (change) {
-                console.log(change.target);
-                if(change.isIntersecting){
-
-                    console.log(change.target.getAttribute("data-lazy-id"));
-                    switch(change.target.getAttribute("data-lazy-id")){
-                        case "impression":
-                            Impression.load();
-                            break;
-
-                        case "registration":
-                            Registration.load();
-                            break;
-
-                        case "location":
-                            Location.load();
-                            break;
-
-                        case "navigation":
-                            Navigation.load();
-                            break;
-                    }
-                    observer.unobserve(change.target);
-                }
-            });
-        };
-    //
-        This website has been built in mopsgeschwindigkeit®
+        script(type="text/javascript" src="assets/vendor/intersectionObserver/intersection-observer.js")
+        script.
+            (function () {
+                Array.prototype.forEach.call(
+                    document.querySelectorAll('[data-lazy-load]'),
+                    function (el) { this.observe(el) },
+                    new IntersectionObserver(function (changes, observer) {
+                        changes.forEach(function (change) {
+                            if (!change.isIntersecting)
+                                return;
+                            change.target.lazyLoad && change.target.lazyLoad();
+                            observer.unobserve(change.target);
+                        });
+                    })
+                );
+            })();
+        //
+            This website has been built in mopsgeschwindigkeit®
 
     block body_end
 

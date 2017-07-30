@@ -1,4 +1,4 @@
-section#location(aria-label="location").-js-lazy-load(data-lazy-id="location")
+section#location(aria-label="location", data-lazy-load)
     h2=location.title
         a.header-anchor(href="#location" aria-hidden="true")= anchorSymbol
     h3 ORWOhaus<br><br> Frank-Zappa-Straße 19<br><br>12681 Berlin
@@ -14,11 +14,7 @@ section#location(aria-label="location").-js-lazy-load(data-lazy-id="location")
     a.map__link(href="https://www.google.com/maps/dir//Frank-Zappa-Straße+19,+12681+Berlin/" rel="noopener" target="_blank")
         img.map__image(data-lazy-src="assets/img/deadline--location__map.png" alt="Google Map of Frank-Zappa-Straße 19, 12681 Berlin")
     script.
-        var Location = (function(){
-            return {
-                load:function(){
-                    var img = document.querySelector('.map__image');
-                    img.src = img.getAttribute('data-lazy-src');
-                }
-            };
-        }());
+        document.getElementById('location').lazyLoad = function () {
+            var img = document.querySelector('.map__image');
+            img.src = img.getAttribute('data-lazy-src');
+        }
