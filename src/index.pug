@@ -12,7 +12,6 @@ html(lang="en")
 
     body
 
-        include _components/background
 
         if navigation.isActive
             include _components/navigation
@@ -34,10 +33,13 @@ html(lang="en")
             include _components/seminar
         if compos.isActive
             include _components/compos
-    footer
-        include _components/contact
-        include _components/sponsors
-        include _components/history
+
+        footer
+            include _components/contact
+            include _components/sponsors
+            include _components/history
+
+        include _components/background
 
     script(type="text/javascript" src="assets/vendor/intersectionObserver/intersection-observer.js")
     script.
