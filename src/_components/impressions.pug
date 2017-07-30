@@ -6,15 +6,10 @@ section#impressions(aria-label="impressions", data-lazy-load)
     div.impressions__slider
         each image in impressions.slider.content
             figure.impressions__slider__slide
-                img.impressions__slider__slide__image(data-lazy=image.src alt=image.alt)
+                img.impressions__slider__slide__image(data-lazy=(image.src).split('.')[0] + impressions.slider.sizes[0].suffix + '.' + (image.src).split('.')[1])
                 figcaption.impressions__slider__slide__caption= image.caption
 
-    //- append head_end
-        link(rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css")
-    //- append body_end
-
     script(type="text/javascript" src="assets/vendor/jquery/jquery-3.2.1.min.js")
-    //script(type="text/javascript" src="assets/vendor/slick/slick.min.js")
     script.
         document.getElementById('impressions').lazyLoad = function () {
             //get css
@@ -29,7 +24,6 @@ section#impressions(aria-label="impressions", data-lazy-load)
             document.getElementsByTagName("head")[0].appendChild(script)
 
             script.onload = function(){
-                //init slick slider
                 $('.impressions__slider').slick({
                     lazyLoad: 'ondemand',
                     nextArrow: '<button type="button" class="slick-next button--small">&gt;</button>',
