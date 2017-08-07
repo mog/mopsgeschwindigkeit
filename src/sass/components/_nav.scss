@@ -1,12 +1,12 @@
 nav {
   text-align: center;
   margin: 0;
-  //padding: 1rem 0;
   top: 0;
-  font-size: $font--size--4;
+  font-size: 28px;//$font--size--4;
   font-family: $font--family--heading;
   text-transform: uppercase;
   z-index: 100;
+  width:100%;
 
   position: fixed;
   min-height: $navHeight;
@@ -51,8 +51,6 @@ nav ul {
     padding-top: 0;
     padding-bottom: 0;
 
-    font-size: 1em;
-
     ul {
       @include grid();
     }
@@ -64,7 +62,6 @@ nav ul {
       text-align: left;
       margin: 0;
       margin-bottom: 1em;
-      font-size: 48px;
 
       //remove logo li
       &:last-child{

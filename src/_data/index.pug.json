@@ -17,7 +17,7 @@
     "content":"about__contents"
   },
   "livestream": {
-    "isActive": true,
+    "isActive": false,
     "hideFromNavigation":true,
     "title": "livestream"
   },
@@ -154,7 +154,7 @@
     "title":"register"
   },
   "seminar":{
-    "isActive":true,
+    "isActive":false,
     "title":"seminar__title",
     "content":"seminar__content"
   },
@@ -245,7 +245,23 @@
   "sponsors":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title":"compos__title"
+    "title":"Sponsors",
+    "sizes":[
+      {"height":64,
+        "suffix":"",
+        "breakpoint":"(min-width:941px)"
+      }
+    ],
+    "content":[{
+      "src":"assets/img/sponsor_iMazing.png",
+      "alt":"iMazing Computersysteme Logo",
+      "link":"http://www.imazing.de/"
+    },
+    {
+      "src":"assets/img/sponsor_trbl.png",
+      "alt":"TRBL Logo",
+      "link": "http://trbl.at"
+    }]
   },
   "history":{
     "isActive":true,

@@ -7,14 +7,17 @@ section {
   @include phone() {
     padding-top: 250px;
     margin-bottom: 100px;
-    &:before{
-      height: 90%!important;
+
+    &:before {
+      height: calc(100% - 190px);
+      bottom: 0;
     }
   }
   @include tablet--up() {
     padding-top: 140px;
     margin-bottom: 100px;
   }
+
   h2 {
     margin-top: -20px;
   }

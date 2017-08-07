@@ -1,0 +1,8 @@
+section#sponsors(aria-label="sponsors")
+    h2=sponsors.title
+        a.header-anchor(href="#sponsors" aria-hidden="true")= anchorSymbol
+    ul.sponsors__list
+        each image in sponsors.content
+            li
+                a(href=image.link rel="noopener" target="_blank")
+                    img.sponsors__list__image(src=image.src alt.image.link)

@@ -12,6 +12,8 @@
 }
 
 .map__description {
+  padding-bottom: 24px;
+
   @include tablet--up() {
     float: left;
     width: 50%;
@@ -20,4 +22,15 @@
 
 .map__image {
   width: 100%;
+  @include phone() {
+    padding-bottom: 24px;
+  }
+
+  @include tablet--up() {
+    padding-right: 42px;
+  }
+}
+
+.location__address {
+  @extend h4;
 }
