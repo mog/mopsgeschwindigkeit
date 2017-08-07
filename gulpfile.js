@@ -192,13 +192,35 @@ gulp.task('watch', function () {
 });
 
 gulp.task('copyassets', function () {
-    gulp.src([paths.assets + '**/*', '!'+paths.assets + '**/imp*.*'])
+    gulp.src([paths.assets + '**/*', '!'+paths.assets + '**/imp*.*', '!'+paths.assets + '**/sponsor_*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest(paths.pubAssets));
 });
 
+gulp.task('manifest', function () {
+    var dataJSON = JSON.parse(fs.readFileSync('./src/manifest.json')),
+        sizes = dataJSON.icons.map((icon) => {
+            return parseInt(icon.sizes.split("x"), 10);
+        });
+
+    sizes.map((size)=>{
+        gulp.src(paths.assets + '**/*--logo--manifest.*')
+        .pipe(imageResize({
+            width : size,
+            filter:'catrom',
+            upscale : false
+        }))
+        .pipe(rename(function (path) { path.basename += '_'+ size; }))
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.pubAssets));
+    });
+});
+
+
 gulp.task('impression', function () {
-    [{width:740, suffix:"--740"}].map((size)=>{
+    var dataJSON = JSON.parse(fs.readFileSync('./src/_data/index.pug.json'));
+
+    [].map((size)=>{
         gulp.src(paths.assets + '**/imp*.*')
         .pipe(imageResize({
             width : size.width,
