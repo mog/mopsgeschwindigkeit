@@ -1,24 +1,29 @@
 #about {
 
   @include phone() {
-    padding-top: 150px;
-    h1{
-      float:left;
-    }
-
-    .logo {
-      float: right;
-      margin-top: -35px;
-      margin-right: -24px;
-    }
-    .content {
-      clear: both;
+    h1 {
+      font-size: $font--size--3;
     }
   }
 
-  @include tablet--up() {
-    .logo {
-      display: none;
-    }
+  h1 {
+    float: left;
+    line-height: 1em;
+  }
+
+  h3 {
+    float: left;
+    clear: both;
+  }
+
+  .logo {
+    float: right;
+    margin-top: -35px;
+    margin-right: -24px;
+  }
+
+  .content {
+    clear: both;
+    padding-top: 24px;
   }
 }

@@ -5,7 +5,7 @@ section#timetable(aria-label="timetable")
     div.c-timetable
         div.c-timetable__filters
             each evt in ["all", "event", "deadline", "seminar", "compo"]
-                div(class="c-timetable__filter js-timetable__filter "+ (evt == 'all' ? 'active' : ''))(data-filter=evt)= evt
+                div(class="c-timetable__filter js-timetable__filter "+ (evt == 'all' ? 'active' : '') data-filter=evt)= evt
 
         each day in timetable.content
             div.c-timetable__day
