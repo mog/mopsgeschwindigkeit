@@ -1,13 +1,17 @@
-#impressions{
+#impressions {
   //push section down to make room for slick slider buttons
-  @include phone(){
+  @include phone() {
     padding-bottom: 6em;
   }
 }
 
 .impressions__slider {
   .impressions__slider__slide {
-    background-color: #0c0f21;
+    @include tablet--up(){
+      background-color: #0c0f21;
+    }
+
+    margin: 0;
   }
 
   .impressions__slider__slide__image {
@@ -45,11 +49,11 @@
     }
 
     .slick-next {
-      right: 45px;
+      right: 0;
     }
 
     .slick-prev {
-      left: 45px;
+      left: 0;
     }
   }
 
