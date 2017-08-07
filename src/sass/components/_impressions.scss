@@ -1,5 +1,12 @@
+#impressions{
+  //push section down to make room for slick slider buttons
+  @include phone(){
+    padding-bottom: 6em;
+  }
+}
+
 .impressions__slider {
-  .impressions__slider__slide{
+  .impressions__slider__slide {
     background-color: #0c0f21;
   }
 
@@ -8,11 +15,11 @@
     margin: 0 auto;
   }
 
-  .impressions__slider__slide__caption{
+  .impressions__slider__slide__caption {
     background: #fff;
     padding: 18px 10px 0;
   }
-  
+
   .slick-next,
   .slick-prev {
     position: absolute;
@@ -23,7 +30,7 @@
     border: 13px solid #fff;
   }
 
-  &.slick-initialized .slick-slide{
+  &.slick-initialized .slick-slide {
     //center vertically
     float: none;
     display: inline-block;
@@ -33,15 +40,16 @@
   @include phone() {
     .slick-next,
     .slick-prev {
-      bottom: 0;
+      bottom: -77px;
+      width: 40%;
     }
 
     .slick-next {
-      right: 0;
+      right: 45px;
     }
 
     .slick-prev {
-      left: 0;
+      left: 45px;
     }
   }
 

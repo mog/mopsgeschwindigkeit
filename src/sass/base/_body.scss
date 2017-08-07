@@ -3,17 +3,26 @@ body, html {
   padding: 0;
   background-color: $color--mute;
   color: #000;
-  //background-image: url(../img/theme/noise.png);
-  //background: linear-gradient(#fab3bb, #92fefe);
   background: linear-gradient(#FCCF8C, #FF9A81, #FF7D8B, #F53C8A, #7772BC, #03C2EE);
 }
 
 body {
+  @include phone() {
+    padding-top: 255px;
+  }
+
+  @include tablet--up() {
+    padding-top: $navHeight*2;
+  }
+
   @extend .-dont-break-out;
-  height:100%;
+  height: 100%;
   min-width: $min-width;
-  border: $bodyBorderWidth solid;
-  border-top: 0;
-  border-bottom: 0;
-  border-image: linear-gradient(lighten(#fab3bb, 4), lighten(#92fefe, 4)) $bodyBorderWidth/1px stretch;
+
+  @include tablet--up() {
+    border: $bodyBorderWidth solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-image: linear-gradient(lighten(#fab3bb, 4), lighten(#92fefe, 4)) $bodyBorderWidth/1px stretch;
+  }
 }

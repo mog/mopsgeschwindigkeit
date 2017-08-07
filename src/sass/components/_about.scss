@@ -1,4 +1,24 @@
-#about{
-  //padding: 40px;
-  //min-height:80vh;
+#about {
+
+  @include phone() {
+    padding-top: 150px;
+    h1{
+      float:left;
+    }
+
+    .logo {
+      float: right;
+      margin-top: -35px;
+      margin-right: -24px;
+    }
+    .content {
+      clear: both;
+    }
+  }
+
+  @include tablet--up() {
+    .logo {
+      display: none;
+    }
+  }
 }

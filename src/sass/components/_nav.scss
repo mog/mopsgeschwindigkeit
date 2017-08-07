@@ -2,7 +2,7 @@ nav {
   text-align: center;
   margin: 0;
   //padding: 1rem 0;
-  top:0;
+  top: 0;
   font-size: $font--size--4;
   font-family: $font--family--heading;
   text-transform: uppercase;
@@ -10,18 +10,18 @@ nav {
 
   position: fixed;
   min-height: $navHeight;
-  left: $bodyBorderWidth;
-  right: $bodyBorderWidth;
-  background: rgba(250,179,187,0.99);
+  background: rgba(250, 179, 187, 0.99);
 
   @include tablet--up(){
+    left: $bodyBorderWidth;
+    right: $bodyBorderWidth;
 
-    background: linear-gradient(90deg, rgba(250,179,187,0.99) 80%, transparent);
+    background: linear-gradient(90deg, rgba(250, 179, 187, 0.99) 80%, transparent);
 
-    body & ul{
+    body & ul {
       display: flex;
       justify-content: space-around;
-      padding-left:0;
+      padding-left: 0;
     }
   }
 
@@ -29,13 +29,53 @@ nav {
     margin: 0 .5em;
     display: inline-block;
   }
-  
-  .logo{
-    width: 33%;
-    margin-bottom:-40px;
 
-    @include phone(){
-      display:none;
+  .logo {
+    @include phone() {
+      display: none;
     }
+
+    @include tablet--up() {
+      width: 50%;
+      margin-bottom: -40px;
+    }
+  }
+}
+
+nav ul {
+  display: inline-block;
+}
+
+@include phone() {
+  nav {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 1em;
+
+    ul {
+      @include grid();
+    }
+
+    li {
+      width: 33%;
+      float: left;
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 1em;
+      font-size: 48px;
+
+      //remove logo li
+      &:last-child{
+        display:none;
+      }
+    }
+  }
+}
+
+@include tablet() {
+  nav {
+    font-size: 1em;
   }
 }

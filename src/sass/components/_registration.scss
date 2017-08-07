@@ -1,37 +1,62 @@
 #register {
 
+  @include phone() {
+    input {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    button {
+      float: right;
+    }
+  }
+
   .registrations {
     padding-top: 20px;
     display: inline-block;
   }
 
   .human {
-    &:nth-child(odd) {
-      background: rgba(255, 255, 255, .5);
-    }
+    margin: 10px;
+    width: 47%;
+    font-size: 18px;
+    padding: 10px;
 
     border: 3px solid black;
     float: left;
-    width: 31%;
-    padding: 20px;
-    font-size: 14px;
-    margin: 10px;
-  }
 
-  .nick, .groups {
-    float: left;
-  }
+    @include phone() {
+      &:nth-child(4n),
+      &:nth-child(4n+1) {
+        background: rgba(255, 255, 255, .5);
+      }
+    }
 
-  .nick::after {
-    content: "®";
-    font-size: .83em;
-    vertical-align: super;
-    padding-left: .1em;
-    line-height: normal;
-  }
+    @include tablet--up() {
+      &:nth-child(odd) {
+        background: rgba(255, 255, 255, .5);
+      }
 
-  .groups {
-    opacity: .5;
-    padding-left: .5em;
+      width: 31%;
+      padding: 20px;
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .nick, .groups {
+      float: left;
+    }
+
+    .nick::after {
+      content: "®";
+      font-size: .83em;
+      vertical-align: super;
+      padding-left: .1em;
+      line-height: normal;
+    }
+
+    .groups {
+      opacity: .5;
+      padding-left: .5em;
+    }
   }
 }

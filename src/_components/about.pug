@@ -1,8 +1,15 @@
-section#about(aria-label="about").first
-    h1=about.title
+section#about(aria-label="about", data-lazy-load).first
+    h1 !{about.title}
 
-    p
-        p Come and join us for a weekend full of fun, competitions and meeting of old and new friends  – for the fourth time in the pulsating city of Berlin, Germany!
-        p Expect a wide variety of competitions, amazing live-acts, seminars, retro-gaming and much more yet to be announced!
+    img.logo(data-lazy-src="assets/img/deadline--logo--phone.png" alt="Deadline Logo")
+    p.content
+        span Come and join us for a weekend full of fun, competitions and meeting of old and new friends  – for the fourth time in the pulsating city of Berlin, Germany!
+        br
+        br
+        span Expect a wide variety of competitions, amazing live-acts, seminars, retro-gaming and much more yet to be announced!
 
-        // p The partyplace is located in the north-east of Berlin, easily reachable by plane, car or train. It features space for up to 150 people, a big outdoor area (bonfire!), nearby shops, hotels and lots more.
+    script.
+        document.getElementById('about').lazyLoad = function () {
+            var img = document.querySelector('#about .logo');
+            img.src = img.getAttribute('data-lazy-src');
+        }

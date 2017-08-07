@@ -2,14 +2,14 @@
 
 @import "globals";
 
-@import "helper/breakpoint";
-@import "helper/grid";
-@import "helper/text--break";
-@import "helper/sticky";
-@import "helper/underline";
-@import "helper/color";
-@import "helper/outline--box-rotated";
 @import "helper/_random--color-from-palette";
+@import "helper/breakpoint";
+@import "helper/color";
+@import "helper/grid";
+@import "helper/outline--box-rotated";
+@import "helper/sticky";
+@import "helper/text--break";
+@import "helper/underline";
 
 @import "base/a";
 @import "base/body";
@@ -18,21 +18,23 @@
 @import "base/typo";
 @import "base/ul";
 
+@import "components/about";
 @import "components/button";
-@import "components/input";
 @import "components/header";
+@import "components/impressions";
+@import "components/input";
 @import "components/intro";
+@import "components/location";
 @import "components/nav";
+@import "components/registration";
 @import "components/section";
 @import "components/sponsors";
-@import "components/timetable";
-@import "components/registration";
 @import "components/tickets";
-@import "components/impressions";
-@import "components/about";
+@import "components/timetable";
 
+@import "variants/align";
 @import "variants/animation";
 @import "variants/icon";
 
-@import "icon";
+//@import "icon";
 @import "shame";

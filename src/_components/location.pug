@@ -1,14 +1,20 @@
-section#location(aria-label="location")
+section#location(aria-label="location", data-lazy-load)
     h2=location.title
         a.header-anchor(href="#location" aria-hidden="true")= anchorSymbol
-    p=location.content
-	p This time the party will happen again in the hall in the basement, which is now finally freshly renovated and features:
-	ul
-		li new & proper sanitary facilities (and lots of them)
-		li better sleeping hall
-		li great bigscreen (as in the years before)
-		li friendly bar with fair prices
-		li lots of couches
-		li big outdoor area with possibility to camp and chill at the bonfire
-	
-    iframe(src=location.map.src width=location.map.width height=location.map.height frameborder="0")
+    h3 ORWOhaus<br><br> Frank-Zappa-Straße 19<br><br>12681 Berlin
+    div.map__description
+        p This time the party will happen again in the hall in the basement, which is now finally freshly renovated and features:
+        ul.location__list
+            li new & proper sanitary facilities (and lots of them)
+            li better sleeping hall
+            li great bigscreen (as in the years before)
+            li friendly bar with fair prices
+            li lots of couches
+            li big outdoor area with possibility to camp and chill at the bonfire
+    a.map__link(href="https://www.google.com/maps/dir//Frank-Zappa-Straße+19,+12681+Berlin/" rel="noopener" target="_blank")
+        img.map__image(data-lazy-src="assets/img/deadline--location__map.png" alt="Google Map of Frank-Zappa-Straße 19, 12681 Berlin")
+    script.
+        document.getElementById('location').lazyLoad = function () {
+            var img = document.querySelector('.map__image');
+            img.src = img.getAttribute('data-lazy-src');
+        }

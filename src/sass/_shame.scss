@@ -2,13 +2,6 @@ body {
   @include phone() {
     font-size: 26px !important;
   }
-
-  @include tablet--down() {
-
-    & > section {
-      padding: 0 1.5em;
-    }
-  }
 }
 
 @include tablet--up() {
@@ -25,38 +18,6 @@ body {
       break-inside: avoid-column;
     }
     //}
-  }
-}
-
-nav ul {
-  display: inline-block;
-}
-
-@include phone() {
-  nav {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    font-size: 1em;
-
-    ul {
-      @include grid();
-    }
-
-    li {
-      width: 50%;
-      float: left;
-      display: inline-block;
-      text-align: left;
-      margin: 0;
-      margin-bottom: .5em;
-    }
-  }
-}
-
-@include tablet() {
-  nav {
-    font-size: 1em;
   }
 }
 
@@ -145,15 +106,5 @@ nav ul {
     border: 2px solid;
     margin: .1em .1em;
     padding: .5em;
-  }
-}
-
-section{
-  @include tablet--up(){
-    margin-bottom: 12rem;
-  }
-
-  &#social{
-    margin-bottom: 0;
   }
 }

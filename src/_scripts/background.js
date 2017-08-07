@@ -184,7 +184,7 @@
 	window.addEventListener('wheel', (e) => {
 		Camera.zoom = Math.min(Math.max(Camera.zoom+e.deltaY*.01,.1),5);
 		Camera.update();
-	});
+	}, {passive:true});
 
 	// Directional light source
 	const Light = {

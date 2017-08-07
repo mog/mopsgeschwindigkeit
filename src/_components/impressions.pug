@@ -1,4 +1,4 @@
-section#impressions(aria-label="impressions")
+section#impressions(aria-label="impressions", data-lazy-load)
     h2=impressions.title
         a.header-anchor(href="#impressions" aria-hidden="true")= anchorSymbol
     p=impressions.content
@@ -6,21 +6,28 @@ section#impressions(aria-label="impressions")
     div.impressions__slider
         each image in impressions.slider.content
             figure.impressions__slider__slide
-                img.impressions__slider__slide__image(data-lazy=image.src alt=image.alt)
+                img.impressions__slider__slide__image(data-lazy=(image.src).split('.')[0] + impressions.slider.sizes[0].suffix + '.' + (image.src).split('.')[1])
                 figcaption.impressions__slider__slide__caption= image.caption
 
-    //- append head_end
-    link(rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css")
-    //- append body_end
-
     script(type="text/javascript" src="assets/vendor/jquery/jquery-3.2.1.min.js")
-    script(type="text/javascript" src="assets/vendor/slick/slick.min.js")
     script.
-        //- init slick slider
-        $(document).ready(function () {
-            $('.impressions__slider').slick({
-                lazyLoad: 'ondemand',
-                nextArrow:'<button type="button" class="slick-next button--small">></button>',
-                prevArrow:'<button type="button" class="slick-prev button--small"><</button>'
-            });
-        });
+        document.getElementById('impressions').lazyLoad = function () {
+            //get css
+            var fileref = document.createElement("link");
+            fileref.rel = "stylesheet";
+            fileref.type = "text/css";
+            fileref.href = "assets/vendor/slick/slick.css";
+            document.getElementsByTagName("head")[0].appendChild(fileref)
+
+            var script = document.createElement("script");
+            script.src = "assets/vendor/slick/slick.min.js";
+            document.getElementsByTagName("head")[0].appendChild(script)
+
+            script.onload = function(){
+                $('.impressions__slider').slick({
+                    lazyLoad: 'ondemand',
+                    nextArrow: '<button type="button" class="slick-next button--small">&gt;</button>',
+                    prevArrow: '<button type="button" class="slick-prev button--small">&lt;</button>'
+                });
+            }
+        }
