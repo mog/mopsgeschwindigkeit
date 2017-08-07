@@ -3,6 +3,7 @@
   @include phone() {
     h1 {
       font-size: $font--size--3;
+      margin-left: -24px;
     }
   }
 
