@@ -18,8 +18,10 @@
 
   .logo {
     float: right;
-    margin-top: -35px;
     margin-right: -24px;
+    @include tablet--up() {
+      margin-top: -35px;
+    }
   }
 
   .content {
