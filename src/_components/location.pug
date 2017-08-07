@@ -13,6 +13,7 @@ section#location(aria-label="location", data-lazy-load)
             li big outdoor area with possibility to camp and chill at the bonfire
     a.map__link(href="https://www.google.com/maps/dir//Frank-Zappa-Straße+19,+12681+Berlin/" rel="noopener" target="_blank")
         img.map__image(data-lazy-src="assets/img/deadline--location__map.png" alt="Google Map of Frank-Zappa-Straße 19, 12681 Berlin")
+        span.map__text Tap for Google Directions
     script.
         document.getElementById('location').lazyLoad = function () {
             var img = document.querySelector('.map__image');
