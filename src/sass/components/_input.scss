@@ -2,4 +2,9 @@ input {
   border: 0;
   outline: 5px solid #192146;
   padding: 20px;
+
+  &:focus{
+    //chrome sets offset -2px
+    outline-offset: 0;
+  }
 }
