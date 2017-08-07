@@ -5,7 +5,7 @@ section {
 
   //--start push down, so anchors are not behind navbar
   @include phone() {
-    padding-top: 250px;
+    padding-top: 200px;
     margin-bottom: 100px;
 
     &:before {
@@ -29,7 +29,7 @@ section {
   //-- end pushdown
 
   @include phone() {
-    margin-bottom: 3em;
+    margin-bottom: 0;
     padding-bottom: 2em;
   }
 
