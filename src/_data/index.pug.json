@@ -42,10 +42,7 @@
       "sizes":[
         {"width":890,
           "suffix":"--890",
-          "breakpoint":"(min-width:941px)"},
-        {"width":740,
-        "suffix":"--740",
-        "breakpoint":"(max-width:940px)"}
+          "breakpoint":"(min-width:941px)"}
 
       ],
       "content":[{
