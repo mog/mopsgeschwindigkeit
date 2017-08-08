@@ -1,4 +1,8 @@
 {
+  "breakpoint": {
+    "tablet":900,
+    "desktop":1200
+  },
   "palette": {
     "lavender_pink": [
       "#ffdee2",
