@@ -6,7 +6,7 @@ section#impressions(aria-label="impressions", data-lazy-load)
     div.impressions__slider
         each image in impressions.slider.content
             figure.impressions__slider__slide
-                img.impressions__slider__slide__image(data-lazy=(image.src).split('.')[0] + impressions.slider.sizes[0].suffix + '.' + (image.src).split('.')[1])
+                img.impressions__slider__slide__image(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAApJREFUeJxjYAAAAAIAAUivpHEAAAAASUVORK5CYII=" data-lazy=(image.src).split('.')[0] + impressions.slider.sizes[0].suffix + '.' + (image.src).split('.')[1])
                 figcaption.impressions__slider__slide__caption= image.caption
 
     script(type="text/javascript" src="assets/vendor/jquery/jquery-3.2.1.min.js")
