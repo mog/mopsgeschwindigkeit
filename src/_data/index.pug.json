@@ -245,46 +245,56 @@
     "title":"Sponsors & Supporters",
     "sizes":[
       {"height":64,
+        "width":200,
         "suffix":"",
         "breakpoint":"(min-width:941px)"
       }
     ],
-    "content":[{
-      "src":"assets/img/sponsor_iMazing.png",
-      "alt":"iMazing Computersysteme",
-      "link":"http://www.imazing.de/"
-    },
-    {
-      "src":"assets/img/sponsor_trbl.png",
-      "alt":"TRBL",
-      "link": "http://trbl.at"
-    },
-	{
-      "src":"assets/img/sponsor_orwohaus.jpg",
-      "alt":"ORWOhaus",
-      "link": "http://orwohaus.de/"
-    },
-	{
-      "src":"assets/img/sponsor_tum.png",
-      "alt":"Tastatur und Maus e.V.",
-      "link": "http://www.tastatur-und-maus.net/"
-    },{
-      "src":"assets/img/sponsor_viprinet.png",
-      "alt":"Viprinet GmbH",
-      "link": "https://www.viprinet.com"
-    },{
-      "src":"assets/img/sponsor_dkev.png",
-      "alt":"digitalekultur e.V.",
-      "link": "https://www.digitalekultur.org/"
-    },{
-      "src":"assets/img/sponsor_reichtech.png",
-      "alt":"ReichTech GmbH",
-      "link": "https://www.reichtech.de/"
-    },{
-      "src":"assets/img/sponsor_stiegler.png",
-      "alt":"Stiegler Legal",
-      "link": "https://stiegler-legal.com/"
-    }]
+    "content":{
+      "supporter":[{
+        "_name":"katze",
+        "link":{
+          "text":"wuff",
+          "src":"//katze.de"
+        }
+      }],
+      "sponsors":[
+        {
+        "src":"assets/img/sponsor_trbl.png",
+        "alt":"TRBL",
+        "link": "http://trbl.at"
+        },
+        {
+        "src":"assets/img/sponsor_orwohaus.png",
+        "alt":"ORWOhaus",
+        "link": "http://orwohaus.de/"
+        },
+        {
+        "src":"assets/img/sponsor_viprinet.png",
+        "alt":"Viprinet GmbH",
+        "link": "https://www.viprinet.com"
+        },{
+        "src":"assets/img/sponsor_reichtech.png",
+        "alt":"ReichTech GmbH",
+        "link": "https://www.reichtech.de/"
+        },{
+        "src":"assets/img/sponsor_iMazing.png",
+        "alt":"iMazing Computersysteme",
+        "link":"http://www.imazing.de/"
+        },{
+        "src":"assets/img/sponsor_stiegler.png",
+        "alt":"Stiegler Legal",
+        "link": "https://stiegler-legal.com/"
+        },{
+        "src":"assets/img/sponsor_dkev.png",
+        "alt":"digitalekultur e.V.",
+        "link": "https://www.digitalekultur.org/"
+        },{
+        "src":"assets/img/sponsor_tum.png",
+        "alt":"Tastatur und Maus e.V.",
+        "link": "http://www.tastatur-und-maus.net/"
+      }]
+    }
   },
   "history":{
     "isActive":true,

@@ -1,8 +1,28 @@
-section#sponsors(aria-label="sponsors")
+section#sponsors(aria-label="sponsors", data-lazy-load)
     h2=sponsors.title
         a.header-anchor(href="#sponsors" aria-hidden="true")= anchorSymbol
+    p.sponsors__content.
+        Thank you making Deadline possible! &lt;3
     ul.sponsors__list
-        each image in sponsors.content
+        each image in sponsors.content.sponsors
             li
                 a(href=image.link rel="noopener" target="_blank")
-                    img.sponsors__list__image(src=image.src alt.image.link)
+                    img.sponsors__list__image(data-lazy-src=image.src alt=image.link)
+    ul.supporter__list
+        each entry in sponsors.content.supporter
+            if(entry.name)
+                li
+                    span.supporter__list__name= entry.name
+                    if(entry.link)
+                        =" "
+                        a(href=entry.link.src rel="noopener" target="_blank")= entry.link.text
+    p.sponsors__content.
+            Want to get your logo or name here as well? Contact us for sponsoring or buy a supporter ticket.
+
+    script.
+        document.getElementById('sponsors').lazyLoad = function () {
+            var img = document.querySelectorAll('.sponsors__list__image');
+            for(var i = 0; i < img.length; i++){
+                img[i].src = img[i].getAttribute('data-lazy-src');
+            }
+        }
