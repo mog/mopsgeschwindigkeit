@@ -3,6 +3,7 @@ nav
         each key, value in Object.keys(locals).reverse()
             if locals[key].isActive && !locals[key].hideFromNavigation
                 li
-                    a(href= '#' + key)=key
+                    a(href= '/#' + key)=key
         li
-            img.logo(src="assets/img/deadline--logo.png")
+            a(href="/")
+                img.logo(src="assets/img/deadline--logo.png")
