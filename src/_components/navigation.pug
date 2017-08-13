@@ -1,9 +1,8 @@
-nav
+nav#navigation(data-lazy-load)
     ul
         each key, value in Object.keys(locals).reverse()
             if locals[key].isActive && !locals[key].hideFromNavigation
                 li
                     a(href= '/#' + key)=key
-        li
-            a(href="/")
-                img.logo(src="assets/img/deadline--logo.png")
+        li.logo-container
+            a.logo(href="/")

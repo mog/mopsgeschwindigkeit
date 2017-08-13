@@ -2,17 +2,17 @@ nav {
   text-align: center;
   margin: 0;
   top: 0;
-  font-size: 28px;//$font--size--4;
+  font-size: 28px; //$font--size--4;
   font-family: $font--family--heading;
   text-transform: uppercase;
   z-index: 100;
-  width:100%;
+  width: 100%;
 
   position: fixed;
   min-height: $navHeight;
   background: rgba(250, 179, 187, 0.99);
 
-  @include tablet--up(){
+  @include tablet--up() {
     left: $bodyBorderWidth;
     right: $bodyBorderWidth;
 
@@ -30,13 +30,19 @@ nav {
     display: inline-block;
   }
 
-  .logo {
+  .logo-container {
     @include phone() {
       display: none;
     }
+  }
 
+  .logo {
     @include tablet--up() {
-      width: 50%;
+      display: inline-block;
+      background: url(../assets/img/deadline--logo.png) no-repeat;
+      background-size: 100%;
+      width: 82px;
+      height: 66px;
       margin-bottom: -40px;
     }
   }
@@ -65,8 +71,8 @@ nav ul {
       margin-bottom: 1em;
 
       //remove logo li
-      &:last-child{
-        display:none;
+      &:last-child {
+        display: none;
       }
     }
   }
