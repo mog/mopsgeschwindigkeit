@@ -22,12 +22,15 @@ var gulp = require('gulp'),
     cssnano = require('cssnano'),
     mqpacker = require("css-mqpacker"),
     uncss = require("postcss-uncss"),
+    //uncss = require("uncss"),
 
     del = require('del'),
 
     gulpSequence = require('gulp-sequence'),
     imageResize = require('gulp-image-resize'),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    fs = require('fs'),
+    gm = require('gulp-gm');
 
 /*
  * Directories here
@@ -101,9 +104,15 @@ gulp.task('browserify', function () {
  * matching file name. index.pug - index.pug.json
  */
 gulp.task('pug', function () {
+
+    var impression = require(paths.data + 'impressum.pug.json');
+    var main = require(paths.data + 'index.pug.json');
+
+    var pugData = Object.assign(main, impression);
+
     return gulp.src('./src/*.pug')
         .pipe(data(function (file) {
-            return require(paths.data + path.basename(file.path) + '.json');
+            return pugData;
         }))
         .pipe(pug())
         .on('error', function (err) {
@@ -164,10 +173,11 @@ gulp.task('sass', function () {
         autoprefixer({browsers: ['last 1 version']}),
         cssnano(),
         mqpacker()
+        /*
         , uncss({
             html: [(paths.public + '*.html')],
             ignore: [new RegExp('^.register.*'), new RegExp('^.impression.*')]
-        })
+        })*/
     ];
 
     return gulp.src(paths.sass + '*.scss')
@@ -192,7 +202,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('copyassets', function () {
-    gulp.src([paths.assets + '**/*', '!'+paths.assets + '**/imp*.*', '!'+paths.assets + '**/sponsor_*.*'])
+    gulp.src([paths.assets + '**/*', '!'+paths.assets + '**/imp*.*', '!'+paths.assets + '**/sponsor_*.*', '!'+paths.assets + '**/logo--manifest*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest(paths.pubAssets));
 });
@@ -216,13 +226,33 @@ gulp.task('manifest', function () {
     });
 });
 
-
 gulp.task('impression', function () {
     var dataJSON = JSON.parse(fs.readFileSync('./src/_data/index.pug.json'));
 
-    [].map((size)=>{
+    dataJSON.impressions.slider.sizes.map((size)=>{
         gulp.src(paths.assets + '**/imp*.*')
         .pipe(imageResize({
+            width : size.width,
+            filter:'catrom',
+            upscale : false
+        }))
+        .pipe(rename(function (path) { path.basename += size.suffix; }))
+        .pipe(imagemin())
+        .pipe(gulp.dest(paths.pubAssets));
+});
+});
+
+gulp.task('sponsors', function () {
+    var dataJSON = JSON.parse(fs.readFileSync('./src/_data/index.pug.json'));
+
+    dataJSON.sponsors.sizes.map((size)=>{
+        gulp.src(paths.assets + '**/sponsor_*.*')
+        .pipe(gm(function (gmfile) {
+            //modulate(255,255,255)
+            return gmfile./*blackThreshold(255,255,255)*/modulate(0,0,0).colorize(7,21,50);
+        }))
+        .pipe(imageResize({
+            height : size.height,
             width : size.width,
             filter:'catrom',
             upscale : false
@@ -243,7 +273,13 @@ gulp.task('copy:trbl', function () {
         .pipe(gulp.dest("P:/var/www/site/trbl/dline2017/"));
 });
 
+gulp.task('copy:deadline', function () {
+    gulp.src(paths.public + '/**/*')
+        .pipe(gulp.dest("L:/pubhtml"));
+});
+
 gulp.task('default', ['clean', 'browser-sync', 'watch']);
 
-gulp.task('build', gulpSequence('clean', ['copymanifest', 'copyassets', 'impression'], ['pug', 'sass', 'browserify'], 'uglify', 'critical'));
+gulp.task('build', gulpSequence('clean', ['copymanifest', 'copyassets', 'impression', 'sponsors', 'manifest'], ['pug', 'sass', 'browserify'], 'uglify', 'critical'));
 gulp.task('deploy:trbl', gulpSequence('build', 'copy:trbl'));
+gulp.task('deploy:deadline', gulpSequence('build', 'copy:deadline'));
