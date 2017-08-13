@@ -16,6 +16,11 @@
     min-width: 100%;
   }
 
+  .registrations--collapsed {
+    max-height: 320px;
+    overflow: hidden;
+  }
+
   .human {
     margin: 10px;
     width: 46%;

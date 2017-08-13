@@ -10,9 +10,18 @@ section#register(aria-label="register", data-lazy-load)
         input(name="email" aria-label="email" type="email" placeholder="email (not shown)")
         button.button--small.js-submit-registration(aria-label="submit").
             submit
-        div.registrations.js-registrations
+        div.registrations.js-registrations.registrations--collapsed
+        div.button.js-collapse(aria-hidden data-collapse=".registrations")= "Show all"
     script.
         (function(){
+            var $collapseButton = $('.js-collapse'),
+                $collapsable = $($collapseButton.attr("data-collapse"));
+
+            $collapseButton.on('click', function(){
+                $collapsable.toggleClass('registrations--collapsed');
+                $collapseButton.text($collapsable.hasClass('registrations--collapsed') ? "Show all" : "Show only a few");
+            })
+
             var $form = $('form[name=register]'),
                 $regCountElement = $('.js-registration-count'),
                 url = $form.attr('action');
