@@ -49,5 +49,8 @@
     "pug",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "require-dir": "^0.3.2"
+  }
 }
