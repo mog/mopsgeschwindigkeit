@@ -9,13 +9,13 @@ section#seminars(aria-label="seminars")
                 var _day,
                     _time;
                 timetable.content.map((day) => {
-                    _day = day.name;
 
                     var found = day.events.filter((event) => {
                         return event.id === seminar.id;
                     });
 
                     if(found.length === 1){
+                        _day = day.name;
                         _time = found[0].time;
                     }
                 })

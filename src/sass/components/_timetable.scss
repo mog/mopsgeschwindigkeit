@@ -17,8 +17,10 @@ $component: c-timetable;
 
   &__entries__entry {
     display: grid;
+    align-items: start;
 
     grid-template-columns: .3fr 1fr;
+
     @include tablet--up(){
       grid-template-columns: .37fr 1fr;
     }
@@ -29,6 +31,9 @@ $component: c-timetable;
   &__time {
     padding: 4px;
     text-align: center;
+
+    min-width: 80px;
+    white-space: nowrap;
   }
 
   &__filter,
@@ -131,8 +136,8 @@ $component: c-timetable;
 
   .event &__time,
   &__filter[data-filter="event"] {
-    background: #E3C646; //nth(map_get($palette, "lavender_pink"), 3);
-    text-shadow: 0 0 10px darken(#E3C646, 15); //nth(map_get($palette, "lavender_pink"), 3), 15);
+    background: #E3C646;
+    text-shadow: 0 0 10px darken(#E3C646, 15);
   }
 
   .compo &__time,
@@ -153,5 +158,6 @@ $component: c-timetable;
   }
   &__description {
     grid-area: description;
+    margin-top: 5px;
   }
 }
