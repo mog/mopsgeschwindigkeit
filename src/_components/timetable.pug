@@ -14,7 +14,11 @@ section#timetable(aria-label="timetable")
                     each entry in day.events
                         li(class="c-timetable__entries__entry " + entry.type)
                             div.c-timetable__time= entry.time
-                            div.c-timetable__description= entry.description
+                            if entry.id
+                                div.c-timetable__description
+                                    a(href="#"+ entry.id)= entry.description
+                            else
+                                div.c-timetable__description= entry.description
     script.
         $(document).ready(function () {
             var $allFilters = $(".js-timetable__filter"),

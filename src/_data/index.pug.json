@@ -110,7 +110,7 @@
           {"time":"14:00", "type":"event", "description":"Doors Open"},
           {"time":"15:00", "type":"event", "description":"TBD - Demoshow - Oldschool Demos"},
 		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
-		  {"time":"18:00", "type":"event", "description":"TBD - Seminar Slot"},
+		  {"time":"18:00", "type":"event", "id":"sem_1", "description":"TBD - Seminar Slot"},
           {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos"},
           {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"},
@@ -123,11 +123,11 @@
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
           {"time":"13:00", "type":"deadline", "description":"Remote Entries"},
 		  {"time":"13:00", "type":"deadline", "description":"Music Compos"},
-          {"time":"14:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"14:00", "type":"seminar", "id":"sem_2", "description":"TBD - Seminar/Workshop Slot"},
           {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
           {"time":"16:00", "type":"compo", "description":"Music Competitions"},
           {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
-		  {"time":"17:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+		  {"time":"17:00", "type":"seminar", "id":"sem_3", "description":"TBD - Seminar/Workshop Slot"},
           {"time":"19:00", "type":"deadline", "description":"Executable Demo Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Compos"},
           {"time":"20:00", "type":"compo", "description":"Wild + Animation Compos"},
@@ -150,10 +150,22 @@
     "isActive":true,
     "title":"register"
   },
-  "seminar":{
-    "isActive":false,
-    "title":"seminar__title",
-    "content":"seminar__content"
+  "seminars":{
+    "isActive":true,
+    "title":"seminars",
+    "content":[{
+      "speaker": "KeyJ",
+      "social": [{
+        "type": "twitter",
+        "url": "https://twitter.com/keyj_kat",
+        "content": "@keyj_kat"
+        }
+      ],
+      "website": "http://keyj.emphy.de/",
+      "id": "sem_1",
+      "title":"All the Small Things: Tricks & Techniques used in Intros",
+      "content":"Everybody knows and loves tiny intros from 1k to 64k, but how do these things actually work? Even the most basic \"Hello World\" program is already larger than 4k, so how can we possibly fit graphics and music in less space than that?<br><br>This talk describes some common tricks that are used under the hood in size-constrained productions, from high-level concepts like procedural generation and compression down to the unholy things that are done to the EXE file header. It starts with very basic stuff that is easily understandable for coders and non-coders alike, and gradually become more and more technical."
+    }]
   },
   "compos":{
     "isActive":true,
