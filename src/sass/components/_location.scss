@@ -1,48 +1,62 @@
+#location {
+  @include tablet--up(){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "heading heading"
+            "address ."
+            "description map"
+            "description .";
+  }
+
+  h2{
+    grid-area: address;
+  }
+}
+
+.location__address{
+  grid-area: address;
+  @extend h4;
+}
+
 .location__list {
   padding: 0 1em;
   margin: 0;
 }
 
-.map__link {
-  margin-top: 1em;
-  display: block;
-  position: relative;
+.map{
+  &__link{
+    grid-area: map;
 
-  border: 5px solid #192146;
-  box-shadow: 10px 10px 0 0 #192146;
+    margin-top: 1em;
+    display: block;
+    position: relative;
 
-  @include tablet--up() {
-    float: left;
-    width: 50%;
+    border: 5px solid #192146;
+    box-shadow: 10px 10px 0 0 #192146;
+    margin-bottom: 1em;
   }
-}
 
-.map__text {
-  background: rgba(255, 255, 255, .75);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 24px;
+  &__description {
+    grid-area: description;
 
-  font-family: $font--family--heading;
-}
-
-.map__description {
-  padding-bottom: 24px;
-  padding-right: 42px;
-
-  @include tablet--up() {
-    float: left;
-    width: 50%;
+    padding-bottom: 24px;
+    padding-right: 42px;
   }
-}
 
-.map__image {
-  width: 100%;
-  display: block;
-}
+  &__text {
+    background: rgba(255, 255, 255, .75);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 24px;
 
-.location__address {
-  @extend h4;
+    font-family: $font--family--heading;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
 }

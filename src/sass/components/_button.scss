@@ -2,6 +2,8 @@ button, .button {
   //reset
   border: none;
   cursor: pointer;
+  //a tags disguised as buttons
+  text-decoration: none;
 
   //style
   padding: $gutter $gutter*2 $gutter $gutter*2;

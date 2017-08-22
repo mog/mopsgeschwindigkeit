@@ -1,25 +1,29 @@
 section {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 42px 32px;
+  padding: 0 42px 72px;
 
   //--start push down, so anchors are not behind navbar
   @include phone() {
-    padding-top: 200px;
+    padding-top: 32px;
     margin-bottom: 100px;
 
     &:before {
-      height: calc(100% - 190px);
+      height: calc(100% - 100px);
       bottom: 0;
     }
   }
+
   @include tablet--up() {
-    padding-top: 140px;
-    margin-bottom: 100px;
+    margin-bottom:42px;
+    padding-top: 160px;
+    padding-bottom: 90px;
   }
 
   h2 {
-    margin-top: -20px;
+    @include tablet--up() {
+      margin-top: -20px;
+    }
   }
 
   &.first {
@@ -27,15 +31,6 @@ section {
     margin-bottom: 0;
   }
   //-- end pushdown
-
-  @include phone() {
-    margin-bottom: 0;
-    padding-bottom: 2em;
-  }
-
-  @include tablet--up() {
-    min-height: calc(100vh - 12rem);
-  }
 
   @include outlineBoxRotated();
 }

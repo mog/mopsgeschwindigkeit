@@ -10,14 +10,29 @@ $component: c-timetable;
     }
   }
 
-  ul {
+  &__entries {
     list-style-type: none;
     padding: 0;
   }
 
+  &__entries__entry {
+    display: grid;
+
+    grid-template-columns: .3fr 1fr;
+    @include tablet--up(){
+      grid-template-columns: .37fr 1fr;
+    }
+
+    grid-template-areas: "time description";
+  }
+
+  &__time {
+    padding: 4px;
+    text-align: center;
+  }
+
   &__filter,
   &__time {
-    width: 3.5em;
     color: #fff;
     font-weight: bold;
     padding-left: 3px;
@@ -25,10 +40,14 @@ $component: c-timetable;
   }
 
   &__filters {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
     @include phone() {
       padding-bottom: 20px;
-      display: inline-block;
     }
+
     @include tablet--up() {
       width: 100%;
       clear: both;
@@ -40,9 +59,8 @@ $component: c-timetable;
   &__filter {
     text-transform: uppercase;
     float: left;
-    margin: 7px 14px;
+    margin: 14px;
     padding: 5px 10px 7px 47px;
-    width: auto;
     transition: background-color .277s;
     border-radius: 1px;
     cursor: pointer;
@@ -129,12 +147,11 @@ $component: c-timetable;
     text-shadow: 0 0 10px darken(nth(map_get($palette, "astra"), 3), 30);
   }
 
-  &__time,
-  &__description {
-    display: table-cell;
+  &__time {
+    grid-area: time;
+    margin-right: 10px;
   }
-
   &__description {
-    padding-left: 10px;
+    grid-area: description;
   }
 }
