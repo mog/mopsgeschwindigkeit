@@ -28,6 +28,10 @@ html(lang="en")
             include _components/timetable
         if register.isActive
             include _components/register
+        if ticket.isActive
+            include _components/ticket
+        if ticket_buy.isActive
+            include _components/ticket_buy
         if seminars.isActive
             include _components/seminars
         if compos.isActive

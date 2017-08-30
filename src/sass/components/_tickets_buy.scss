@@ -1,0 +1,35 @@
+.paypal {
+
+  @include tablet--up(){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description form";
+  }
+
+  &__description {
+    grid-area: description;
+    padding-right:24px;
+  }
+
+  &__form {
+    grid-area: form;
+
+    text-align: right;
+
+    width:100%;
+    table{
+      width:100%;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+
+      margin-bottom: 16px;
+    }
+
+    input[type="image"]{
+      margin-top: 8px;
+    }
+  }
+}
+

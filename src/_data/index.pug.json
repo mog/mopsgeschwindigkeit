@@ -10,6 +10,10 @@
     "isActive":true,
     "hideFromNavigation":true
   },
+  "ticket_buy":{
+    "isActive":true,
+    "hideFromNavigation":true
+  },
   "about":{
     "isActive":true,
     "hideFromNavigation":true,
@@ -110,7 +114,7 @@
           {"time":"14:00", "type":"event", "description":"Doors Open"},
           {"time":"15:00", "type":"event", "description":"TBD - Demoshow - Oldschool Demos"},
 		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
-		  {"time":"18:00", "type":"seminar", "id":"sem_1", "description":"KeyJ: All the Small Things: Tricks & Techniques used in Intros"},
+		  {"time":"18:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
           {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos"},
           {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"},
@@ -123,7 +127,7 @@
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
           {"time":"13:00", "type":"deadline", "description":"Remote Entries"},
 		  {"time":"13:00", "type":"deadline", "description":"Music Compos"},
-          {"time":"14:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"14:00", "type":"seminar", "id":"sem_1", "description":"KeyJ: All the Small Things: Tricks & Techniques used in Intros"},
           {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
           {"time":"16:00", "type":"compo", "description":"Music Competitions"},
           {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
@@ -146,9 +150,14 @@
         ]
       }]
   },
+  "ticket":{
+    "isActive":true,
+    "title": "ticket"
+  },
   "register":{
     "isActive":true,
-    "title":"register"
+    "title":"register",
+    "hideFromNavigation":true
   },
   "seminars":{
     "isActive":true,
