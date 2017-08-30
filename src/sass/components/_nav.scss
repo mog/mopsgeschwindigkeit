@@ -21,7 +21,7 @@ nav {
     left: $bodyBorderWidth;
     right: $bodyBorderWidth;
 
-    background: linear-gradient(90deg, rgba(250, 179, 187, 0.99) 80%, transparent);
+    background: linear-gradient(90deg, rgba(250, 179, 187, 0.99) 80%, rgba(250, 179, 187, 0));
 
     body & ul {
       display: flex;
