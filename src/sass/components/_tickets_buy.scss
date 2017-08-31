@@ -1,6 +1,31 @@
+.ticket {
+  @include tablet--up() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline headline" "subline subline" "description features";
+
+  }
+  &__headline {
+    grid-area: headline;
+  }
+
+  &__subline {
+    grid-area: subline;
+  }
+
+  &__description {
+    grid-area: description;
+    padding-right: 24px;
+  }
+
+  &__features {
+    grid-area: features;
+  }
+}
+
 .paypal {
 
-  @include tablet--up(){
+  @include tablet--up() {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "description form";
@@ -8,7 +33,7 @@
 
   &__description {
     grid-area: description;
-    padding-right:24px;
+    padding-right: 24px;
   }
 
   &__form {
@@ -16,9 +41,9 @@
 
     text-align: right;
 
-    width:100%;
-    table{
-      width:100%;
+    width: 100%;
+    table {
+      width: 100%;
     }
 
     input[type="text"], select {
@@ -27,9 +52,29 @@
       margin-bottom: 16px;
     }
 
-    input[type="image"]{
+    input[type="image"] {
       margin-top: 8px;
     }
   }
 }
 
+.bank-transfer{
+  @include tablet--up() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "headline headline" "data description";
+  }
+
+  &__headline {
+    grid-area: headline;
+  }
+
+  &__data {
+    grid-area: data;
+    padding-right: 24px;
+  }
+
+  &__description {
+    grid-area: description;
+  }
+}
