@@ -10,6 +10,10 @@ body {
   }
 }
 
+address{
+  font-style: normal;
+}
+
 @include tablet--up() {
   .rules ul,
   .compo ul {
