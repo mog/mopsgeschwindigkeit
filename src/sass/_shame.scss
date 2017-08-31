@@ -1,3 +1,9 @@
+@include tablet--up() {
+  .l--columns--2 {
+    column-count: 2;
+  }
+}
+
 body {
   @include phone() {
     font-size: 26px !important;
@@ -58,6 +64,7 @@ body {
     transform: translate(-50%, 0);
   }
 }
+
 /*
 :target::before {
   content: "";
@@ -72,12 +79,12 @@ body {
   }
 }
 */
-#about{
+#about {
   @include tablet() {
     font-size: 1.2em;
   }
 
-  @include desktop(){
+  @include desktop() {
     font-size: 1.45em;
     text-align: justify;
     line-height: normal;
