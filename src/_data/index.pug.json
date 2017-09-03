@@ -197,12 +197,26 @@
     ],
     "content":{
       "supporter":[{
-        "_name":"katze",
-        "link":{
+        "name":"cynic",
+        "_link":{
           "text":"wuff",
           "src":"//katze.de"
         }
-      }],
+        },
+        {
+          "name":"lambdacore",
+          "_link":{
+            "text":"wuff",
+            "src":"//katze.de"
+          }
+        },
+        {
+          "name":"moqui",
+          "_link":{
+            "text":"wuff",
+            "src":"//katze.de"
+          }
+        }],
       "sponsors":[
         {
         "src":"assets/img/sponsor_trbl.png",
@@ -238,6 +252,10 @@
         "src":"assets/img/sponsor_tum.png",
         "alt":"Tastatur und Maus e.V.",
         "link": "http://www.tastatur-und-maus.net/"
+      },{
+        "src":"assets/img/sponsor_framefield.png",
+        "alt":"FRAMEFIELD",
+        "link": "http://framefield.com/"
       }]
     }
   },
