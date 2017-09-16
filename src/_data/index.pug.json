@@ -205,35 +205,31 @@
     "content":{
       "supporter":[{
         "name":"cynic^Still^Haujobb",
-        "_link":{
+        "link":{
           "text":"Website",
           "src":"http://www.still-scene.org/person/show/5"
           }
         },
-	{
+	    {
           "name":"havoc^LineOut",
-          "_link":{
+          "link":{
             "text":"Demozoo",
             "src":"https://demozoo.org/sceners/2419/"
           }
         },
         {
-          "name":"lambdacore",
-          "_link":{
-            "text":"wuff",
-            "src":"//katze.de"
-          }
+          "name":"lambdacore"
         },
         {
           "name":"moqui^Schnappsgirls",
-          "_link":{
+          "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
           }
         },
-	{
+	    {
           "name":"ted^TRBL^3LN",
-          "_link":{
+          "link":{
             "text":"Twitter",
             "src":"https://twitter.com/tedpew"
           }
