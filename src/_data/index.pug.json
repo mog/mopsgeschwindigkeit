@@ -204,11 +204,18 @@
     ],
     "content":{
       "supporter":[{
-        "name":"cynic",
+        "name":"cynic^Still^Haujobb",
         "_link":{
-          "text":"wuff",
-          "src":"//katze.de"
-        }
+          "text":"Website",
+          "src":"http://www.still-scene.org/person/show/5"
+          }
+        },
+	{
+          "name":"havoc^LineOut",
+          "_link":{
+            "text":"Demozoo",
+            "src":"https://demozoo.org/sceners/2419/"
+          }
         },
         {
           "name":"lambdacore",
@@ -218,10 +225,17 @@
           }
         },
         {
-          "name":"moqui",
+          "name":"moqui^Schnappsgirls",
           "_link":{
-            "text":"wuff",
-            "src":"//katze.de"
+            "text":"Pouët",
+            "src":"https://www.pouet.net/user.php?who=20526"
+          }
+        },
+	{
+          "name":"ted^TRBL^3LN",
+          "_link":{
+            "text":"Twitter",
+            "src":"https://twitter.com/tedpew"
           }
         }],
       "sponsors":[
