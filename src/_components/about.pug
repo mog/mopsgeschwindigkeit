@@ -1,13 +1,28 @@
 section#about(aria-label="about", data-lazy-load).first
     h1 !{about.title}
 
-    img.logo(data-lazy-src="assets/img/deadline--logo--phone.png" alt="Deadline Logo")
+    img.logo(data-lazy-src="assets/img/deadline--logo--big.png" alt="Deadline Logo")
     h3 29.09. - 01.10.2017
     p.content
-        span Come and join us for a weekend full of fun, competitions and meeting of old and new friends  – for the fourth time in the pulsating city of Berlin, Germany!
+        span A non-commercial computer arts and multimedia festival held annually - this year for the fourth time.
         br
         br
-        span Expect a wide variety of competitions, amazing live-acts, seminars, retro-gaming and much more yet to be announced!
+        span Expect a wide variety of creative competitions, groovy live-acts, mindblowing seminars, retro-gaming and much more yet to be announced!
+        br
+        br
+        span Come and join us for a weekend full of fun, and meeting of old and new friends!
+
+    a.button.button--small(style="float:right" href="#ticket_buy").
+        Get your ticket now!
+    //-
+        a.button.button--cta(href="#ticket")
+            span.button--cta__content Get your ticket now!
+            span.button--cta__background
+                <svg class="button--cta__svg" preserveAspectRatio= "xMinYMin meet" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <g>
+                <path fill="#d21b1e" id="svg_7" d="m74.700438,-0.000001l23.006083,28.848767l36.899141,0l-8.210868,35.973915l23.006083,28.848767l-33.244704,16.009956l-8.210868,35.973915l-33.244868,-16.009956l-33.244868,16.009956l-8.210868,-35.973915l-33.244704,-16.009956l23.006083,-28.848767l-8.210868,-35.973915l36.899141,0l23.006083,-28.848767z"/>
+                </g>
+                </svg>
 
     script.
         document.getElementById('about').lazyLoad = function () {

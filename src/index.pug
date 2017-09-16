@@ -5,7 +5,8 @@ html(lang="en")
         title= title
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width")
-        meta(name="theme-color" content="#317EFB")
+        meta(name="theme-color" content="#d47983")
+        include _components/meta
         link(rel="manifest" href="manifest.json")
         link(rel="stylesheet" href="css/style.css")
         block head_end
@@ -27,14 +28,18 @@ html(lang="en")
             include _components/timetable
         if register.isActive
             include _components/register
-        if seminar.isActive
-            include _components/seminar
+        if ticket.isActive
+            include _components/ticket
+        if ticket_buy.isActive
+            include _components/ticket_buy
+        if seminars.isActive
+            include _components/seminars
         if compos.isActive
             include _components/compos
 
         footer
-            include _components/contact
             include _components/sponsors
+            include _components/contact
             include _components/history
 
         //include _components/background
@@ -54,8 +59,9 @@ html(lang="en")
                     })
                 );
             })();
-        //
-            This website has been built in mopsgeschwindigkeit®
 
+        include _components/tracking
+        //
+            This website has been built in mopsgeschwindigkeit
     block body_end
 

@@ -6,11 +6,12 @@
   &:before {
     content: "";
     width: 100%;
-    height: 100%;
+    height: calc(100% - 120px);
     display: block;
     z-index: -1;
     position: absolute;
     left: 0;
+    bottom:0;
     background: linear-gradient(45deg, #fff, rgba(255,255,255,.0) 66%);
     background-clip: content-box;
   }

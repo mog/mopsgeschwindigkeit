@@ -1,0 +1,59 @@
+//-extends _layouts/deadline2017
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width")
+        meta(name="theme-color" content="#d47983")
+        link(rel="manifest" href="manifest.json")
+        link(rel="stylesheet" href="css/style.css")
+        block head_end
+
+    body
+        include _components/navigation
+        section#impressum(aria-label="impressum" style="padding-top:0")
+            h1="Impressum"
+            b.
+                Veranstalter vor Ort und Ansprechpartner bezüglich der Veranstaltung, sowie inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:
+            p.
+                Philipp Eckert, Hermannstr. 224, 12049 Berlin<br>
+                Tel: 0177 1970283<br>
+                Mail: <a href="contact@demoparty.berlin">contact@demoparty.berlin</a>
+
+            b.
+                in Kooperation mit:
+            p.
+                Orwohaus e.V., Frank-Zappa-Straße 19-20, 12681 Berlin<br>
+                Vertretungsberechtigter Vorstand: Stefan Drews, Lisett Schmuck und weitere…<br>
+                Amtsgericht Charlottenburg, Vereinsregisternummer: VR 24031, Steuernummer: 27/674/51898<br>
+
+            b.
+                und:
+            p.
+                Digitale Kultur e.V., Christinastraße 82, 50733 Köln<br>
+                Mail: <a href="vorstand@digitalekultur.org">vorstand@digitalekultur.org</a><br>
+                Vertretungsberechtigter Vorstand: Tobias Heim, Stefan Keßeler (Vorsitzender), Stephan Maihöfer<br>
+                Amtsgericht Köln, Vereinsregisternummer:  VR 14200, Steuernummer: DE 234279707<br>
+
+            b.
+                Haftung für die abrufbaren Inhalte:
+            p.
+                Die hier abrufbaren Inhalte erheben keinen Anspruch auf Vollständigkeit. Die rechtlichen Hinweise sind unverbindlich und daher nicht rechtsbindend. Sie haben vielmehr einen informativen Charakter, ohne dass für die Richtigkeit Gewähr übernommen wird.
+
+            b.
+                Haftung für Links:
+            p.
+                Die im Rahmen dieses Angebotes weiterverweisenden externen Links zu Angeboten Dritter führen zu Inhalten der jeweiligen Anbieter. Diese Verweise sind als solche aus dem Zusammenhang erkennbar oder gesondert gekennzeichnet. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Der Betreiber dieses Angebotes hat keinerlei Einfluss auf die dort bereitgehaltenen Inhalte und macht sich diese durch die Verweise nicht zu eigen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+
+            <br>
+            a.button.button--small(style="float:right" href="./").
+                Back to Website
+
+        footer
+            include _components/contact
+        //
+            This website has been built in mopsgeschwindigkeit®
+
+    block body_end
+

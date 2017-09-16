@@ -10,6 +10,10 @@
     "isActive":true,
     "hideFromNavigation":true
   },
+  "ticket_buy":{
+    "isActive":true,
+    "hideFromNavigation":true
+  },
   "about":{
     "isActive":true,
     "hideFromNavigation":true,
@@ -40,67 +44,64 @@
     "content": "SHOW ME WHAT YOU GOT! I WANT TO SEE WHAT YOU GOT!",
     "slider":{
       "sizes":[
-        {"width":890,
-          "suffix":"--890",
-          "breakpoint":"(min-width:941px)"},
-        {"width":740,
-        "suffix":"--740",
-        "breakpoint":"(max-width:940px)"}
-
-      ],
+        {
+          "width": 890,
+          "suffix": "--890"
+        }],
       "content":[{
-          "src":"assets/img/imp1.jpg",
-          "alt":"photo by keyJ",
-          "caption": "Come to the ORWOhaus to party with us"
-      },{
-          "src":"assets/img/imp2.jpg",
-          "alt":"photo by vickey",
-          "caption": "Be greeted by the friendly Info-Desk"
-      },{
-          "src":"assets/img/imp3.jpg",
-          "alt":"photo by ted",
-          "caption": "Watch the competitions in the main hall"
-	  },{
-          "src":"assets/img/imp4.jpg",
-          "alt":"photo by ted",
-          "caption": "Enjoy our great Live-Acts"
-	  },{
-          "src":"assets/img/imp5.jpg",
-          "alt":"photo by ted",
-          "caption": "Relax in the meadows or camp outside"
-	  },{
-          "src":"assets/img/imp6.jpg",
-          "alt":"photo by ted",
-          "caption": "Dance your ass off to our DJ-Sets"
-	  },{
-          "src":"assets/img/imp7.jpg",
-          "alt":"photo by vickey",
-          "caption": "Tell or hear great stories at the bonfire"
-	  },{
-          "src":"assets/img/imp8.jpg",
-          "alt":"photo by dojoe",
-          "caption": "Meet friends and have a great time. Cheers!"
-	  },{
-          "src":"assets/img/imp9.jpg",
-          "alt":"photo by ted",
-          "caption": "Take part and win the competition!"
-	  },{
-          "src":"assets/img/imp10.jpg",
-          "alt":"photo by ted",
-          "caption": "Relax outside"
-	  },{
-          "src":"assets/img/imp11.jpg",
-          "alt":"photo by Saga Musix",
-          "caption": "Show us your joystick-skills!"
-	  },{
-          "src":"assets/img/imp12.jpg",
-          "alt":"photo by nodepond",
-          "caption": "Party to 8-bit-sounds!"
-	  },{
-          "src":"assets/img/imp13.jpg",
-          "alt":"photo by T$",
-          "caption": "Take a break at the terrace."
-      }]
+            "src":"assets/img/imp1.jpg",
+            "alt":"photo by keyJ",
+            "caption": "Come to the ORWOhaus to party with us"
+        },{
+            "src":"assets/img/imp2.jpg",
+            "alt":"photo by vickey",
+            "caption": "Be greeted by the friendly Info-Desk"
+        },{
+            "src":"assets/img/imp3.jpg",
+            "alt":"photo by ted",
+            "caption": "Watch the competitions in the main hall"
+        },{
+            "src":"assets/img/imp4.jpg",
+            "alt":"photo by ted",
+            "caption": "Enjoy our great Live-Acts"
+        },{
+            "src":"assets/img/imp5.jpg",
+            "alt":"photo by ted",
+            "caption": "Relax in the meadows or camp outside"
+        },{
+            "src":"assets/img/imp6.jpg",
+            "alt":"photo by ted",
+            "caption": "Dance your ass off to our DJ-Sets"
+        },{
+            "src":"assets/img/imp7.jpg",
+            "alt":"photo by vickey",
+            "caption": "Tell or hear great stories at the bonfire"
+        },{
+            "src":"assets/img/imp8.jpg",
+            "alt":"photo by dojoe",
+            "caption": "Meet friends and have a great time. Cheers!"
+        },{
+            "src":"assets/img/imp9.jpg",
+            "alt":"photo by ted",
+            "caption": "Take part and win the competition!"
+        },{
+            "src":"assets/img/imp10.jpg",
+            "alt":"photo by ted",
+            "caption": "Relax outside"
+        },{
+            "src":"assets/img/imp11.jpg",
+            "alt":"photo by Saga Musix",
+            "caption": "Show us your joystick-skills!"
+        },{
+            "src":"assets/img/imp12.jpg",
+            "alt":"photo by nodepond",
+            "caption": "Party to 8-bit-sounds!"
+        },{
+            "src":"assets/img/imp13.jpg",
+            "alt":"photo by T$",
+            "caption": "Take a break at the terrace."
+        }
+      ]
     }
   },
   "timetable":{
@@ -113,7 +114,7 @@
           {"time":"14:00", "type":"event", "description":"Doors Open"},
           {"time":"15:00", "type":"event", "description":"TBD - Demoshow - Oldschool Demos"},
 		  {"time":"16:00", "type":"event", "description":"TBD - Retro Gaming Tournament"},
-		  {"time":"18:00", "type":"event", "description":"TBD - Seminar Slot"},
+		  {"time":"18:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
           {"time":"19:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"19:30", "type":"event", "description":"TBD - Demoshow - Newschool Demos"},
           {"time":"22:00", "type":"event", "description":"TBD - Live-Act/DJ Slot"},
@@ -126,7 +127,7 @@
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
           {"time":"13:00", "type":"deadline", "description":"Remote Entries"},
 		  {"time":"13:00", "type":"deadline", "description":"Music Compos"},
-          {"time":"14:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+          {"time":"14:00", "type":"seminar", "id":"sem_1", "description":"KeyJ: All the Small Things: Tricks & Techniques used in Intros"},
           {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
           {"time":"16:00", "type":"compo", "description":"Music Competitions"},
           {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
@@ -149,98 +150,39 @@
         ]
       }]
   },
+  "ticket":{
+    "isActive":true,
+    "title": "ticket"
+  },
   "register":{
     "isActive":true,
-    "title":"register"
+    "title":"register",
+    "hideFromNavigation":true
   },
-  "seminar":{
-    "isActive":false,
-    "title":"seminar__title",
-    "content":"seminar__content"
+  "seminars":{
+    "isActive":true,
+    "title":"seminars",
+    "content":[{
+      "speaker": "KeyJ",
+      "social": [{
+        "type": "twitter",
+        "url": "https://twitter.com/keyj_kat",
+        "content": "@keyj_kat"
+        }
+      ],
+      "website": "http://keyj.emphy.de/",
+      "id": "sem_1",
+      "title":"All the Small Things: Tricks & Techniques used in Intros",
+      "content":"Everybody knows and loves tiny intros from 1k to 64k, but how do these things actually work? Even the most basic \"Hello World\" program is already larger than 4k, so how can we possibly fit graphics and music in less space than that?<br><br>This talk describes some common tricks that are used under the hood in size-constrained productions, from high-level concepts like procedural generation and compression down to the unholy things that are done to the EXE file header. It starts with very basic stuff that is easily understandable for coders and non-coders alike, and gradually become more and more technical."
+    }]
   },
   "compos":{
     "isActive":true,
-    "title":"Competitions",
-    "content":[
-      {
-        "title":"General Rules",
-        "content":[
-          "Your contribution must not have been released before.",
-          "Contributions must be handed in before the respective compo deadline.",
-          "The composer of any music released or used in any competition must not be registered at any copyright society. This includes – but is not limited to – all members of BIEM (take a look at their website for more information). Notably GEMA is a member of BIEM.",
-          "In case of too few compo entries for one compo (less than three) the party organizers can cancel or combine competitions.",
-          "By taking part in a competition you agree that we spread your entry (e.g. through scene.org) and that we’re allowed to use it in non-commercial promotions for upcoming editions of Deadline demoparty.",
-          "Entries containing content which violates German law or are unsuitable will be disqualified.",
-          "If your entry contains commercial material it will be disqualified as well.",
-          "If you have questions about these rules, contact the organizers at contact@demoparty.berlin"]
-      },
-      {
-        "title":"Remote Entries",
-        "content": [
-		"You can’t make it to the party, but would like to participate? We accept remote entries for all compos!",
-		"Please send your remote entries to contact@demoparty.berlin. The deadline for remote entry submission is 30th Sept. 2017, 13:00 (UTC+1)",
-		"Please note: For remote entries we will try to send you the prize or bring it to another demoparty, eg. Revision. This usually works out well, but no guarantee.",
-		"We will try our best to have a livestream available again  – in previous years we always managed to have a reliable stream, thanks to our friends at Viprinet."]
-      },
-      {
-        "title":"Executable Competitions",
-        "content":[{
-          "title": "PC Demo",
-          "content":[
-            "We have a Windows compomachine with the following specs: (not final yet)<ul>",
-            "CPU: Core i7",
-            "RAM: 16GB RAM",
-            "Graphics: NVIDIA Titan Black w/ 6GB RAM",
-            "OS: Win8.1 64bit with then latest DirectX and stable NVidia drivers.",
-            "Kindly provided by Tastatur und Maus e.V. Thanks! &lt;3",
-            "If you plan to release a MaxOS X or Linux production please contact us before the party so that we can make sure we have the right OS ready for you.",
-            "Maximum total size on disk after unpacking 512 MiB",
-            "Maximum running time is 10 minutes.]"
-          ]
-        },
-        {
-          "title":"PC 64 Intro",
-          "content":[
-            "Maximum file size of intro executable is 64 KB (65.536 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.",
-            "Maximum running time is 10 minutes."
-          ]
-        },
-        {
-          "title":"PC 4 Intro",
-          "content":[
-            "Maximum file size of intro executable is 4 KB (4.096 bytes). All other files in the archive of the intro will be deleted before showing the entry in the competition.",
-            "Maximum running time is 10 minutes."
-          ]
-        },
-        {
-          "title":"Javascript Demo",
-          "content":[
-            "Intros and Demos of all filesizes allowed.",
-            "Size of the entry will be displayed on the beam-slide.",
-            "Entries will be shown on the newest version of Chrome, Firefox or Edge Browser, please specify which one is preferred.",
-            "Maximum running time is 10 minutes."
-          ]
-        },
-        {
-          "title":"Oldschool Platforms",
-          "content":[
-            "We can provide a C64 (new or old SID + 1541 (II) or Chameleon or 1541U2), Atari Falcon 060, Plus4 (with 1551 or 1541), or Amiga.",
-            "Your entry needs to be provided on disks or as an image file.",
-            "Every other oldschool platform with 8 and 16 bit is allowed as well – but please bring your own hardware then.",
-            "Please inform us as soon as you know what hardware you need.",
-            "If another system is needed, ask us as soon as possible and we will of course try to get the preferred hardware or inform you if we cannot provide it.",
-            "Maximum running time is 10 minutes.",
-            "If possible, please also hand in a video of your entry.",
-            "Please contact us in advance in case of unconventional video signals.",
-            "You can contact us under: contact@demoparty.berlin"
-          ]
-        }]
-      }
-    ]
+    "title":"Competitions"
   },
   "contact":{
     "isActive":true,
-    "title":"contact__title"
+    "title":"Contact"
   },
   "sponsors":{
     "isActive":true,
@@ -248,46 +190,74 @@
     "title":"Sponsors & Supporters",
     "sizes":[
       {"height":64,
+        "width":200,
         "suffix":"",
         "breakpoint":"(min-width:941px)"
       }
     ],
-    "content":[{
-      "src":"assets/img/sponsor_iMazing.png",
-      "alt":"iMazing Computersysteme",
-      "link":"http://www.imazing.de/"
-    },
-    {
-      "src":"assets/img/sponsor_trbl.png",
-      "alt":"TRBL",
-      "link": "http://trbl.at"
-    },
-	{
-      "src":"assets/img/sponsor_orwohaus.jpg",
-      "alt":"ORWOhaus",
-      "link": "http://orwohaus.de/"
-    },
-	{
-      "src":"assets/img/sponsor_tum.png",
-      "alt":"Tastatur und Maus e.V.",
-      "link": "http://www.tastatur-und-maus.net/"
-    },{
-      "src":"assets/img/sponsor_viprinet.png",
-      "alt":"Viprinet GmbH",
-      "link": "https://www.viprinet.com"
-    },{
-      "src":"assets/img/sponsor_dkev.png",
-      "alt":"digitalekultur e.V.",
-      "link": "https://www.digitalekultur.org/"
-    },{
-      "src":"assets/img/sponsor_reichtech.png",
-      "alt":"ReichTech GmbH",
-      "link": "https://www.reichtech.de/"
-    },{
-      "src":"assets/img/sponsor_stiegler.png",
-      "alt":"Stiegler Legal",
-      "link": "https://stiegler-legal.com/"
-    }]
+    "content":{
+      "supporter":[{
+        "name":"cynic",
+        "_link":{
+          "text":"wuff",
+          "src":"//katze.de"
+        }
+        },
+        {
+          "name":"lambdacore",
+          "_link":{
+            "text":"wuff",
+            "src":"//katze.de"
+          }
+        },
+        {
+          "name":"moqui",
+          "_link":{
+            "text":"wuff",
+            "src":"//katze.de"
+          }
+        }],
+      "sponsors":[
+        {
+        "src":"assets/img/sponsor_trbl.png",
+        "alt":"TRBL",
+        "link": "http://trbl.at"
+        },
+        {
+        "src":"assets/img/sponsor_orwohaus.png",
+        "alt":"ORWOhaus",
+        "link": "http://orwohaus.de/"
+        },
+        {
+        "src":"assets/img/sponsor_viprinet.png",
+        "alt":"Viprinet GmbH",
+        "link": "https://www.viprinet.com"
+        },{
+        "src":"assets/img/sponsor_reichtech.png",
+        "alt":"ReichTech GmbH",
+        "link": "https://www.reichtech.de/"
+        },{
+        "src":"assets/img/sponsor_iMazing.png",
+        "alt":"iMazing Computersysteme",
+        "link":"http://www.imazing.de/"
+        },{
+        "src":"assets/img/sponsor_stiegler.png",
+        "alt":"Stiegler Legal",
+        "link": "https://stiegler-legal.com/"
+        },{
+        "src":"assets/img/sponsor_dkev.png",
+        "alt":"digitalekultur e.V.",
+        "link": "https://www.digitalekultur.org/"
+        },{
+        "src":"assets/img/sponsor_tum.png",
+        "alt":"Tastatur und Maus e.V.",
+        "link": "http://www.tastatur-und-maus.net/"
+      },{
+        "src":"assets/img/sponsor_framefield.png",
+        "alt":"FRAMEFIELD",
+        "link": "http://framefield.com/"
+      }]
+    }
   },
   "history":{
     "isActive":true,

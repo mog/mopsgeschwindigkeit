@@ -1,0 +1,61 @@
+.seminar {
+  &__speaker {
+    grid-area: speaker;
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__abstract {
+    grid-area: abstract;
+    padding-right: 48px;
+  }
+
+  &__date {
+    @extend .h3;
+    grid-area: date;
+  }
+
+  &__time {
+    @extend .h3;
+    grid-area: time;
+
+    @include phone(){
+      text-align: right;
+    }
+  }
+
+  &__social {
+    grid-area: social;
+  }
+
+  &__website {
+    grid-area: website;
+  }
+}
+
+#seminars .seminar{
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1.8fr 1fr;
+  grid-template-areas:
+          "speaker speaker"
+          "title title"
+          "date time"
+          "abstract abstract"
+          "social social"
+          "website website";
+
+  @include tablet--up(){
+    grid-template-areas:
+            "speaker speaker"
+            "title title"
+            "abstract date"
+            "abstract time"
+            "abstract ."
+            "social social"
+            "website website";
+  }
+}

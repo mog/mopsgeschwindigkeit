@@ -1,0 +1,30 @@
+section#seminars(aria-label="seminars")
+    h2=seminars.title
+        a.header-anchor(href="#seminars" aria-hidden="true")= anchorSymbol
+    each seminar in seminars.content
+        div.seminar
+            h3.seminar__speaker(id=seminar.id)= seminar.speaker
+            h4.seminar__title= seminar.title
+            -
+                var _day,
+                    _time;
+                timetable.content.map((day) => {
+
+                    var found = day.events.filter((event) => {
+                        return event.id === seminar.id;
+                    });
+
+                    if(found.length === 1){
+                        _day = day.name;
+                        _time = found[0].time;
+                    }
+                })
+            p.seminar__date= _day
+            p.seminar__time= _time
+
+            p.seminar__abstract !{seminar.content}
+            div.seminar__social
+                each socialLink in seminar.social
+                    a(href=socialLink.url)= socialLink.content
+            div.seminar__website
+                a(href=seminar.website)= seminar.website

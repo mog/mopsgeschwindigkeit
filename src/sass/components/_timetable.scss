@@ -10,14 +10,34 @@ $component: c-timetable;
     }
   }
 
-  ul {
+  &__entries {
     list-style-type: none;
     padding: 0;
   }
 
+  &__entries__entry {
+    display: grid;
+    align-items: start;
+
+    grid-template-columns: .3fr 1fr;
+
+    @include tablet--up(){
+      grid-template-columns: .37fr 1fr;
+    }
+
+    grid-template-areas: "time description";
+  }
+
+  &__time {
+    padding: 4px;
+    text-align: center;
+
+    min-width: 80px;
+    white-space: nowrap;
+  }
+
   &__filter,
   &__time {
-    width: 3.5em;
     color: #fff;
     font-weight: bold;
     padding-left: 3px;
@@ -25,10 +45,14 @@ $component: c-timetable;
   }
 
   &__filters {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
     @include phone() {
       padding-bottom: 20px;
-      display: inline-block;
     }
+
     @include tablet--up() {
       width: 100%;
       clear: both;
@@ -40,9 +64,8 @@ $component: c-timetable;
   &__filter {
     text-transform: uppercase;
     float: left;
-    margin: 7px 14px;
+    margin: 14px;
     padding: 5px 10px 7px 47px;
-    width: auto;
     transition: background-color .277s;
     border-radius: 1px;
     cursor: pointer;
@@ -113,8 +136,8 @@ $component: c-timetable;
 
   .event &__time,
   &__filter[data-filter="event"] {
-    background: #E3C646; //nth(map_get($palette, "lavender_pink"), 3);
-    text-shadow: 0 0 10px darken(#E3C646, 15); //nth(map_get($palette, "lavender_pink"), 3), 15);
+    background: #E3C646;
+    text-shadow: 0 0 10px darken(#E3C646, 15);
   }
 
   .compo &__time,
@@ -129,12 +152,12 @@ $component: c-timetable;
     text-shadow: 0 0 10px darken(nth(map_get($palette, "astra"), 3), 30);
   }
 
-  &__time,
-  &__description {
-    display: table-cell;
+  &__time {
+    grid-area: time;
+    margin-right: 10px;
   }
-
   &__description {
-    padding-left: 10px;
+    grid-area: description;
+    margin-top: 5px;
   }
 }

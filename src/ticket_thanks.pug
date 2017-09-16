@@ -1,0 +1,32 @@
+
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width")
+        meta(name="theme-color" content="#d47983")
+        link(rel="manifest" href="manifest.json")
+        link(rel="stylesheet" href="css/style.css")
+        block head_end
+
+    body
+        include _components/navigation
+        section#ticket_thanks(aria-label="ticket_thanks")
+            h2="Thank you for buying a ticket!"
+            p.
+                You will get a confirmation mail within 24 hours including your ticket number.<br>
+                We will add you to the guestlist. Simply say your name/nickname at the entrance desk and/or show them your confirmation mail and you will get your wristband (and t-shirt if you bought a supporter ticket)
+            p.
+                See you there! &lt;3
+
+            <br>
+            a.button.button--small(style="float:right" href="./").
+                Back to Website
+        footer
+            include _components/contact
+        //
+            This website has been built in mopsgeschwindigkeit®
+
+    block body_end
+

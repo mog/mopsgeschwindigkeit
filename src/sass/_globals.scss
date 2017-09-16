@@ -7,11 +7,12 @@ $bodyBorderWidth: 17px;
 
 $min-width: 600px;
 $max-width: 1080px;
-//60rem;
+
 $header-height: 80vh;
 
-$tablet-width: 990px;
-$desktop-width: 1200px;
+$tablet-width: map-get($breakpoint, "tablet") + px;
+$desktop-width: map-get($breakpoint, "desktop") + px;
+
 
 //base-size
 $font--size: 18px;

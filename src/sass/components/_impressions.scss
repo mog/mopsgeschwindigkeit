@@ -1,21 +1,56 @@
-#impressions{
+#impressions {
   //push section down to make room for slick slider buttons
-  @include phone(){
+  @include phone() {
     padding-bottom: 6em;
   }
 }
 
 .impressions__slider {
-  .impressions__slider__slide {
-    background-color: #0c0f21;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+  max-height: 660px;
+}
+
+.impressions__slider.slick-initialized {
+  visibility: visible;
+  opacity: 1;
+  //max-height: none;
+}
+
+.slick-slide {
+  height: auto;
+  width: auto;
+  min-height: 600px;
+}
+
+@keyframes LoadingAnimation {
+  0%{background-position:0 0}
+  50%{background-position:100% 0}
+  100%{background-position:0 0}
+}
+
+.impressions__slider {
+  &__slide {
+    margin: 0;
+
+    @include tablet--up(){
+      background:#192146;
+    }
   }
 
-  .impressions__slider__slide__image {
-    max-height: 66vh;
+  &__slide__image {
+    min-width: 33%;
+    min-height: 24px;
+
     margin: 0 auto;
+    transition: min-height .277s;
+    animation: LoadingAnimation 3s ease infinite;
+    background:linear-gradient(45deg, #FCCF8C, #FF9A81, #FF7D8B, #F53C8A, #7772BC, #03C2EE);
+    background-size: 200% 100%;
   }
 
-  .impressions__slider__slide__caption {
+  &__slide__caption {
     background: #fff;
     padding: 18px 10px 0;
   }
@@ -45,11 +80,11 @@
     }
 
     .slick-next {
-      right: 45px;
+      right: 0;
     }
 
     .slick-prev {
-      left: 45px;
+      left: 0;
     }
   }
 

@@ -1,0 +1,38 @@
+#contact {
+  // start reset section
+  @include tablet--up() {
+    width: 100%;
+    max-width: initial;
+    margin-bottom: 0;
+    min-height: auto;
+  }
+
+  &::before {
+    transform: none;
+  }
+  // end reset section
+
+  h3 {
+    border: 0;
+  }
+
+  .social-links {
+    @include phone(){
+      text-align:center;
+    }
+
+    @include tablet--up() {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  .link--social {
+    @extend .button;
+    @extend .button--small;
+
+    display: inline-block;
+    margin: 14px;
+  }
+}

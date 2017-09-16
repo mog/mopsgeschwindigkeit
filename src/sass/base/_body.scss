@@ -8,7 +8,8 @@ body, html {
 
 body {
   @include phone() {
-    padding-top: 255px;
+    padding-top: 32px;
+    padding-bottom: $navHeight*2;
   }
 
   @include tablet--up() {

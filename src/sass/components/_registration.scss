@@ -13,6 +13,12 @@
   .registrations {
     padding-top: 20px;
     display: inline-block;
+    min-width: 100%;
+  }
+
+  .registrations--collapsed {
+    max-height: 320px;
+    overflow: hidden;
   }
 
   .human {

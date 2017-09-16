@@ -3,6 +3,7 @@
   @include phone() {
     h1 {
       font-size: $font--size--3;
+      margin-left: -24px;
     }
   }
 
@@ -18,8 +19,10 @@
 
   .logo {
     float: right;
-    margin-top: -35px;
     margin-right: -24px;
+    @include tablet--up() {
+      margin-top: -35px;
+    }
   }
 
   .content {
