@@ -23,8 +23,10 @@ section#seminars(aria-label="seminars")
             p.seminar__time= _time
 
             p.seminar__abstract !{seminar.content}
-            div.seminar__social
-                each socialLink in seminar.social
-                    a(href=socialLink.url)= socialLink.content
+
+            if(seminar.social)
+                div.seminar__social
+                    each socialLink in seminar.social
+                        a(href=socialLink.url)= socialLink.content
             div.seminar__website
                 a(href=seminar.website)= seminar.website
