@@ -131,7 +131,7 @@
           {"time":"15:00", "type":"deadline", "description":"Wild+Animation Compos"},
           {"time":"16:00", "type":"compo", "description":"Music Competitions"},
           {"time":"16:00", "type":"deadline", "description":"Graphic Compos"},
-		  {"time":"17:00", "type":"seminar", "description":"TBD - Seminar/Workshop Slot"},
+		  {"time":"17:00", "type":"seminar", "id":"sem_2", "description":"insaneCPU: a stepping stone to emulating the SuperCPU on real Hardware"},
           {"time":"19:00", "type":"deadline", "description":"Executable Demo Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Compos"},
           {"time":"20:00", "type":"compo", "description":"Wild + Animation Compos"},
@@ -174,7 +174,14 @@
       "id": "sem_1",
       "title":"All the Small Things: Tricks & Techniques used in Intros",
       "content":"Everybody knows and loves tiny intros from 1k to 64k, but how do these things actually work? Even the most basic \"Hello World\" program is already larger than 4k, so how can we possibly fit graphics and music in less space than that?<br><br>This talk describes some common tricks that are used under the hood in size-constrained productions, from high-level concepts like procedural generation and compression down to the unholy things that are done to the EXE file header. It starts with very basic stuff that is easily understandable for coders and non-coders alike, and gradually become more and more technical."
-    }]
+      },
+      {
+        "speaker": "insane",
+        "website": "http://insane.tscc.de/",
+        "id": "sem_2",
+        "title":"insaneCPU: a stepping stone to emulating the SuperCPU on real Hardware",
+        "content":"Have you ever wanted to play Metal Dust on your C64 without the 65816 SuperCPU?<br>Or have you ever wanted to replace the 6510/8500 in your C64 with an ARM11?<br>No? Then this seminar isn't for you - for everybody else insane/altair^rabenauge^tscc is showing his current progress in creating a SuperCPU compatible accelerator able to run Metal Dust and ARM-based C64 code."
+      }]
   },
   "compos":{
     "isActive":true,
@@ -198,35 +205,31 @@
     "content":{
       "supporter":[{
         "name":"cynic^Still^Haujobb",
-        "_link":{
+        "link":{
           "text":"Website",
           "src":"http://www.still-scene.org/person/show/5"
           }
         },
-	{
+	    {
           "name":"havoc^LineOut",
-          "_link":{
+          "link":{
             "text":"Demozoo",
             "src":"https://demozoo.org/sceners/2419/"
           }
         },
         {
-          "name":"lambdacore",
-          "_link":{
-            "text":"wuff",
-            "src":"//katze.de"
-          }
+          "name":"lambdacore"
         },
         {
           "name":"moqui^Schnappsgirls",
-          "_link":{
+          "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
           }
         },
-	{
+	    {
           "name":"ted^TRBL^3LN",
-          "_link":{
+          "link":{
             "text":"Twitter",
             "src":"https://twitter.com/tedpew"
           }
