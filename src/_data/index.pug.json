@@ -185,6 +185,13 @@
         "id": "sem_2",
         "title":"insaneCPU: a stepping stone to emulating the SuperCPU on real Hardware",
         "content":"Have you ever wanted to play Metal Dust on your C64 without the 65816 SuperCPU?<br>Or have you ever wanted to replace the 6510/8500 in your C64 with an ARM11?<br>No? Then this seminar isn't for you - for everybody else insane/altair^rabenauge^tscc is showing his current progress in creating a SuperCPU compatible accelerator able to run Metal Dust and ARM-based C64 code."
+      },
+	  {
+        "speaker": "Charlie",
+        "website": "http://2017.function.hu/en/",
+        "id": "sem_3",
+        "title":"ABI-Tour: Motorola 68k compiler development stories",
+        "content":"Charlie / BX ^ InQ ^ SGR will take a deep dive with you in the world of cross-platform Amiga/Atari demo development with lots of hands-on examples."
       }]
   },
   "compos":{
