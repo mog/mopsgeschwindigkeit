@@ -128,7 +128,7 @@
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
 		  {"time":"13:00", "type":"deadline", "description":"DL Music Compos"},
           {"time":"13:00", "type":"deadline", "description":"DL Remote Entries"},
-		  {"time":"13:00", "type":"event", "Demoshow"},
+		  {"time":"13:00", "type":"event", "description":"Demoshow"},
 		  {"time":"14:30", "type":"seminar", "id":"sem_1", "description":"KeyJ/TRBL - All the Small Things: Tricks & Techniques used in Intros"},
           {"time":"15:00", "type":"deadline", "description":"DL Wild+Animation Compos"},
 		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
