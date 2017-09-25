@@ -112,14 +112,15 @@
         "name":"Fri 29.09",
         "events":[
           {"time":"14:00", "type":"event", "description":"Doors Open"},
-		  {"time":"16:00", "type":"event", "description":"TBA Retro Gaming Tournament, Training begins"},
+		  {"time":"16:00", "type":"event", "description":"Dynablaster World Championship - Start of free training and registration"},
 		  {"time":"18:00", "type":"event", "description":"Demoshow - Newschool Demos"},
 		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"20:30", "type":"event", "description":"The Party 1997 - The lost Video Tape"},
-		  {"time":"21:00", "type":"event", "description":"TBA Retro Gaming Tournament - Finals"},
+		  {"time":"21:00", "type":"event", "description":"Dynablaster World Championship - Qualifications/Quarter Finals"},
 		  {"time":"22:00", "type":"event", "description":"Live-Act: Sleep Lab"},
           {"time":"23:00", "type":"event", "description":"Live-Act: Leśnik / Altair"},
-		  {"time":"24:00", "type":"event", "description":"Live-Act: Skomp"}
+		  {"time":"24:00", "type":"event", "description":"Dynablaster World Championship - Finals"},
+		  {"time":"00:30", "type":"event", "description":"Live-Act: Skomp"}
         ]
       },
       {
@@ -188,7 +189,13 @@
       },
 	  {
         "speaker": "Charlie",
-        "website": "http://2017.function.hu/en/",
+		"social": [{
+        "type": "twitter",
+        "url": "https://twitter.com/chainq",
+        "content": "@chainq"
+        }
+      ],
+        "website": "http://charlie.amigaspirit.hu",
         "id": "sem_3",
         "title":"ABI-Tour: Motorola 68k compiler development stories",
         "content":"Charlie / BX ^ InQ ^ SGR will take a deep dive with you in the world of cross-platform Amiga/Atari demo development with lots of hands-on examples."
@@ -244,6 +251,9 @@
             "text":"Twitter",
             "src":"https://twitter.com/tedpew"
           }
+        },
+        {
+          "name":"anti^fake"
         }],
       "sponsors":[
         {
@@ -280,10 +290,14 @@
         "src":"assets/img/sponsor_tum.png",
         "alt":"Tastatur und Maus e.V.",
         "link": "http://www.tastatur-und-maus.net/"
-      },{
+        },{
         "src":"assets/img/sponsor_framefield.png",
         "alt":"FRAMEFIELD",
         "link": "http://framefield.com/"
+      },{
+        "src":"assets/img/sponsor_kwizzad.png",
+        "alt":"KWIZZAD",
+        "link": "https://www.kwizzad.com/career"
       }]
     }
   },
