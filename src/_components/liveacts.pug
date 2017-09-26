@@ -1,0 +1,32 @@
+section#liveacts(aria-label="liveacts")
+    h2=liveacts.title
+        a.header-anchor(href="#liveacts" aria-hidden="true")= anchorSymbol
+    each liveact in liveacts.content
+        div.liveact
+            h3.liveact__artist(id=liveact.id)= liveact.artist
+            -
+                var _day,
+                    _time;
+                timetable.content.map((day) => {
+
+                    var found = day.events.filter((event) => {
+                        return event.id === liveact.id;
+                    });
+
+                    if(found.length === 1){
+                        _day = day.name;
+                        _time = found[0].time;
+                    }
+                })
+            p.liveact__date= _day
+            p.liveact__time= _time
+
+            p.liveact__abstract !{liveact.content}
+
+            if(liveact.social)
+                div.liveact__social
+                    each socialLink in liveact.social
+                        a(href=socialLink.url rel="noopener" target="_blank")= socialLink.content
+                        br
+            div.liveact__website
+                a(href=liveact.website rel="noopener" target="_blank")= liveact.website
