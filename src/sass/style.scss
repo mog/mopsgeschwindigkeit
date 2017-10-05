@@ -2,7 +2,7 @@
 
 @import "globals";
 
-@import "helper/_random--color-from-palette";
+@import "helper/random--color-from-palette";
 @import "helper/breakpoint";
 @import "helper/color";
 @import "helper/grid";
@@ -37,7 +37,6 @@
 
 @import "variants/align";
 @import "variants/animation";
-@import "variants/icon";
 
 //@import "icon";
 @import "shame";

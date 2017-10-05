@@ -1,6 +1,6 @@
 button, .button {
   //reset
-  border: none;
+  border: 0;
   cursor: pointer;
   //a tags disguised as buttons
   text-decoration: none;
@@ -33,28 +33,5 @@ button, .button {
   &--small {
     padding: 24px 42px;
   }
-
-  //fancy six star button
-  /*
-  &--cta {
-    $backgroundColor: nth(map_get($palette, "perfume"), 2);
-    $borderColor: red; // #192146;
-
-    padding: 0;
-    outline: 0;
-    box-shadow: none;
-    background: none;
-
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    //background-color: $backgroundColor;
-    //border: 5px solid $borderColor;
-
-    &__svg {
-      width: 100%;
-    }
-  }
-  //*/
 }
 

@@ -32,8 +32,8 @@ html, body {
 }
 
 ::-moz-selection {
-  color: #fff;
   background: $color--primary;
+  color: #fff;
 }
 
 ::selection {
@@ -112,7 +112,7 @@ h2, .h2 {
 
         $rotation: (random()*$maxRot*2)-$maxRot;
         h2::before {
-          $color1: getRandomColor();
+          $color1: get-random-color();
           $colorAsHSLUV: hsluv-from-hex($color1);
           $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
           background: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, rgba($color2, 0) 80%);
@@ -121,7 +121,7 @@ h2, .h2 {
 
         h2::after {
           $rotation2: $rotation * -1;
-          $color1: getRandomColor();
+          $color1: get-random-color();
           $colorAsHSLUV: hsluv-from-hex($color1);
           $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
           background: linear-gradient((45-$rotation2)+deg, $color1, $color2 70%, rgba($color2, 0) 80%);

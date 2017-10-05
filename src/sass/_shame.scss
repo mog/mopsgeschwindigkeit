@@ -1,31 +1,30 @@
-@include tablet--up() {
+@include tablet--up {
   .l--columns--2 {
     column-count: 2;
   }
 }
 
 body {
-  @include phone() {
+  @include phone {
     font-size: 26px !important;
   }
 }
 
-address{
+address {
   font-style: normal;
 }
 
-@include tablet--up() {
+@include tablet--up {
   .rules ul,
   .compo ul {
-    //.-column--2 {
-    padding-left: 0;
-    list-style-position: outside;
     column-count: 2;
     column-gap: $gutter;
+    list-style-position: outside;
+    padding-left: 0;
 
     li {
-      margin-left: 1em;
       break-inside: avoid-column;
+      margin-left: 1em;
     }
     //}
   }
@@ -38,11 +37,11 @@ address{
 #location {
 
   .location__link {
-    float: left;
     clear: both;
+    float: left;
   }
 
-  @include tablet--up() {
+  @include tablet--up {
     .location-wrapper {
       display: flex;
     }
@@ -55,16 +54,16 @@ address{
   }
 
   .location__image {
-    overflow: hidden;
-    margin-right: $gutter;
     margin-bottom: $gutter;
+    margin-right: $gutter;
+    overflow: hidden;
   }
 
   img {
-    max-width: none;
     height: 100%;
-    position: relative;
     left: 50%;
+    max-width: none;
+    position: relative;
     transform: translate(-50%, 0);
   }
 }
@@ -83,27 +82,28 @@ address{
   }
 }
 */
+
 #about {
-  @include tablet() {
+  @include tablet {
     font-size: 1.2em;
   }
 
-  @include desktop() {
+  @include desktop {
     font-size: 1.45em;
-    text-align: justify;
     line-height: normal;
+    text-align: justify;
   }
 }
 
 #social {
   display: inline-block;
-  vertical-align: top;
   margin-left: 1em;
+  vertical-align: top;
 
-  @include tablet--down() {
+  @include tablet--down {
     position: fixed;
-    top: 1em;
     right: 1em;
+    top: 1em;
     z-index: 150;
   }
 
@@ -112,10 +112,10 @@ address{
   }
 
   .language--switch {
+    border: 2px solid;
     font-size: .5em;
     line-height: 2em;
-    border: 2px solid;
-    margin: .1em .1em;
+    margin: .1em;
     padding: .5em;
   }
 }

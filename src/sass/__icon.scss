@@ -1,33 +1,61 @@
 @font-face {
-  font-family: 'iconfont';
-  src:  url('../img/theme/font/icomoon.eot?o5v5ps');
-  src:  url('../img/theme/font/icomoon.eot?o5v5ps#iefix') format('embedded-opentype'),
-        url('../img/theme/font/icomoon.ttf?o5v5ps') format('truetype'),
-        url('../img/theme/font/icomoon.woff?o5v5ps') format('woff'),
-        url('../img/theme/font/icomoon.svg?o5v5ps#icomoon') format('svg');
-  font-weight: normal;
+  font-family: "iconfont";
   font-style: normal;
+  font-weight: normal;
+  //src: url("../img/theme/font/icomoon.eot?o5v5ps");
+  src: url("../img/theme/font/icomoon.eot?o5v5ps#iefix") format("embedded-opentype"),
+  url("../img/theme/font/icomoon.ttf?o5v5ps") format("truetype"),
+  url("../img/theme/font/icomoon.woff?o5v5ps") format("woff"),
+  url("../img/theme/font/icomoon.svg?o5v5ps#icomoon") format("svg");
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'iconfont' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
+[class^="icon-"],
+[class*=" icon-"] {
+  // Better Font Rendering
+  // sass-lint:disable no-vendor-prefixes
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // sass-lint:enable no-vendor-prefixes
+
+  // use !important to prevent issues with browser extensions that change fonts
+  font-family: "iconfont" !important; // sass-lint:disable-line no-important
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
 }
 
-.icon--facebook:before {
-  content: "\ea91";
+.icon {
+  &--facebook {
+    ::before {
+      content: "\ea91";
+    }
+  }
+
+  &--twitter {
+    ::before {
+      content: "\ea96";
+    }
+  }
+
+  &arrow--left {
+    //icon related
+    position: relative;
+    text-indent: $gutter;
+
+    &::before {
+      font-size: 1rem;
+      line-height: 2rem;
+      text-indent: 0;
+      content: "⪧";
+      position: absolute;
+      left: $gutter;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
-.icon--twitter:before {
-  content: "\ea96";
-}
+
 

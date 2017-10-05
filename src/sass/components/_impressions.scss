@@ -25,17 +25,23 @@
 }
 
 @keyframes LoadingAnimation {
-  0%{background-position:0 0}
-  50%{background-position:100% 0}
-  100%{background-position:0 0}
+  0% {
+    background-position: 0 0
+  }
+  50% {
+    background-position: 100% 0
+  }
+  100% {
+    background-position: 0 0
+  }
 }
 
 .impressions__slider {
   &__slide {
     margin: 0;
 
-    @include tablet--up(){
-      background:#192146;
+    @include tablet--up() {
+      background: #192146;
     }
   }
 
@@ -46,7 +52,7 @@
     margin: 0 auto;
     transition: min-height .277s;
     animation: LoadingAnimation 3s ease infinite;
-    background:linear-gradient(45deg, #FCCF8C, #FF9A81, #FF7D8B, #F53C8A, #7772BC, #03C2EE);
+    background: linear-gradient(45deg, #FCCF8C, #FF9A81, #FF7D8B, #F53C8A, #7772BC, #03C2EE);
     background-size: 200% 100%;
   }
 

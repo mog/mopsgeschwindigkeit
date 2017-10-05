@@ -9,7 +9,7 @@ nav {
   width: 100%;
 
   position: fixed;
-  min-height: $navHeight;
+  min-height: $nav-height;
   background: rgba(250, 179, 187, 0.99);
 
   @include phone(){
@@ -18,8 +18,8 @@ nav {
 
   @include tablet--up() {
     top: 0;
-    left: $bodyBorderWidth;
-    right: $bodyBorderWidth;
+    left: $body-border-width;
+    right: $body-border-width;
 
     background: linear-gradient(90deg, rgba(250, 179, 187, 0.99) 80%, rgba(250, 179, 187, 0));
 
