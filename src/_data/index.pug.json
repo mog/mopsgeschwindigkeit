@@ -1,5 +1,5 @@
 {
-  "title": "Deadline 2017",
+  "title": "Deadline 2019",
   "anchorSymbol":"«",
 
   "navigation":{
@@ -105,7 +105,7 @@
     }
   },
   "timetable":{
-    "isActive":true,
+    "isActive":false,
     "title": "timetable",
     "content":[
       {
@@ -165,7 +165,7 @@
     "hideFromNavigation":true
   },
   "seminars":{
-    "isActive":true,
+    "isActive":false,
     "title":"seminars",
     "content":[{
       "speaker": "KeyJ",
@@ -202,7 +202,7 @@
       }]
   },
   "liveacts":{
-    "isActive":true,
+    "isActive":false,
     "title":"Liveacts",
     "hideFromNavigation":true,
     "content":[{
@@ -233,7 +233,7 @@
       {
         "artist": "CMD",
         "id": "act_4",
-        "content":"CMD was a musician on PC demoscene active in mid-late 90s/early 2000s under a moniker KeyG. During the years KeyG was a member of groups Pulse, Digisonix and many others. In years 1997-2004 together with three other demoscene musicians he formed the band \"Aural Planet\" which release several full albums. For over three years now he lives and works in Berlin, where some years ago the project CMD was started. The idea was to regularly publish songs which oscillate between chiptune sounds and modern electronic music. These songs are now being reworked to a full album which will be performed live at Deadline 2017."
+        "content":"CMD was a musician on PC demoscene active in mid-late 90s/early 2000s under a moniker KeyG. During the years KeyG was a member of groups Pulse, Digisonix and many others. In years 1997-2004 together with three other demoscene musicians he formed the band \"Aural Planet\" which release several full albums. For over three years now he lives and works in Berlin, where some years ago the project CMD was started. The idea was to regularly publish songs which oscillate between chiptune sounds and modern electronic music. These songs are now being reworked to a full album which will be performed live at Deadline 2019."
       },
       {
         "artist": "Wayfinder",
@@ -252,7 +252,7 @@
       ]
   },
   "compos":{
-    "isActive":true,
+    "isActive":false,
     "title":"Competitions"
   },
   "contact":{
@@ -272,38 +272,38 @@
     ],
     "content":{
       "supporter":[{
-        "name":"cynic^Still^Haujobb",
+        "_name":"cynic^Still^Haujobb",
         "link":{
           "text":"Website",
           "src":"http://www.still-scene.org/person/show/5"
           }
         },
 	    {
-          "name":"havoc^LineOut",
+          "_name":"havoc^LineOut",
           "link":{
             "text":"Demozoo",
             "src":"https://demozoo.org/sceners/2419/"
           }
         },
         {
-          "name":"lambdacore"
+          "_name":"lambdacore"
         },
         {
-          "name":"moqui^Schnappsgirls",
+          "_name":"moqui^Schnappsgirls",
           "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
           }
         },
 	    {
-          "name":"ted^TRBL^3LN",
+          "_name":"ted^TRBL^3LN",
           "link":{
             "text":"Twitter",
             "src":"https://twitter.com/tedpew"
           }
         },
         {
-          "name":"anti^fake"
+          "_name":"anti^fake"
         }],
       "sponsors":[
         {
@@ -315,35 +315,35 @@
           "alt":"ORWOhaus",
           "link": "http://orwohaus.de/"
         },{
-          "src":"assets/img/sponsor_viprinet.png",
+          "_src":"assets/img/sponsor_viprinet.png",
           "alt":"Viprinet GmbH",
           "link": "https://www.viprinet.com"
         },{
-          "src":"assets/img/sponsor_reichtech.png",
+          "_src":"assets/img/sponsor_reichtech.png",
           "alt":"ReichTech GmbH",
           "link": "https://www.reichtech.de/"
         },{
-          "src":"assets/img/sponsor_kwizzad.png",
+          "_src":"assets/img/sponsor_kwizzad.png",
           "alt":"KWIZZAD",
           "link": "https://www.kwizzad.com/career"
         },{
-          "src":"assets/img/sponsor_iMazing.png",
+          "_src":"assets/img/sponsor_iMazing.png",
           "alt":"iMazing Computersysteme",
           "link":"http://www.imazing.de/"
         },{
-          "src":"assets/img/sponsor_stiegler.png",
+          "_src":"assets/img/sponsor_stiegler.png",
           "alt":"Stiegler Legal",
           "link": "https://stiegler-legal.com/"
         },{
-          "src":"assets/img/sponsor_dkev.png",
+          "_src":"assets/img/sponsor_dkev.png",
           "alt":"digitalekultur e.V.",
           "link": "https://www.digitalekultur.org/"
         },{
-          "src":"assets/img/sponsor_tum.png",
+          "_src":"assets/img/sponsor_tum.png",
           "alt":"Tastatur und Maus e.V.",
           "link": "http://www.tastatur-und-maus.net/"
         },{
-          "src":"assets/img/sponsor_framefield.png",
+          "_src":"assets/img/sponsor_framefield.png",
           "alt":"FRAMEFIELD",
           "link": "http://framefield.com/"
         }]
@@ -352,7 +352,22 @@
   "history":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title":"history__title",
-    "content":[2015,2016,2017]
+    "title":"Previous Deadlines",
+    "content":[{
+        "name": 2014,
+        "link": "/2014"
+      },{
+        "name": 2015,
+        "link": "/2015"
+      },{
+        "name": 2016,
+        "link": "/2016_wp"
+      },{
+        "name": 2017,
+        "link": "/2017"
+      },{
+        "name": 2018,
+        "link": "/2018"
+      }]
   }
 }

@@ -1,5 +1,7 @@
 @import "../sharedConfig.json";
 
+$DEBUG:false;
+
 $nav-height: 80px;
 $body-border-width: 17px;
 
@@ -8,8 +10,8 @@ $max-width: 1080px;
 
 $header-height: 80vh;
 
-$tablet-width: map-get($breakpoint, "tablet") + px;
-$desktop-width: map-get($breakpoint, "desktop") + px;
+$tablet-width: map-get($breakpoint, "tablet") + 0px;
+$desktop-width: map-get($breakpoint, "desktop") + 0px;
 
 //base-size
 $font--size: 18px;
@@ -19,7 +21,7 @@ $font--size--3: 1.999em;
 $font--size--4: 1.414em;
 $font--size--5: 18px;
 $font--size--6: 18px;
-$font--family--heading: "vcr_osd_monoregular", sans-serif;
+$font--family--heading: "break_bold", sans-serif;
 $font--family--base: "Montserrat", sans-serif;
 
 //  numbers

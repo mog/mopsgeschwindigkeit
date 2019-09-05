@@ -4,35 +4,50 @@
     "desktop":1200
   },
   "palette": {
-    "lavender_pink": [
-      "#ffdee2",
-      "#fab4bc",
-      "#d47983"
+    "sail": [
+      "#deefff",
+      "#b4d8fa",
+      "#79a8d4"
     ],
     "perfume": [
       "#f5deff",
       "#e4b4fa",
       "#b779d4"
     ],
-    "sail": [
-      "#deefff",
-      "#b4d8fa",
-      "#79a8d4"
-    ],
-    "charlotte": [
-      "#defffe",
-      "#b4faf9",
-      "#79d4d2"
+
+    "redOrange": [
+      "#FF5F59",
+      "#FF3933",
+      "#D9120B"
     ],
     "astra": [
       "#fcffde",
       "#f4fab4",
       "#ccd479"
     ],
+
+    "lavender_pink": [
+      "#ffdee2",
+      "#fab4bc",
+      "#d47983"
+    ],
+    "charlotte": [
+      "#defffe",
+      "#b4faf9",
+      "#79d4d2"
+    ],
+
+    "mountainMeadow": [
+      "#048C5F",
+      "#20B383",
+      "#48D9A8"
+    ],
+
     "gray": [
       "#d1d1d1",
       "#ababab",
       "#857171"
     ]
   }
+
 }

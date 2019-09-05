@@ -2,7 +2,9 @@ nav {
   text-align: center;
   margin: 0;
 
-  font-size: 28px; //$font--size--4;
+  font-size: 21px; //$font--size--4;
+  letter-spacing:4px;
+  line-height:33px;
   font-family: $font--family--heading;
   text-transform: uppercase;
   z-index: 100;
@@ -10,7 +12,7 @@ nav {
 
   position: fixed;
   min-height: $nav-height;
-  background: rgba(250, 179, 187, 0.99);
+  background: rgba(32, 179, 131, 0.99);
 
   @include phone(){
     bottom: 0;
@@ -21,7 +23,7 @@ nav {
     left: $body-border-width;
     right: $body-border-width;
 
-    background: linear-gradient(90deg, rgba(250, 179, 187, 0.99) 80%, rgba(250, 179, 187, 0));
+    background: linear-gradient(90deg, rgba(32, 179, 131, 0.99) 80%, rgba(250, 179, 187, 0));
 
     body & ul {
       display: flex;
@@ -33,6 +35,7 @@ nav {
   li {
     margin: 0 .5em;
     display: inline-block;
+    white-space: nowrap;
   }
 
   .logo-container {

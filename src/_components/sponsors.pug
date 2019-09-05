@@ -5,9 +5,10 @@ section#sponsors(aria-label="sponsors", data-lazy-load)
         Thank you making Deadline possible! &lt;3
     ul.sponsors__list
         each image in sponsors.content.sponsors
-            li
-                a(href=image.link rel="noopener" target="_blank")
-                    img.sponsors__list__image(data-lazy-src=image.src alt=image.link)
+            if(image.src)
+                li
+                    a(href=image.link rel="noopener" target="_blank")
+                        img.sponsors__list__image(data-lazy-src=image.src alt=image.link)
     ul.supporter__list
         each entry in sponsors.content.supporter
             if(entry.name)
@@ -17,7 +18,7 @@ section#sponsors(aria-label="sponsors", data-lazy-load)
                         =" "
                         a(href=entry.link.src rel="noopener" target="_blank")= entry.link.text
     p.sponsors__content.
-            Want to get your logo or name here as well? Contact us for sponsoring or buy a supporter ticket.
+            Want to get your logo or name here as well? <a href="mailto:me@philipp-eckert.de">Contact us</a> for sponsoring or buy a supporter ticket.
 
     script.
         document.getElementById('sponsors').lazyLoad = function () {

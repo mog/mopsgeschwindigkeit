@@ -19,7 +19,7 @@
   //generate a couple of rotation, unneeded ones will be removed from css minifier
   @for $i from 1 through 15 {
 
-    $max-rot: 3.0;
+    $max-rot: 5.0;
 
     &:nth-child(#{$i})::before {
       $rotation: (random()*$max-rot*2)-$max-rot;
