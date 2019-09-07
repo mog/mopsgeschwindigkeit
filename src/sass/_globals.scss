@@ -1,18 +1,17 @@
 @import "../sharedConfig.json";
 
-$DEBUG: false;
+$DEBUG:false;
 
-$navHeight: 80px;
-$bodyBorderWidth: 17px;
+$nav-height: 80px;
+$body-border-width: 17px;
 
 $min-width: 600px;
 $max-width: 1080px;
 
 $header-height: 80vh;
 
-$tablet-width: map-get($breakpoint, "tablet") + px;
-$desktop-width: map-get($breakpoint, "desktop") + px;
-
+$tablet-width: map-get($breakpoint, "tablet") + 0px;
+$desktop-width: map-get($breakpoint, "desktop") + 0px;
 
 //base-size
 $font--size: 18px;
@@ -22,21 +21,21 @@ $font--size--3: 1.999em;
 $font--size--4: 1.414em;
 $font--size--5: 18px;
 $font--size--6: 18px;
-$font--family--heading: 'vcr_osd_monoregular', sans-serif;
-$font--family--base: 'Montserrat', sans-serif;
+$font--family--heading: "break_bold", sans-serif;
+$font--family--base: "Montserrat", sans-serif;
 
 //  numbers
 $gutter: $font--size * 2;
 $transition--speed: .277s;
 
 //  colors
-$color--snuff: #F7F7F7;
+$color--snuff: #f7f7f7;
 
 $color--pomegranate: #f44336;
 $color--pomegranate--darker: #d32f2f;
 
 $color--orange-peel: #ff9800;
-$color--orange-peel--darker: #F57C00;
+$color--orange-peel--darker: #f57c00;
 
 $color--primary: #f00;
 //$color--pomegranate;

@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('copy:trbl', function () {
     gulp.src('./public/**/*')
-        .pipe(gulp.dest("P:/var/www/site/trbl/dline2017/"));
+        .pipe(gulp.dest("P:/var/www/site/trbl/dline2019/"));
 });
 
 gulp.task('copy:deadline', function () {

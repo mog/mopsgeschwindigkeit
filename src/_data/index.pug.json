@@ -1,5 +1,5 @@
 {
-  "title": "Deadline 2017",
+  "title": "Deadline 2019",
   "anchorSymbol":"«",
 
   "navigation":{
@@ -105,7 +105,7 @@
     }
   },
   "timetable":{
-    "isActive":true,
+    "isActive":false,
     "title": "timetable",
     "content":[
       {
@@ -117,10 +117,10 @@
 		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"20:30", "type":"event", "description":"The Party 1997 - The lost Video Tape"},
 		  {"time":"21:00", "type":"event", "description":"Dynablaster World Championship - Qualifications/Quarter Finals"},
-		  {"time":"22:00", "type":"event", "description":"Live-Act: Sleep Lab"},
-          {"time":"23:00", "type":"event", "description":"Live-Act: Lesnik/Altair (Visuals: Jacku)"},
+		  {"time":"22:00", "type":"event", "id":"act_1", "description":"Live-Act: Sleep Lab"},
+          {"time":"23:00", "type":"event", "id":"act_2", "description":"Live-Act: Lesnik/Altair (Visuals: Jacku)"},
 		  {"time":"24:00", "type":"event", "description":"Dynablaster World Championship - Finals"},
-		  {"time":"00:30", "type":"event", "description":"Live-Act: Skomp"}
+		  {"time":"00:30", "type":"event", "id":"act_3", "description":"Live-Act: Skomp"}
         ]
       },
       {
@@ -139,10 +139,10 @@
           {"time":"18:00", "type":"deadline", "description":"DL Executable Demo Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Competitions"},
           {"time":"20:00", "type":"compo", "description":"Wild + Animation Competitions"},
-		  {"time":"21:00", "type":"event", "description":"Live-Act: CMD"},
+		  {"time":"21:00", "type":"event", "id":"act_4", "description":"Live-Act: CMD"},
           {"time":"22:00", "type":"compo", "description":"Executable Demo Competitions"},
-		  {"time":"23:00", "type":"event", "description":"Live-Act: Wayfinder"},
-		  {"time":"02:00", "type":"event", "description":"Live-Act TBA"}
+		  {"time":"23:00", "type":"event", "id":"act_5", "description":"Live-Act: Wayfinder"},
+		  {"time":"02:00", "type":"event", "id":"act_6", "description":"Live-Act TBA"}
         ]
       },
       {
@@ -165,7 +165,7 @@
     "hideFromNavigation":true
   },
   "seminars":{
-    "isActive":true,
+    "isActive":false,
     "title":"seminars",
     "content":[{
       "speaker": "KeyJ",
@@ -201,8 +201,58 @@
         "content":"Charlie / BX ^ InQ ^ SGR will take a deep dive with you in the world of cross-platform Amiga/Atari demo development with lots of hands-on examples."
       }]
   },
+  "liveacts":{
+    "isActive":false,
+    "title":"Liveacts",
+    "hideFromNavigation":true,
+    "content":[{
+      "artist": "SleepLab",
+      "social": [{
+        "type": "facebook",
+        "url": "https://fb.me/sleeplabrecords",
+        "content": "facebook"
+      }],
+      "id": "act_1",
+      "content":"Dystopian dreamworlds and sonic insomniac daymares. SleepLab is a Berlin-based electronic music and live audiovisual project. Their often avant-garde and experimental works were spawned in the throes of the nocturnal fusion of classical, rave, HC/punk and demoscene."
+      },
+      {
+        "artist": "Lesnik/altair (Visuals: Jacku)",
+        "social": [{
+          "type": "facebook",
+          "url": "https://www.facebook.com/lesniq",
+          "content": "facebook"
+        }],
+        "id": "act_2",
+        "content":"Lesnik known from the 90s and early 2000s as the creator of chiptune music, will perform with a live act presenting his contemporary work: emotional, nostalgic drum and bass with a lot of atmospheric melodies. The performance will be accompanied by moody visualization - mostly original footage recorded by Jacku, mixed live. You can sit and listen/watch or dance like there's no tomorrow."
+      },
+      {
+        "artist": "Skomp",
+        "id": "act_3",
+        "content":"Hailing from the house metropolis of Hamburg, skomp plays the kind of tech house that's sure to get you stepping, with occasional forays into pure, unadulterated, out-and-out techno. More often found deep in GLSL and C#, skomp can also be found rocking shows as diverse as UK demoparties and hometown Hamburg club nights."
+      },
+      {
+        "artist": "CMD",
+        "id": "act_4",
+        "content":"CMD was a musician on PC demoscene active in mid-late 90s/early 2000s under a moniker KeyG. During the years KeyG was a member of groups Pulse, Digisonix and many others. In years 1997-2004 together with three other demoscene musicians he formed the band \"Aural Planet\" which release several full albums. For over three years now he lives and works in Berlin, where some years ago the project CMD was started. The idea was to regularly publish songs which oscillate between chiptune sounds and modern electronic music. These songs are now being reworked to a full album which will be performed live at Deadline 2019."
+      },
+      {
+        "artist": "Wayfinder",
+        "social": [{
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/wayfu",
+          "content": "soundcloud"
+        },{
+          "type": "facebook",
+          "url": "https://www.facebook.com/gowayfinder/",
+          "content": "facebook"
+        }],
+        "id": "act_5",
+        "content":"Wayfinder plays music and you should be there and dance!"
+      }
+      ]
+  },
   "compos":{
-    "isActive":true,
+    "isActive":false,
     "title":"Competitions"
   },
   "contact":{
@@ -222,89 +272,102 @@
     ],
     "content":{
       "supporter":[{
-        "name":"cynic^Still^Haujobb",
+        "_name":"cynic^Still^Haujobb",
         "link":{
           "text":"Website",
           "src":"http://www.still-scene.org/person/show/5"
           }
         },
 	    {
-          "name":"havoc^LineOut",
+          "_name":"havoc^LineOut",
           "link":{
             "text":"Demozoo",
             "src":"https://demozoo.org/sceners/2419/"
           }
         },
         {
-          "name":"lambdacore"
+          "_name":"lambdacore"
         },
         {
-          "name":"moqui^Schnappsgirls",
+          "_name":"moqui^Schnappsgirls",
           "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
           }
         },
 	    {
-          "name":"ted^TRBL^3LN",
+          "_name":"ted^TRBL^3LN",
           "link":{
             "text":"Twitter",
             "src":"https://twitter.com/tedpew"
           }
         },
         {
-          "name":"anti^fake"
+          "_name":"anti^fake"
         }],
       "sponsors":[
         {
-        "src":"assets/img/sponsor_trbl.png",
-        "alt":"TRBL",
-        "link": "http://trbl.at"
-        },
-        {
-        "src":"assets/img/sponsor_orwohaus.png",
-        "alt":"ORWOhaus",
-        "link": "http://orwohaus.de/"
-        },
-        {
-        "src":"assets/img/sponsor_viprinet.png",
-        "alt":"Viprinet GmbH",
-        "link": "https://www.viprinet.com"
+          "src":"assets/img/sponsor_trbl.png",
+          "alt":"TRBL",
+          "link": "http://trbl.at"
         },{
-        "src":"assets/img/sponsor_reichtech.png",
-        "alt":"ReichTech GmbH",
-        "link": "https://www.reichtech.de/"
+          "src":"assets/img/sponsor_orwohaus.png",
+          "alt":"ORWOhaus",
+          "link": "http://orwohaus.de/"
         },{
-        "src":"assets/img/sponsor_iMazing.png",
-        "alt":"iMazing Computersysteme",
-        "link":"http://www.imazing.de/"
+          "_src":"assets/img/sponsor_viprinet.png",
+          "alt":"Viprinet GmbH",
+          "link": "https://www.viprinet.com"
         },{
-        "src":"assets/img/sponsor_stiegler.png",
-        "alt":"Stiegler Legal",
-        "link": "https://stiegler-legal.com/"
+          "_src":"assets/img/sponsor_reichtech.png",
+          "alt":"ReichTech GmbH",
+          "link": "https://www.reichtech.de/"
         },{
-        "src":"assets/img/sponsor_dkev.png",
-        "alt":"digitalekultur e.V.",
-        "link": "https://www.digitalekultur.org/"
+          "_src":"assets/img/sponsor_kwizzad.png",
+          "alt":"KWIZZAD",
+          "link": "https://www.kwizzad.com/career"
         },{
-        "src":"assets/img/sponsor_tum.png",
-        "alt":"Tastatur und Maus e.V.",
-        "link": "http://www.tastatur-und-maus.net/"
+          "_src":"assets/img/sponsor_iMazing.png",
+          "alt":"iMazing Computersysteme",
+          "link":"http://www.imazing.de/"
         },{
-        "src":"assets/img/sponsor_framefield.png",
-        "alt":"FRAMEFIELD",
-        "link": "http://framefield.com/"
-      },{
-        "src":"assets/img/sponsor_kwizzad.png",
-        "alt":"KWIZZAD",
-        "link": "https://www.kwizzad.com/career"
-      }]
+          "_src":"assets/img/sponsor_stiegler.png",
+          "alt":"Stiegler Legal",
+          "link": "https://stiegler-legal.com/"
+        },{
+          "_src":"assets/img/sponsor_dkev.png",
+          "alt":"digitalekultur e.V.",
+          "link": "https://www.digitalekultur.org/"
+        },{
+          "_src":"assets/img/sponsor_tum.png",
+          "alt":"Tastatur und Maus e.V.",
+          "link": "http://www.tastatur-und-maus.net/"
+        },{
+          "_src":"assets/img/sponsor_framefield.png",
+          "alt":"FRAMEFIELD",
+          "link": "http://framefield.com/"
+        }]
     }
   },
   "history":{
     "isActive":true,
     "hideFromNavigation":true,
-    "title":"history__title",
-    "content":[2015,2016,2017]
+    "title":"Previous Deadlines",
+    "content":[{
+        "name": 2014,
+        "link": "/2014"
+      },{
+        "name": 2015,
+        "link": "/2015"
+      },{
+        "name": 2016,
+        "link": "/2016_wp"
+      },{
+        "name": 2017,
+        "link": "/2017"
+      },{
+        "name": 2018,
+        "link": "/2018"
+      }]
   }
 }

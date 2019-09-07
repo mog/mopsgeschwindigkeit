@@ -17,8 +17,8 @@
   }
 
   .social-links {
-    @include phone(){
-      text-align:center;
+    @include phone() {
+      text-align: center;
     }
 
     @include tablet--up() {

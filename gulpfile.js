@@ -4,6 +4,8 @@ let gulp = require('gulp'),
 require('require-dir')('./gulp_tasks');
 
 
-gulp.task('build', gulpSequence('clean', ['copymanifest', 'copyassets', 'impression', 'sponsors', 'manifest'], ['pug', 'sass', 'browserify'], 'uglify', 'critical'));
+gulp.task('build', gulpSequence('clean', ['copymanifest', 'copyassets', 'impression', 'sponsors', 'manifest'], ['copydownloads'], ['pug', 'sass', 'browserify'], 'uglify', 'critical'));
 
 gulp.task('default', gulpSequence(['build'], ['browser-sync', 'watch']));
+
+gulp.task('test', gulpSequence(['lint-sass']));

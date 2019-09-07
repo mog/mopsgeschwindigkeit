@@ -1,4 +1,4 @@
-@function getRandomColor() {
+@function get-random-color() {
   //grey is at the end of the palette, let's not use it
   $index: random(length(map-keys($palette)) - 1);
   $key: nth(map-keys($palette), $index);

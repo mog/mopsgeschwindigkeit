@@ -3,17 +3,17 @@ body, html {
   padding: 0;
   background-color: $color--mute;
   color: #000;
-  background: linear-gradient(#FCCF8C, #FF9A81, #FF7D8B, #F53C8A, #7772BC, #03C2EE);
+  background: linear-gradient(#FF3933,#25a7eb,#fb5cec,#20B383);
 }
 
 body {
   @include phone() {
     padding-top: 32px;
-    padding-bottom: $navHeight*2;
+    padding-bottom: $nav-height*2;
   }
 
   @include tablet--up() {
-    padding-top: $navHeight*2;
+    padding-top: $nav-height*2;
   }
 
   @extend .-dont-break-out;
@@ -21,9 +21,9 @@ body {
   min-width: $min-width;
 
   @include tablet--up() {
-    border: $bodyBorderWidth solid;
+    border: $body-border-width solid;
     border-top: 0;
     border-bottom: 0;
-    border-image: linear-gradient(lighten(#fab3bb, 4), lighten(#92fefe, 4)) $bodyBorderWidth/1px stretch;
+    border-image: linear-gradient(lighten(#fab3bb, 4), lighten(#92fefe, 4)) $body-border-width/1px stretch;
   }
 }

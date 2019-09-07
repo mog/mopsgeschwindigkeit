@@ -4,12 +4,14 @@
     h1 {
       font-size: $font--size--3;
       margin-left: -24px;
+      margin-bottom: 1em;
     }
   }
 
   h1 {
     float: left;
     line-height: 1em;
+    margin-bottom: 0;
   }
 
   h3 {

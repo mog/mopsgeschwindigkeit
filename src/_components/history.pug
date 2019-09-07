@@ -1,0 +1,9 @@
+section#history(aria-label="history", data-lazy-load)
+    h2=history.title
+        a.header-anchor(href="#history" aria-hidden="true")= anchorSymbol
+    p.history__content.
+        Previous Deadlines had their websites too <br><br>
+
+    p.history__list
+        each entry in history.content
+            a(href=entry.link style="display:inline-block" rel="noopener" target="_blank" class="button button--small")= entry.name

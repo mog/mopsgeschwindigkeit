@@ -45,7 +45,8 @@
     }
   }
 
-  date, location {
+  date,
+  location {
     float: left;
     clear: both;
     @include phone() {

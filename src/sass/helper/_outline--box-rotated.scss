@@ -1,4 +1,4 @@
-@mixin outlineBoxRotated() {
+@mixin outline-box-rotated() {
 
   position: relative;
   z-index: 1;
@@ -11,21 +11,24 @@
     z-index: -1;
     position: absolute;
     left: 0;
-    bottom:0;
-    background: linear-gradient(45deg, #fff, rgba(255,255,255,.0) 66%);
+    bottom: 0;
+    background: linear-gradient(45deg, #fff, rgba(255, 255, 255, .0) 66%);
     background-clip: content-box;
   }
 
+  //generate a couple of rotation, unneeded ones will be removed from css minifier
   @for $i from 1 through 15 {
-    $maxRot: 3.0;
+
+    $max-rot: 5.0;
+
     &:nth-child(#{$i})::before {
-      $rotation: (random()*$maxRot*2)-$maxRot;
-      $color1: getRandomColor();
-      $colorAsHSLUV: hsluv-from-hex($color1);
-      $color2: hsluv((nth($colorAsHSLUV, 1) + 80), nth($colorAsHSLUV, 2), nth($colorAsHSLUV, 3));
+      $rotation: (random()*$max-rot*2)-$max-rot;
+      $color-1: get-random-color();
+      $color-as-hsluv: hsluv-from-hex($color-1);
+      $color2: hsluv((nth($color-as-hsluv, 1) + 80), nth($color-as-hsluv, 2), nth($color-as-hsluv, 3));
       transform: skew($rotation+deg) rotate($rotation+deg);
       border: 20px solid #000;
-      border-image: linear-gradient((45-$rotation)+deg, $color1, $color2 70%, rgba($color2, 0) 80%) 10 stretch;
+      border-image: linear-gradient((45-$rotation)+deg, $color-1, $color2 70%, rgba($color2, 0) 80%) 10 stretch;
     }
   }
 }
