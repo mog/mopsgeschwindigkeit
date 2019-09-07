@@ -105,53 +105,52 @@
     }
   },
   "timetable":{
-    "isActive":false,
+    "isActive":true,
     "title": "timetable",
     "content":[
       {
-        "name":"Fri 29.09",
+        "name":"Fri 04.10",
         "events":[
           {"time":"14:00", "type":"event", "description":"Doors Open"},
-		  {"time":"16:00", "type":"event", "description":"Dynablaster World Championship - Start of free training and registration"},
-		  {"time":"18:00", "type":"event", "description":"Demoshow - Newschool Demos"},
+		  {"time":"16:00", "type":"event", "description":"Retro Gaming Tournament Registration + Free Training"},
+		  {"time":"18:00", "type":"event", "description":"Demoshow - TBA"},
+		  {"time":"19:00", "type":"event", "description":"Retro Gaming Tournament Start"},
 		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
-		  {"time":"20:30", "type":"event", "description":"The Party 1997 - The lost Video Tape"},
-		  {"time":"21:00", "type":"event", "description":"Dynablaster World Championship - Qualifications/Quarter Finals"},
-		  {"time":"22:00", "type":"event", "id":"act_1", "description":"Live-Act: Sleep Lab"},
-          {"time":"23:00", "type":"event", "id":"act_2", "description":"Live-Act: Lesnik/Altair (Visuals: Jacku)"},
-		  {"time":"24:00", "type":"event", "description":"Dynablaster World Championship - Finals"},
-		  {"time":"00:30", "type":"event", "id":"act_3", "description":"Live-Act: Skomp"}
+		  {"time":"20:15", "type":"event", "id":"act_1", "description":"Liveact: WAKE"},
+		  {"time":"21:00", "type":"event", "description":"Retro Gaming Tournament - Finals"},
+		  {"time":"22:00", "type":"event", "id":"act_2", "description":"Live-Act: Zeigerkollektiv"},
+          {"time":"24:00", "type":"event", "id":"act_3", "description":"Live-Act: TBA"}
         ]
       },
       {
-        "name":"Sat 30.09",
+        "name":"Sat 05.10",
         "events":[
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
-		  {"time":"13:00", "type":"deadline", "description":"DL Music Compos"},
-          {"time":"13:00", "type":"deadline", "description":"DL Remote Entries"},
-		  {"time":"13:00", "type":"event", "description":"Demoshow"},
-		  {"time":"14:30", "type":"seminar", "id":"sem_1", "description":"KeyJ/TRBL - All the Small Things: Tricks & Techniques used in Intros"},
-          {"time":"15:00", "type":"deadline", "description":"DL Wild+Animation Compos"},
+		  {"time":"12:00", "type":"event", "description":"Demoshow"},
+		  {"time":"13:00", "type":"deadline", "description":"Deadline Music"},
+          {"time":"13:00", "type":"deadline", "description":"Deadline Remote"},
+		  {"time":"13:30", "type":"event", "id":"act_4", "description":"Liveact: Dipswitch"},
+		  {"time":"15:00", "type":"deadline", "description":"Deadline Wild+Animation+3D"},
+		  {"time":"15:00", "type":"seminar", "id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},      
 		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
-		  {"time":"16:00", "type":"deadline", "description":"DL Graphic Compos"},
-		  {"time":"17:00", "type":"seminar", "id":"sem_2", "description":"insaneCPU: a stepping stone to emulating the SuperCPU on real Hardware"},
-		  {"time":"17:30", "type":"seminar", "id":"sem_3", "description":"Charlie/Singular Crew - ABI-Tour: Motorola 68k compiler development stories"},
-          {"time":"18:00", "type":"deadline", "description":"DL Executable Demo Compos"},
+		  {"time":"16:00", "type":"deadline", "description":"Deadline Graphics"},
+		  {"time":"17:00", "type":"seminar", "id":"sem_2", "description":"TBA"},
+          {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Competitions"},
-          {"time":"20:00", "type":"compo", "description":"Wild + Animation Competitions"},
-		  {"time":"21:00", "type":"event", "id":"act_4", "description":"Live-Act: CMD"},
+          {"time":"20:00", "type":"compo", "description":"Wild + Animation + 3D Compo"},
           {"time":"22:00", "type":"compo", "description":"Executable Demo Competitions"},
 		  {"time":"23:00", "type":"event", "id":"act_5", "description":"Live-Act: Wayfinder"},
-		  {"time":"02:00", "type":"event", "id":"act_6", "description":"Live-Act TBA"}
+		  {"time":"01:00", "type":"event", "id":"act_6", "description":"Live-Act: BombJoe"},
+		  {"time":"03:00", "type":"event", "id":"act_7", "description":"Live-Act TBA"}
         ]
       },
       {
-        "name":"Sun 01.10",
+        "name":"Sun 06.10",
         "events":[
           {"time":"09:00", "type":"deadline", "description":"Voting Deadline"},
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
           {"time":"13:00", "type":"event", "description":"Prizegiving Ceremony"},
-          {"time":"14:00", "type":"event", "description":"End of Party / Chillout at the bar"}
+          {"time":"14:00", "type":"event", "description":"End of Party"}
         ]
       }]
   },
@@ -252,7 +251,7 @@
       ]
   },
   "compos":{
-    "isActive":false,
+    "isActive":true,
     "title":"Competitions"
   },
   "contact":{
