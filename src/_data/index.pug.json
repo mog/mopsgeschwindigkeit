@@ -278,6 +278,17 @@
           }
         },
 	    {
+          "name":"Charlie^Singular Crew",
+          "social": [{
+			"type": "twitter",
+			"url": "https://twitter.com/chainq",
+			"content": "@chainq"
+			}
+        },
+		{
+          "name":"b2ag"
+        },
+		{
           "_name":"havoc^LineOut",
           "link":{
             "text":"Demozoo",
@@ -285,7 +296,7 @@
           }
         },
         {
-          "_name":"lambdacore"
+          "name":"lambdacore"
         },
         {
           "_name":"moqui^Schnappsgirls",
@@ -295,11 +306,12 @@
           }
         },
 	    {
-          "_name":"ted^TRBL^3LN",
-          "link":{
-            "text":"Twitter",
-            "src":"https://twitter.com/tedpew"
-          }
+          "name":"ted^TRBL^3LN",
+          "social": [{
+			"type": "twitter",
+			"url": "https://twitter.com/tedpew",
+			"content": "@tedpew"
+		    }
         },
         {
           "_name":"anti^fake"
@@ -314,19 +326,19 @@
           "alt":"ORWOhaus",
           "link": "http://orwohaus.de/"
         },{
-          "_src":"assets/img/sponsor_viprinet.png",
+          "src":"assets/img/sponsor_viprinet.png",
           "alt":"Viprinet GmbH",
           "link": "https://www.viprinet.com"
         },{
-          "_src":"assets/img/sponsor_reichtech.png",
+          "src":"assets/img/sponsor_reichtech.png",
           "alt":"ReichTech GmbH",
           "link": "https://www.reichtech.de/"
         },{
-          "_src":"assets/img/sponsor_kwizzad.png",
-          "alt":"KWIZZAD",
-          "link": "https://www.kwizzad.com/career"
+          "src":"assets/img/sponsor_heyjobs.jpg",
+          "alt":"Heyjobs",
+          "link": "https://careers.heyjobs.co/en-de"
         },{
-          "_src":"assets/img/sponsor_iMazing.png",
+          "src":"assets/img/sponsor_iMazing.png",
           "alt":"iMazing Computersysteme",
           "link":"http://www.imazing.de/"
         },{
@@ -334,11 +346,11 @@
           "alt":"Stiegler Legal",
           "link": "https://stiegler-legal.com/"
         },{
-          "_src":"assets/img/sponsor_dkev.png",
+          "src":"assets/img/sponsor_dkev.png",
           "alt":"digitalekultur e.V.",
           "link": "https://www.digitalekultur.org/"
         },{
-          "_src":"assets/img/sponsor_tum.png",
+          "src":"assets/img/sponsor_tum.png",
           "alt":"Tastatur und Maus e.V.",
           "link": "http://www.tastatur-und-maus.net/"
         },{
