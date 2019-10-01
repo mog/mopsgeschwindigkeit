@@ -163,40 +163,14 @@
     "hideFromNavigation":true
   },
   "seminars":{
-    "isActive":false,
+    "isActive":true,
     "title":"seminars",
     "content":[{
-      "speaker": "KeyJ",
-      "social": [{
-        "type": "twitter",
-        "url": "https://twitter.com/keyj_kat",
-        "content": "@keyj_kat"
-        }
-      ],
-      "website": "http://keyj.emphy.de/",
-      "id": "sem_1",
-      "title":"All the Small Things: Tricks & Techniques used in Intros",
-      "content":"Everybody knows and loves tiny intros from 1k to 64k, but how do these things actually work? Even the most basic \"Hello World\" program is already larger than 4k, so how can we possibly fit graphics and music in less space than that?<br><br>This talk describes some common tricks that are used under the hood in size-constrained productions, from high-level concepts like procedural generation and compression down to the unholy things that are done to the EXE file header. It starts with very basic stuff that is easily understandable for coders and non-coders alike, and gradually become more and more technical."
-      },
-      {
-        "speaker": "insane",
-        "website": "http://insane.tscc.de/",
-        "id": "sem_2",
-        "title":"insaneCPU: a stepping stone to emulating the SuperCPU on real Hardware",
-        "content":"Have you ever wanted to play Metal Dust on your C64 without the 65816 SuperCPU?<br>Or have you ever wanted to replace the 6510/8500 in your C64 with an ARM11?<br>No? Then this seminar isn't for you - for everybody else insane/altair^rabenauge^tscc is showing his current progress in creating a SuperCPU compatible accelerator able to run Metal Dust and ARM-based C64 code."
-      },
-	  {
-        "speaker": "Charlie",
-		"social": [{
-        "type": "twitter",
-        "url": "https://twitter.com/chainq",
-        "content": "@chainq"
-        }
-      ],
-        "website": "http://charlie.amigaspirit.hu",
-        "id": "sem_3",
-        "title":"ABI-Tour: Motorola 68k compiler development stories",
-        "content":"Charlie / BX ^ InQ ^ SGR will take a deep dive with you in the world of cross-platform Amiga/Atari demo development with lots of hands-on examples."
+        "speaker": "Utz^Irrlicht Project",
+        "website": "http://bintracker.org/",
+        "id": "sem_1",
+        "title":"Bintracker - A Chiptune Audio Workstation for the 21st Century",
+        "content":"Bintracker supports any music engine on any plaform through the versatile MDAL abstraction layer, so you can compose for SID, AY, FM, Beeper… all with one tool. By using MAME as emulation backend, a vast array of 8- and 16-bit platforms are covered."
       }]
   },
   "liveacts":{
