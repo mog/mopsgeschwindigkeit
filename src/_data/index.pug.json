@@ -1,427 +1,585 @@
 {
   "title": "Deadline 2019",
-  "anchorSymbol":"«",
-
-  "navigation":{
-    "isActive":true,
-    "hideFromNavigation":true
+  "anchorSymbol": "«",
+  "navigation": {
+    "isActive": true,
+    "hideFromNavigation": true
   },
-  "header":{
-    "isActive":true,
-    "hideFromNavigation":true
+  "header": {
+    "isActive": true,
+    "hideFromNavigation": true
   },
-  "ticket_buy":{
-    "isActive":true,
-    "hideFromNavigation":true
+  "ticket_buy": {
+    "isActive": true,
+    "hideFromNavigation": true
   },
-  "about":{
-    "isActive":true,
-    "hideFromNavigation":true,
-    "title":"Deadline<br>Demoparty<br>Berlin",
-    "content":"about__contents"
+  "about": {
+    "isActive": true,
+    "hideFromNavigation": true,
+    "title": "Deadline<br>Demoparty<br>Berlin",
+    "content": "about__contents"
   },
   "livestream": {
     "isActive": false,
-    "hideFromNavigation":true,
+    "hideFromNavigation": true,
     "title": "livestream"
   },
-  "location":{
-    "isActive":true,
+  "location": {
+    "isActive": true,
     "title": "location",
-    "map":{
-      "src":"https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2426.7846711830553%212d13.529529999999996%213d52.53732999999993%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x47a84c05c8fd04cd%3A0xc77d389550445adc%212sFrank-Zappa-Stra%C3%9Fe+19%2C+12681+Berlin%2C+Deutschland%215e0%213m2%211sde%212sde%214v1407183513715",
-      "width":"100%",
-      "height":"100%",
-      "static":{
-        "src":""
+    "map": {
+      "src": "https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d2426.7846711830553%212d13.529529999999996%213d52.53732999999993%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x47a84c05c8fd04cd%3A0xc77d389550445adc%212sFrank-Zappa-Stra%C3%9Fe+19%2C+12681+Berlin%2C+Deutschland%215e0%213m2%211sde%212sde%214v1407183513715",
+      "width": "100%",
+      "height": "100%",
+      "static": {
+        "src": ""
       }
     }
   },
-  "impressions":{
-    "isActive":true,
-    "hideFromNavigation":true,
+  "impressions": {
+    "isActive": true,
+    "hideFromNavigation": true,
     "title": "impressions",
     "content": "SHOW ME WHAT YOU GOT! I WANT TO SEE WHAT YOU GOT!",
-    "slider":{
-      "sizes":[
+    "slider": {
+      "sizes": [
         {
           "width": 890,
           "suffix": "--890"
-        }],
-      "content":[{
-            "src":"assets/img/imp1.jpg",
-            "alt":"photo by keyJ",
-            "caption": "Come to the ORWOhaus to party with us"
-        },{
-            "src":"assets/img/imp2.jpg",
-            "alt":"photo by vickey",
-            "caption": "Be greeted by the friendly Info-Desk"
-        },{
-            "src":"assets/img/imp3.jpg",
-            "alt":"photo by ted",
-            "caption": "Watch the competitions in the main hall"
-        },{
-            "src":"assets/img/imp4.jpg",
-            "alt":"photo by ted",
-            "caption": "Enjoy our great Live-Acts"
-        },{
-            "src":"assets/img/imp5.jpg",
-            "alt":"photo by ted",
-            "caption": "Relax in the meadows or camp outside"
-        },{
-            "src":"assets/img/imp6.jpg",
-            "alt":"photo by ted",
-            "caption": "Dance your ass off to our DJ-Sets"
-        },{
-            "src":"assets/img/imp7.jpg",
-            "alt":"photo by vickey",
-            "caption": "Tell or hear great stories at the bonfire"
-        },{
-            "src":"assets/img/imp8.jpg",
-            "alt":"photo by dojoe",
-            "caption": "Meet friends and have a great time. Cheers!"
-        },{
-            "src":"assets/img/imp9.jpg",
-            "alt":"photo by ted",
-            "caption": "Take part and win the competition!"
-        },{
-            "src":"assets/img/imp10.jpg",
-            "alt":"photo by ted",
-            "caption": "Relax outside"
-        },{
-            "src":"assets/img/imp11.jpg",
-            "alt":"photo by Saga Musix",
-            "caption": "Show us your joystick-skills!"
-        },{
-            "src":"assets/img/imp12.jpg",
-            "alt":"photo by nodepond",
-            "caption": "Party to 8-bit-sounds!"
-        },{
-            "src":"assets/img/imp13.jpg",
-            "alt":"photo by T$",
-            "caption": "Take a break at the terrace."
+        }
+      ],
+      "content": [
+        {
+          "src": "assets/img/imp1.jpg",
+          "alt": "photo by keyJ",
+          "caption": "Come to the ORWOhaus to party with us"
+        },
+        {
+          "src": "assets/img/imp2.jpg",
+          "alt": "photo by vickey",
+          "caption": "Be greeted by the friendly Info-Desk"
+        },
+        {
+          "src": "assets/img/imp3.jpg",
+          "alt": "photo by ted",
+          "caption": "Watch the competitions in the main hall"
+        },
+        {
+          "src": "assets/img/imp4.jpg",
+          "alt": "photo by ted",
+          "caption": "Enjoy our great Live-Acts"
+        },
+        {
+          "src": "assets/img/imp5.jpg",
+          "alt": "photo by ted",
+          "caption": "Relax in the meadows or camp outside"
+        },
+        {
+          "src": "assets/img/imp6.jpg",
+          "alt": "photo by ted",
+          "caption": "Dance your ass off to our DJ-Sets"
+        },
+        {
+          "src": "assets/img/imp7.jpg",
+          "alt": "photo by vickey",
+          "caption": "Tell or hear great stories at the bonfire"
+        },
+        {
+          "src": "assets/img/imp8.jpg",
+          "alt": "photo by dojoe",
+          "caption": "Meet friends and have a great time. Cheers!"
+        },
+        {
+          "src": "assets/img/imp9.jpg",
+          "alt": "photo by ted",
+          "caption": "Take part and win the competition!"
+        },
+        {
+          "src": "assets/img/imp10.jpg",
+          "alt": "photo by ted",
+          "caption": "Relax outside"
+        },
+        {
+          "src": "assets/img/imp11.jpg",
+          "alt": "photo by Saga Musix",
+          "caption": "Show us your joystick-skills!"
+        },
+        {
+          "src": "assets/img/imp12.jpg",
+          "alt": "photo by nodepond",
+          "caption": "Party to 8-bit-sounds!"
+        },
+        {
+          "src": "assets/img/imp13.jpg",
+          "alt": "photo by T$",
+          "caption": "Take a break at the terrace."
         }
       ]
     }
   },
-  "timetable":{
-    "isActive":true,
+  "timetable": {
+    "isActive": true,
     "title": "timetable",
-    "content":[
+    "content": [
       {
-        "name":"Fri 04.10",
-        "events":[
-          {"time":"14:00", "type":"event", "description":"Doors Open"},
-		  {"time":"16:00", "type":"event", "description":"Retro Gaming Tournament Registration + Free Training"},
-		  {"time":"18:00", "type":"event", "description":"Demoshow - Orga Favourites"},
-		  {"time":"19:00", "type":"event", "description":"Retro Gaming Tournament Start"},
-		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
-		  {"time":"20:15", "type":"event", "_id":"act_1", "description":"Liveact: WAKE"},
-		  {"time":"21:00", "type":"event", "description":"Retro Gaming Tournament - Finals"},
-<<<<<<< HEAD
-		  {"time":"22:00", "type":"event", "_id":"act_2", "description":"Live-Act: Zeigerkollektiv"},
-          {"time":"24:00", "type":"event", "_id":"act_3", "description":"Live-Act: TBA"}
-=======
-		  {"time":"23:00", "type":"event", "id":"act_2", "description":"DJ-Set: Naks / Da Jormas"},
-          {"time":"00:30", "type":"event", "id":"act_3", "description":"DJ-Set: ektr0 / k2"}
-		  {"time":"02:00", "type":"event", "id":"act_4", "description":"DJ-Set: Dipswitch"}
->>>>>>> origin/master
+        "name": "Fri 04.10",
+        "events": [
+          {
+            "time": "14:00",
+            "type": "event",
+            "description": "Doors Open"
+          },
+          {
+            "time": "16:00",
+            "type": "event",
+            "description": "Retro Gaming Tournament Registration + Free Training"
+          },
+          {
+            "time": "18:00",
+            "type": "event",
+            "description": "Demoshow - Orga Favourites"
+          },
+          {
+            "time": "19:00",
+            "type": "event",
+            "description": "Retro Gaming Tournament Start"
+          },
+          {
+            "time": "20:00",
+            "type": "event",
+            "description": "Opening Ceremony"
+          },
+          {
+            "time": "20:15",
+            "type": "event",
+            "id": "act_1",
+            "description": "Liveact: WAKE"
+          },
+          {
+            "time": "21:00",
+            "type": "event",
+            "description": "Retro Gaming Tournament - Finals"
+          },
+          {
+            "time": "23:00",
+            "type": "event",
+            "id": "act_2",
+            "description": "DJ-Set: Naks / Da Jormas"
+          },
+          {
+            "time": "00:30",
+            "type": "event",
+            "id": "act_3",
+            "description": "DJ-Set: ektr0 / k2"
+          },
+          {
+            "time": "02:00",
+            "type": "event",
+            "id": "act_4",
+            "description": "DJ-Set: Dipswitch"
+          }
         ]
       },
       {
-        "name":"Sat 05.10",
-        "events":[
-          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
-		  {"time":"12:00", "type":"event", "description":"Demoshow"},
-<<<<<<< HEAD
-		  {"time":"13:00", "type":"deadline", "description":"Deadline Music"},
-          {"time":"13:00", "type":"deadline", "description":"Deadline Remote"},
-		  {"time":"13:30", "type":"event", "_id":"act_4", "description":"Liveact: Dipswitch"},
-		  {"time":"15:00", "type":"deadline", "description":"Deadline Wild+Animation+3D"},
-		  {"time":"15:00", "type":"seminar", "_id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},
-		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
-		  {"time":"16:00", "type":"deadline", "description":"Deadline Graphics"},
-		  {"time":"17:00", "type":"seminar", "_id":"sem_2", "description":"TBA"},
-          {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
-          {"time":"19:00", "type":"compo", "description":"Graphic Competitions"},
-          {"time":"20:00", "type":"compo", "description":"Wild + Animation + 3D Compo"},
-          {"time":"22:00", "type":"compo", "description":"Executable Demo Competitions"},
-		  {"time":"23:00", "type":"event", "_id":"act_5", "description":"Live-Act: Wayfinder"},
-		  {"time":"01:00", "type":"event", "_id":"act_6", "description":"Live-Act: BombJoe"},
-		  {"time":"03:00", "type":"event", "_id":"act_7", "description":"Live-Act TBA"}
-=======
-		  {"time":"13:00", "type":"deadline", "description":"Deadline for Music + Remote Compos"},
-		  {"time":"13:30", "type":"event", "id":"act_4", "description":"DJ-Set: Dipswitch"},
-		  {"time":"15:00", "type":"deadline", "description":"Deadline for Wild+Animation Compo"},
-		  {"time":"15:00", "type":"deadline", "description":"Deadline for Three-Dee and Graphic Compos"},
-		  {"time":"15:00", "type":"seminar", "id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},      
-		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
-          {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
-          {"time":"18:00", "type":"compo", "description":"Graphic Competitions"},
-          {"time":"19:00", "type":"compo", "description":"Wild+Animation and Three-Dee Compos"},
-		  {"time":"21:30", "type":"event", "id":"act_5", "description":"Live-Act: Zeigerkollektiv"},
-          {"time":"22:30", "type":"compo", "description":"Executable Demo Competitions"},
-		  {"time":"24:00", "type":"event", "id":"act_6", "description":"DJ-Set: Wayfinder"},
-		  {"time":"01:30", "type":"event", "id":"act_7", "description":"DJ-Set: BombJoe"}
->>>>>>> origin/master
+        "name": "Sat 05.10",
+        "events": [
+          {
+            "time": "10:00",
+            "type": "event",
+            "description": "Breakfast starts"
+          },
+          {
+            "time": "12:00",
+            "type": "event",
+            "description": "Demoshow"
+          },
+          {
+            "time": "13:00",
+            "type": "deadline",
+            "description": "Deadline for Music + Remote Compos"
+          },
+          {
+            "time": "13:30",
+            "type": "event",
+            "id": "act_4",
+            "description": "DJ-Set: Dipswitch"
+          },
+          {
+            "time": "15:00",
+            "type": "deadline",
+            "description": "Deadline for Wild+Animation Compo"
+          },
+          {
+            "time": "15:00",
+            "type": "deadline",
+            "description": "Deadline for Three-Dee and Graphic Compos"
+          },
+          {
+            "time": "15:00",
+            "type": "seminar",
+            "id": "sem_1",
+            "description": "Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"
+          },
+          {
+            "time": "16:00",
+            "type": "compo",
+            "description": "Music Competitions"
+          },
+          {
+            "time": "18:00",
+            "type": "deadline",
+            "description": "Deadline Demo+Intro Compos"
+          },
+          {
+            "time": "18:00",
+            "type": "compo",
+            "description": "Graphic Competitions"
+          },
+          {
+            "time": "19:00",
+            "type": "compo",
+            "description": "Wild+Animation and Three-Dee Compos"
+          },
+          {
+            "time": "21:30",
+            "type": "event",
+            "id": "act_5",
+            "description": "Live-Act: Zeigerkollektiv"
+          },
+          {
+            "time": "22:30",
+            "type": "compo",
+            "description": "Executable Demo Competitions"
+          },
+          {
+            "time": "24:00",
+            "type": "event",
+            "id": "act_6",
+            "description": "DJ-Set: Wayfinder"
+          },
+          {
+            "time": "01:30",
+            "type": "event",
+            "id": "act_7",
+            "description": "DJ-Set: BombJoe"
+          }
         ]
       },
       {
-        "name":"Sun 06.10",
-        "events":[
-          {"time":"09:00", "type":"deadline", "description":"Voting Deadline"},
-          {"time":"10:00", "type":"event", "description":"Breakfast starts"},
-          {"time":"13:00", "type":"event", "description":"Prizegiving Ceremony"},
-          {"time":"14:00", "type":"event", "description":"End of Party"}
+        "name": "Sun 06.10",
+        "events": [
+          {
+            "time": "09:00",
+            "type": "deadline",
+            "description": "Voting Deadline"
+          },
+          {
+            "time": "10:00",
+            "type": "event",
+            "description": "Breakfast starts"
+          },
+          {
+            "time": "13:00",
+            "type": "event",
+            "description": "Prizegiving Ceremony"
+          },
+          {
+            "time": "14:00",
+            "type": "event",
+            "description": "End of Party"
+          }
         ]
-      }]
+      }
+    ]
   },
-  "ticket":{
-    "isActive":true,
+  "ticket": {
+    "isActive": true,
     "title": "ticket"
   },
-  "register":{
-    "isActive":true,
-    "title":"register",
-    "hideFromNavigation":true
+  "register": {
+    "isActive": true,
+    "title": "register",
+    "hideFromNavigation": true
   },
-  "seminars":{
-    "isActive":true,
-    "title":"seminars",
-    "content":[{
+  "seminars": {
+    "isActive": true,
+    "title": "seminars",
+    "content": [
+      {
         "speaker": "Utz^Irrlicht Project",
         "website": "http://bintracker.org/",
         "id": "sem_1",
-        "title":"Bintracker - A Chiptune Audio Workstation for the 21st Century",
-        "content":"Bintracker supports any music engine on any plaform through the versatile MDAL abstraction layer, so you can compose for SID, AY, FM, Beeper… all with one tool. By using MAME as emulation backend, a vast array of 8- and 16-bit platforms are covered."
-      }]
+        "title": "Bintracker - A Chiptune Audio Workstation for the 21st Century",
+        "content": "Bintracker supports any music engine on any plaform through the versatile MDAL abstraction layer, so you can compose for SID, AY, FM, Beeper… all with one tool. By using MAME as emulation backend, a vast array of 8- and 16-bit platforms are covered."
+      }
+    ]
   },
-  "liveacts":{
-    "isActive":true,
-    "title":"Liveacts",
-    "hideFromNavigation":false,
-    "content":[{
-      "artist": "WAKE",
-      "social": [{
-        "type": "web",
-        "url": "https://wake-audiovisual.com/",
-      }],
-      "id": "act_1",
-      "content":"WAKE (formerly SleepLab) is a live audiovisual project from Berlin. Thomas Mann <a href=\"https://www.youtube.com/user/ThePixtur\">/pixtur/</a> and Lena Kilkka <a href=\"http://www.lena-kilkka.com/\">/lucid/</a> blend a hypnotic, eclectic fusion of cinematic sounds with demoscene realtime visuals and theatrical guest performances. All visuals are built and performed using our own custom-made 3D engine <a href=\"http://tooll.io/\">tooll.io</a>."
+  "liveacts": {
+    "isActive": true,
+    "title": "Liveacts",
+    "hideFromNavigation": false,
+    "content": [
+      {
+        "artist": "WAKE",
+        "social": [
+          {
+            "type": "web",
+            "url": "https://wake-audiovisual.com/"
+          }
+        ],
+        "id": "act_1",
+        "content": "WAKE (formerly SleepLab) is a live audiovisual project from Berlin. Thomas Mann <a href=\"https://www.youtube.com/user/ThePixtur\">/pixtur/</a> and Lena Kilkka <a href=\"http://www.lena-kilkka.com/\">/lucid/</a> blend a hypnotic, eclectic fusion of cinematic sounds with demoscene realtime visuals and theatrical guest performances. All visuals are built and performed using our own custom-made 3D engine <a href=\"http://tooll.io/\">tooll.io</a>."
       },
       {
         "artist": "Naks / Da Jormas",
-        "social": [{
-          "type": "facebook",
-          "url": "https://www.facebook.com/naksjacks/",
-          "content": "facebook"
-        }],
+        "social": [
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/naksjacks/",
+            "content": "facebook"
+          }
+        ],
         "id": "act_2",
-        "content":"He usually plays in Clubs in Berlin, at Deadline he will play a set of the very best Amiga tunes for you to dance!"
+        "content": "He usually plays in Clubs in Berlin, at Deadline he will play a set of the very best Amiga tunes for you to dance!"
       },
       {
         "artist": "ektr0 / k2",
         "id": "act_3",
-        "content":"ektr0 started his musical career on the Amiga 500, with Protracker but tracked less and less over the years. Through Renoise he came back to the roots and re-discovered the scene where he's active since this year again. He will play digital scene-releases controlled by two analog turntables using Linux with xwax and timecoded vinyls."
+        "content": "ektr0 started his musical career on the Amiga 500, with Protracker but tracked less and less over the years. Through Renoise he came back to the roots and re-discovered the scene where he's active since this year again. He will play digital scene-releases controlled by two analog turntables using Linux with xwax and timecoded vinyls."
       },
       {
         "artist": "Dipswitch",
-		"social": [{
-          "type": "soundcloud",
-          "url": "https://soundcloud.com/comfortnoise/comfortnoise-podcast-091-by-dipswitchrootsnfruits",
-          "content": "soundcloud"
-        },{
-          "type": "facebook",
-          "url": "https://www.facebook.com/dipswitch1/",
-          "content": "facebook"
-        }],
+        "social": [
+          {
+            "type": "soundcloud",
+            "url": "https://soundcloud.com/comfortnoise/comfortnoise-podcast-091-by-dipswitchrootsnfruits",
+            "content": "soundcloud"
+          },
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/dipswitch1/",
+            "content": "facebook"
+          }
+        ],
         "id": "act_4",
-        "content":"You know him from Black Maiden Hi-Fi and his Sets at Evoke. Here in Berlin he will kick your asses with dubstep and grime on Friday and come back on Saturday with some chilled dub tunes."
+        "content": "You know him from Black Maiden Hi-Fi and his Sets at Evoke. Here in Berlin he will kick your asses with dubstep and grime on Friday and come back on Saturday with some chilled dub tunes."
       },
-	  {
+      {
         "artist": "Zeigerkollektiv",
         "id": "act_5",
-        "content":"THEY ARE BACK! Demoscene classics played by a live rock band? F*** yeah! You know them as friendly bar-people from previous Deadlines, but now you will get to know their true passion: Music! In this case they listened to a whole bunch of demoscene classics and will present them in a way you have never heard before."
+        "content": "THEY ARE BACK! Demoscene classics played by a live rock band? F*** yeah! You know them as friendly bar-people from previous Deadlines, but now you will get to know their true passion: Music! In this case they listened to a whole bunch of demoscene classics and will present them in a way you have never heard before."
       },
       {
         "artist": "Wayfinder",
-        "social": [{
-          "type": "soundcloud",
-          "url": "https://soundcloud.com/wayfu",
-          "content": "soundcloud"
-        },{
-          "type": "facebook",
-          "url": "https://www.facebook.com/gowayfinder/",
-          "content": "facebook"
-        }],
+        "social": [
+          {
+            "type": "soundcloud",
+            "url": "https://soundcloud.com/wayfu",
+            "content": "soundcloud"
+          },
+          {
+            "type": "facebook",
+            "url": "https://www.facebook.com/gowayfinder/",
+            "content": "facebook"
+          }
+        ],
         "id": "act_6",
-        "content":"Wayfinder plays music and you should be there and dance!"
+        "content": "Wayfinder plays music and you should be there and dance!"
       },
-	  {
+      {
         "artist": "BombJoe",
         "id": "act_7",
-        "content":"DJs Bombe and dojoe met early on during their careers, in the Gentlemen’s clubs of London where they were spinning Schranz and Garage to distinguished upper class folks. They quickly realized the potential of uniting forces and together became shooting stars among the posh and wealthy, entertaining the Houses and royalty alike. Celebrating their recent reception of knighthood from a slightly tipsy Queen after a wild night at Buckingham Palace, they are now touring Europe in their Bombjoe 2019 World Tour. Expect nothing but the finest dance music between Prog House and Trance, and be sure to hold on to your socks unless you want them blown off!"
+        "content": "DJs Bombe and dojoe met early on during their careers, in the Gentlemen’s clubs of London where they were spinning Schranz and Garage to distinguished upper class folks. They quickly realized the potential of uniting forces and together became shooting stars among the posh and wealthy, entertaining the Houses and royalty alike. Celebrating their recent reception of knighthood from a slightly tipsy Queen after a wild night at Buckingham Palace, they are now touring Europe in their Bombjoe 2019 World Tour. Expect nothing but the finest dance music between Prog House and Trance, and be sure to hold on to your socks unless you want them blown off!"
       }
-      ]
+    ]
   },
-  "compos":{
-    "isActive":true,
-    "title":"Competitions"
+  "compos": {
+    "isActive": true,
+    "title": "Competitions"
   },
-  "contact":{
-    "isActive":true,
-    "title":"Contact"
+  "contact": {
+    "isActive": true,
+    "title": "Contact"
   },
-  "sponsors":{
-    "isActive":true,
-    "hideFromNavigation":true,
-    "title":"Sponsors & Supporters",
-    "sizes":[
-      {"height":64,
-        "width":200,
-        "suffix":"",
-        "breakpoint":"(min-width:941px)"
+  "sponsors": {
+    "isActive": true,
+    "hideFromNavigation": true,
+    "title": "Sponsors & Supporters",
+    "sizes": [
+      {
+        "height": 64,
+        "width": 200,
+        "suffix": "",
+        "breakpoint": "(min-width:941px)"
       }
     ],
-    "content":{
-      "supporter":[{
-        "name":"cynic^Still^Haujobb",
-        "link":{
-          "text":"Website",
-          "src":"http://www.still-scene.org/person/show/5"
-          }
-        },
-	    {
-          "name":"Charlie^Singular Crew",
-          "link": [{
-			"type": "twitter",
-			"src": "https://twitter.com/chainq",
-			"content": "@chainq"
-			}]
-        },
-		{
-          "name":"b2ag"
-        },
-		{
-          "_name":"havoc^LineOut",
-          "link":{
-            "text":"Demozoo",
-            "src":"https://demozoo.org/sceners/2419/"
+    "content": {
+      "supporter": [
+        {
+          "name": "cynic^Still^Haujobb",
+          "link": {
+            "text": "Website",
+            "src": "http://www.still-scene.org/person/show/5"
           }
         },
         {
-          "name":"lambdacore"
-        },
-		{
-          "name":"titus^Rabenauge"
+          "name": "Charlie^Singular Crew",
+          "link": [
+            {
+              "type": "twitter",
+              "src": "https://twitter.com/chainq",
+              "content": "@chainq"
+            }
+          ]
         },
         {
-          "name":"moqui^Schnappsgirls",
-          "link":{
-            "text":"Pouët",
-            "src":"https://www.pouet.net/user.php?who=20526"
+          "name": "b2ag"
+        },
+        {
+          "_name": "havoc^LineOut",
+          "link": {
+            "text": "Demozoo",
+            "src": "https://demozoo.org/sceners/2419/"
           }
         },
-		{
-          "name":"CME^TRBL"
-        },
-	    {
-          "name":"ted^TRBL^3LN",
-          "link": [{
-			"type": "twitter",
-			"src": "https://twitter.com/tedpew",
-			"content": "@tedpew"
-		    }]
-        },{
-          "name":"xq"
+        {
+          "name": "lambdacore"
         },
         {
-          "name":"xq"
+          "name": "titus^Rabenauge"
         },
-		{
-          "name":"Jobj"
-        },
-		{
-          "name":"uncle-x/mfx"
-        }],
-      "sponsors":[
         {
-          "src":"assets/img/sponsor_trbl.png",
-          "alt":"TRBL",
+          "name": "moqui^Schnappsgirls",
+          "link": {
+            "text": "Pouët",
+            "src": "https://www.pouet.net/user.php?who=20526"
+          }
+        },
+        {
+          "name": "CME^TRBL"
+        },
+        {
+          "name": "ted^TRBL^3LN",
+          "link": [
+            {
+              "type": "twitter",
+              "src": "https://twitter.com/tedpew",
+              "content": "@tedpew"
+            }
+          ]
+        },
+        {
+          "name": "xq"
+        },
+        {
+          "name": "xq"
+        },
+        {
+          "name": "Jobj"
+        },
+        {
+          "name": "uncle-x/mfx"
+        }
+      ],
+      "sponsors": [
+        {
+          "src": "assets/img/sponsor_trbl.png",
+          "alt": "TRBL",
           "link": "http://trbl.at"
-        },{
-          "src":"assets/img/sponsor_orwohaus.png",
-          "alt":"ORWOhaus",
-          "link": "http://orwohaus.de/"
-        },{
-          "src":"assets/img/sponsor_viprinet.png",
-          "alt":"Viprinet GmbH",
+        },
+        {
+          "src": "assets/img/sponsor_orwohaus.png",
+          "alt": "ORWOhaus",
+          "link": "http://orwohaus.de"
+        },
+        {
+          "src": "assets/img/sponsor_viprinet.png",
+          "alt": "Viprinet GmbH",
           "link": "https://www.viprinet.com"
-        },{
-          "src":"assets/img/sponsor_reichtech.png",
-          "alt":"ReichTech GmbH",
-          "link": "https://www.reichtech.de/"
-        },{
-<<<<<<< HEAD
-          "src":"assets/img/sponsor_heyjobs.png",
-=======
-          "src":"assets/img/sponsor_hey.png",
->>>>>>> origin/master
-          "alt":"Heyjobs",
-          "link": "https://hire.heyjobs.co/en-us/careers/"
-        },{
-          "src":"assets/img/sponsor_framefield.png",
-          "alt":"FRAMEFIELD",
-          "link": "http://framefield.com/"
-        },{
-          "src":"assets/img/sponsor_iMazing.png",
-          "alt":"iMazing Computersysteme",
-          "link":"http://www.imazing.de/"
-        },{
-          "_src":"assets/img/sponsor_stiegler.png",
-          "alt":"Stiegler Legal",
-          "link": "https://stiegler-legal.com/"
-        },{
-          "src":"assets/img/sponsor_dkev.png",
-          "alt":"digitalekultur e.V.",
-          "link": "https://www.digitalekultur.org/"
-        },{
-          "src":"assets/img/sponsor_tum.png",
-          "alt":"Tastatur und Maus e.V.",
-          "link": "http://www.tastatur-und-maus.net/"
-<<<<<<< HEAD
-        },{
-          "src":"assets/img/sponsor_undev.png",
-          "alt":"undev",
+        },
+        {
+          "src": "assets/img/sponsor_reichtech.png",
+          "alt": "ReichTech GmbH",
+          "link": "https://www.reichtech.de"
+        },
+        {
+          "src": "assets/img/sponsor_hey.png",
+          "alt": "Heyjobs",
+          "link": "https://hire.heyjobs.co/en-us/careers"
+        },
+        {
+          "src": "assets/img/sponsor_framefield.png",
+          "alt": "FRAMEFIELD",
+          "link": "http://framefield.com"
+        },
+        {
+          "src": "assets/img/sponsor_iMazing.png",
+          "alt": "iMazing Computersysteme",
+          "link": "http://www.imazing.de"
+        },
+        {
+          "_src": "assets/img/sponsor_stiegler.png",
+          "alt": "Stiegler Legal",
+          "link": "https://stiegler-legal.com"
+        },
+        {
+          "src": "assets/img/sponsor_dkev.png",
+          "alt": "digitalekultur e.V.",
+          "link": "https://www.digitalekultur.org"
+        },
+        {
+          "src": "assets/img/sponsor_tum.png",
+          "alt": "Tastatur und Maus e.V.",
+          "link": "http://www.tastatur-und-maus.net"
+        },
+        {
+          "src": "assets/img/sponsor_undev.png",
+          "alt": "undev",
           "link": "https://undev.studio"
-        },{
-          "_src":"assets/img/sponsor_framefield.png",
-          "alt":"FRAMEFIELD",
-          "link": "http://framefield.com/"
-=======
->>>>>>> origin/master
-        }]
+        },
+        {
+          "src": "assets/img/sponsor_blendfx.png",
+          "alt": "blendFX",
+          "link": "https://blendfx.com"
+        },
+        {
+          "src": "assets/img/sponsor_miamedia.png",
+          "alt": "Mia Media",
+          "link": "https://www.miamedia.de"
+        },
+        {
+          "src": "assets/img/sponsor_mds.png",
+          "alt": "moodspLAtEAU",
+          "link": "https://moodsplateau.net"
+        }
+      ]
     }
   },
-  "history":{
-    "isActive":true,
-    "hideFromNavigation":true,
-    "title":"Previous Deadlines",
-    "content":[{
+  "history": {
+    "isActive": true,
+    "hideFromNavigation": true,
+    "title": "Previous Deadlines",
+    "content": [
+      {
         "name": 2014,
         "link": "/2014"
-      },{
+      },
+      {
         "name": 2015,
         "link": "/2015"
-      },{
+      },
+      {
         "name": 2016,
         "link": "/2016_wp"
-      },{
+      },
+      {
         "name": 2017,
         "link": "/2017"
-      },{
+      },
+      {
         "name": 2018,
         "link": "/2018"
-      }]
+      }
+    ]
   }
 }
