@@ -113,13 +113,14 @@
         "events":[
           {"time":"14:00", "type":"event", "description":"Doors Open"},
 		  {"time":"16:00", "type":"event", "description":"Retro Gaming Tournament Registration + Free Training"},
-		  {"time":"18:00", "type":"event", "description":"Demoshow - TBA"},
+		  {"time":"18:00", "type":"event", "description":"Demoshow - Orga Favourites"},
 		  {"time":"19:00", "type":"event", "description":"Retro Gaming Tournament Start"},
 		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
 		  {"time":"20:15", "type":"event", "id":"act_1", "description":"Liveact: WAKE"},
 		  {"time":"21:00", "type":"event", "description":"Retro Gaming Tournament - Finals"},
-		  {"time":"22:00", "type":"event", "id":"act_2", "description":"Live-Act: Zeigerkollektiv"},
-          {"time":"24:00", "type":"event", "id":"act_3", "description":"Live-Act: TBA"}
+		  {"time":"23:00", "type":"event", "id":"act_2", "description":"DJ-Set: Naks / Da Jormas"},
+          {"time":"00:30", "type":"event", "id":"act_3", "description":"DJ-Set: ektr0 / k2"}
+		  {"time":"02:00", "type":"event", "id":"act_4", "description":"DJ-Set: Dipswitch"}
         ]
       },
       {
@@ -127,21 +128,19 @@
         "events":[
           {"time":"10:00", "type":"event", "description":"Breakfast starts"},
 		  {"time":"12:00", "type":"event", "description":"Demoshow"},
-		  {"time":"13:00", "type":"deadline", "description":"Deadline Music"},
-          {"time":"13:00", "type":"deadline", "description":"Deadline Remote"},
-		  {"time":"13:30", "type":"event", "id":"act_4", "description":"Liveact: Dipswitch"},
-		  {"time":"15:00", "type":"deadline", "description":"Deadline Wild+Animation+3D"},
+		  {"time":"13:00", "type":"deadline", "description":"Deadline for Music + Remote Compos"},
+		  {"time":"13:30", "type":"event", "id":"act_4", "description":"DJ-Set: Dipswitch"},
+		  {"time":"15:00", "type":"deadline", "description":"Deadline for Wild+Animation Compo"},
+		  {"time":"15:00", "type":"deadline", "description":"Deadline for Three-Dee and Graphic Compos"},
 		  {"time":"15:00", "type":"seminar", "id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},      
 		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
-		  {"time":"16:00", "type":"deadline", "description":"Deadline Graphics"},
-		  {"time":"17:00", "type":"seminar", "id":"sem_2", "description":"TBA"},
           {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
-          {"time":"19:00", "type":"compo", "description":"Graphic Competitions"},
-          {"time":"20:00", "type":"compo", "description":"Wild + Animation + 3D Compo"},
-          {"time":"22:00", "type":"compo", "description":"Executable Demo Competitions"},
-		  {"time":"23:00", "type":"event", "id":"act_5", "description":"Live-Act: Wayfinder"},
-		  {"time":"01:00", "type":"event", "id":"act_6", "description":"Live-Act: BombJoe"},
-		  {"time":"03:00", "type":"event", "id":"act_7", "description":"Live-Act TBA"}
+          {"time":"18:00", "type":"compo", "description":"Graphic Competitions"},
+          {"time":"19:00", "type":"compo", "description":"Wild+Animation and Three-Dee Compos"},
+		  {"time":"21:30", "type":"event", "id":"act_5", "description":"Live-Act: Zeigerkollektiv"},
+          {"time":"22:30", "type":"compo", "description":"Executable Demo Competitions"},
+		  {"time":"24:00", "type":"event", "id":"act_6", "description":"DJ-Set: Wayfinder"},
+		  {"time":"01:30", "type":"event", "id":"act_7", "description":"DJ-Set: BombJoe"}
         ]
       },
       {
@@ -201,38 +200,51 @@
       }]
   },
   "liveacts":{
-    "isActive":false,
+    "isActive":true,
     "title":"Liveacts",
-    "hideFromNavigation":true,
+    "hideFromNavigation":false,
     "content":[{
-      "artist": "SleepLab",
+      "artist": "WAKE",
       "social": [{
-        "type": "facebook",
-        "url": "https://fb.me/sleeplabrecords",
-        "content": "facebook"
+        "type": "web",
+        "url": "https://wake-audiovisual.com/",
       }],
       "id": "act_1",
-      "content":"Dystopian dreamworlds and sonic insomniac daymares. SleepLab is a Berlin-based electronic music and live audiovisual project. Their often avant-garde and experimental works were spawned in the throes of the nocturnal fusion of classical, rave, HC/punk and demoscene."
+      "content":"WAKE (formerly SleepLab) is a live audiovisual project from Berlin. Thomas Mann <a href=\"https://www.youtube.com/user/ThePixtur\">/pixtur/</a> and Lena Kilkka <a href=\"http://www.lena-kilkka.com/\">/lucid/</a> blend a hypnotic, eclectic fusion of cinematic sounds with demoscene realtime visuals and theatrical guest performances. All visuals are built and performed using our own custom-made 3D engine <a href=\"http://tooll.io/\">tooll.io</a>."
       },
       {
-        "artist": "Lesnik/altair (Visuals: Jacku)",
+        "artist": "Naks / Da Jormas",
         "social": [{
           "type": "facebook",
-          "url": "https://www.facebook.com/lesniq",
+          "url": "https://www.facebook.com/naksjacks/",
           "content": "facebook"
         }],
         "id": "act_2",
-        "content":"Lesnik known from the 90s and early 2000s as the creator of chiptune music, will perform with a live act presenting his contemporary work: emotional, nostalgic drum and bass with a lot of atmospheric melodies. The performance will be accompanied by moody visualization - mostly original footage recorded by Jacku, mixed live. You can sit and listen/watch or dance like there's no tomorrow."
+        "content":"He usually plays in Clubs in Berlin, at Deadline he will play a set of the very best Amiga tunes for you to dance!"
       },
       {
-        "artist": "Skomp",
+        "artist": "ektr0 / k2",
         "id": "act_3",
-        "content":"Hailing from the house metropolis of Hamburg, skomp plays the kind of tech house that's sure to get you stepping, with occasional forays into pure, unadulterated, out-and-out techno. More often found deep in GLSL and C#, skomp can also be found rocking shows as diverse as UK demoparties and hometown Hamburg club nights."
+        "content":"ektr0 started his musical career on the Amiga 500, with Protracker but tracked less and less over the years. Through Renoise he came back to the roots and re-discovered the scene where he's active since this year again. He will play digital scene-releases controlled by two analog turntables using Linux with xwax and timecoded vinyls."
       },
       {
-        "artist": "CMD",
+        "artist": "Dipswitch",
+		"social": [{
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/comfortnoise/comfortnoise-podcast-091-by-dipswitchrootsnfruits",
+          "content": "soundcloud"
+        },{
+          "type": "facebook",
+          "url": "https://www.facebook.com/dipswitch1/",
+          "content": "facebook"
+        }],
         "id": "act_4",
-        "content":"CMD was a musician on PC demoscene active in mid-late 90s/early 2000s under a moniker KeyG. During the years KeyG was a member of groups Pulse, Digisonix and many others. In years 1997-2004 together with three other demoscene musicians he formed the band \"Aural Planet\" which release several full albums. For over three years now he lives and works in Berlin, where some years ago the project CMD was started. The idea was to regularly publish songs which oscillate between chiptune sounds and modern electronic music. These songs are now being reworked to a full album which will be performed live at Deadline 2019."
+        "content":"You know him from Black Maiden Hi-Fi and his Sets at Evoke. Here in Berlin he will kick your asses with dubstep and grime on Friday and come back on Saturday with some chilled dub tunes."
+      },
+	  {
+        "artist": "Zeigerkollektiv",
+        "id": "act_5",
+        "content":"THEY ARE BACK! Demoscene classics played by a live rock band? F*** yeah! You know them as friendly bar-people from previous Deadlines, but now you will get to know their true passion: Music! In this case they listened to a whole bunch of demoscene classics and will present them in a way you have never heard before."
       },
       {
         "artist": "Wayfinder",
@@ -245,8 +257,13 @@
           "url": "https://www.facebook.com/gowayfinder/",
           "content": "facebook"
         }],
-        "id": "act_5",
+        "id": "act_6",
         "content":"Wayfinder plays music and you should be there and dance!"
+      },
+	  {
+        "artist": "BombJoe",
+        "id": "act_7",
+        "content":"DJs Bombe and dojoe met early on during their careers, in the Gentlemen’s clubs of London where they were spinning Schranz and Garage to distinguished upper class folks. They quickly realized the potential of uniting forces and together became shooting stars among the posh and wealthy, entertaining the Houses and royalty alike. Celebrating their recent reception of knighthood from a slightly tipsy Queen after a wild night at Buckingham Palace, they are now touring Europe in their Bombjoe 2019 World Tour. Expect nothing but the finest dance music between Prog House and Trance, and be sure to hold on to your socks unless you want them blown off!"
       }
       ]
   },
@@ -271,7 +288,7 @@
     ],
     "content":{
       "supporter":[{
-        "_name":"cynic^Still^Haujobb",
+        "name":"cynic^Still^Haujobb",
         "link":{
           "text":"Website",
           "src":"http://www.still-scene.org/person/show/5"
@@ -298,12 +315,18 @@
         {
           "name":"lambdacore"
         },
+		{
+          "name":"titus^Rabenauge"
+        },
         {
-          "_name":"moqui^Schnappsgirls",
+          "name":"moqui^Schnappsgirls",
           "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
           }
+        },
+		{
+          "name":"CME^TRBL"
         },
 	    {
           "name":"ted^TRBL^3LN",
@@ -314,7 +337,13 @@
 		    }
         },
         {
-          "_name":"anti^fake"
+          "name":"xq"
+        },
+		{
+          "name":"Jobj"
+        },
+		{
+          "name":"uncle-x/mfx"
         }],
       "sponsors":[
         {
@@ -338,6 +367,10 @@
           "alt":"Heyjobs",
           "link": "https://careers.heyjobs.co/en-de"
         },{
+          "src":"assets/img/sponsor_framefield.png",
+          "alt":"FRAMEFIELD",
+          "link": "http://framefield.com/"
+        },{
           "src":"assets/img/sponsor_iMazing.png",
           "alt":"iMazing Computersysteme",
           "link":"http://www.imazing.de/"
@@ -353,10 +386,6 @@
           "src":"assets/img/sponsor_tum.png",
           "alt":"Tastatur und Maus e.V.",
           "link": "http://www.tastatur-und-maus.net/"
-        },{
-          "_src":"assets/img/sponsor_framefield.png",
-          "alt":"FRAMEFIELD",
-          "link": "http://framefield.com/"
         }]
     }
   },
