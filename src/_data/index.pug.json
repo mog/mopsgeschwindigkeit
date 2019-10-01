@@ -189,12 +189,16 @@
       {
         "artist": "Naks / Da Jormas",
         "social": [{
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/naks",
+          "content": "soundcloud"
+        },{
           "type": "facebook",
           "url": "https://www.facebook.com/naksjacks/",
           "content": "facebook"
         }],
         "id": "act_2",
-        "content":"He usually plays in Clubs in Berlin, at Deadline he will play a set of the very best Amiga tunes for you to dance!"
+        "content":"Naks goes back to his dA JoRMaS roots with a special Amiga classics DJ set."
       },
       {
         "artist": "ektr0 / k2",
