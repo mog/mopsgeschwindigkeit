@@ -116,10 +116,10 @@
 		  {"time":"18:00", "type":"event", "description":"Demoshow - TBA"},
 		  {"time":"19:00", "type":"event", "description":"Retro Gaming Tournament Start"},
 		  {"time":"20:00", "type":"event", "description":"Opening Ceremony"},
-		  {"time":"20:15", "type":"event", "id":"act_1", "description":"Liveact: WAKE"},
+		  {"time":"20:15", "type":"event", "_id":"act_1", "description":"Liveact: WAKE"},
 		  {"time":"21:00", "type":"event", "description":"Retro Gaming Tournament - Finals"},
-		  {"time":"22:00", "type":"event", "id":"act_2", "description":"Live-Act: Zeigerkollektiv"},
-          {"time":"24:00", "type":"event", "id":"act_3", "description":"Live-Act: TBA"}
+		  {"time":"22:00", "type":"event", "_id":"act_2", "description":"Live-Act: Zeigerkollektiv"},
+          {"time":"24:00", "type":"event", "_id":"act_3", "description":"Live-Act: TBA"}
         ]
       },
       {
@@ -129,19 +129,19 @@
 		  {"time":"12:00", "type":"event", "description":"Demoshow"},
 		  {"time":"13:00", "type":"deadline", "description":"Deadline Music"},
           {"time":"13:00", "type":"deadline", "description":"Deadline Remote"},
-		  {"time":"13:30", "type":"event", "id":"act_4", "description":"Liveact: Dipswitch"},
+		  {"time":"13:30", "type":"event", "_id":"act_4", "description":"Liveact: Dipswitch"},
 		  {"time":"15:00", "type":"deadline", "description":"Deadline Wild+Animation+3D"},
-		  {"time":"15:00", "type":"seminar", "id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},      
+		  {"time":"15:00", "type":"seminar", "_id":"sem_1", "description":"Bintracker - A Chiptune Audio Workstation for the 21st Century (by utz^Irrlicht Project)"},
 		  {"time":"16:00", "type":"compo", "description":"Music Competitions"},
 		  {"time":"16:00", "type":"deadline", "description":"Deadline Graphics"},
-		  {"time":"17:00", "type":"seminar", "id":"sem_2", "description":"TBA"},
+		  {"time":"17:00", "type":"seminar", "_id":"sem_2", "description":"TBA"},
           {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
           {"time":"19:00", "type":"compo", "description":"Graphic Competitions"},
           {"time":"20:00", "type":"compo", "description":"Wild + Animation + 3D Compo"},
           {"time":"22:00", "type":"compo", "description":"Executable Demo Competitions"},
-		  {"time":"23:00", "type":"event", "id":"act_5", "description":"Live-Act: Wayfinder"},
-		  {"time":"01:00", "type":"event", "id":"act_6", "description":"Live-Act: BombJoe"},
-		  {"time":"03:00", "type":"event", "id":"act_7", "description":"Live-Act TBA"}
+		  {"time":"23:00", "type":"event", "_id":"act_5", "description":"Live-Act: Wayfinder"},
+		  {"time":"01:00", "type":"event", "_id":"act_6", "description":"Live-Act: BombJoe"},
+		  {"time":"03:00", "type":"event", "_id":"act_7", "description":"Live-Act TBA"}
         ]
       },
       {
@@ -279,11 +279,11 @@
         },
 	    {
           "name":"Charlie^Singular Crew",
-          "social": [{
+          "link": [{
 			"type": "twitter",
-			"url": "https://twitter.com/chainq",
+			"src": "https://twitter.com/chainq",
 			"content": "@chainq"
-			}
+			}]
         },
 		{
           "name":"b2ag"
@@ -299,7 +299,7 @@
           "name":"lambdacore"
         },
         {
-          "_name":"moqui^Schnappsgirls",
+          "name":"moqui^Schnappsgirls",
           "link":{
             "text":"Pouët",
             "src":"https://www.pouet.net/user.php?who=20526"
@@ -307,11 +307,13 @@
         },
 	    {
           "name":"ted^TRBL^3LN",
-          "social": [{
+          "link": [{
 			"type": "twitter",
-			"url": "https://twitter.com/tedpew",
+			"src": "https://twitter.com/tedpew",
 			"content": "@tedpew"
-		    }
+		    }]
+        },{
+          "name":"xq"
         },
         {
           "_name":"anti^fake"
@@ -334,7 +336,7 @@
           "alt":"ReichTech GmbH",
           "link": "https://www.reichtech.de/"
         },{
-          "src":"assets/img/sponsor_heyjobs.jpg",
+          "src":"assets/img/sponsor_heyjobs.png",
           "alt":"Heyjobs",
           "link": "https://careers.heyjobs.co/en-de"
         },{
@@ -353,6 +355,10 @@
           "src":"assets/img/sponsor_tum.png",
           "alt":"Tastatur und Maus e.V.",
           "link": "http://www.tastatur-und-maus.net/"
+        },{
+          "src":"assets/img/sponsor_undev.png",
+          "alt":"undev",
+          "link": "https://undev.studio"
         },{
           "_src":"assets/img/sponsor_framefield.png",
           "alt":"FRAMEFIELD",

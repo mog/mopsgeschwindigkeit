@@ -1,3 +1,8 @@
+#timetable {
+  @include tablet--up() {
+    max-width: 95%;
+  }
+}
 $component: c-timetable;
 
 .#{$component} {
