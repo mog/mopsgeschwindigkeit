@@ -13,10 +13,11 @@ section#sponsors(aria-label="sponsors", data-lazy-load)
         each entry in sponsors.content.supporter
             if(entry.name)
                 li
-                    span.supporter__list__name= entry.name
-                    if(entry.link)
-                        =" "
-                        a(href=entry.link.src rel="noopener" target="_blank")= entry.link.text
+                    span.supporter__list__name
+                        if(entry.link)
+                            a(href=entry.link.src rel="noopener" target="_blank")= entry.name
+                        else
+                            = entry.name
     p.sponsors__content.
             Want to get your logo or name here as well? <a href="mailto:me@philipp-eckert.de">Contact us</a> for sponsoring or buy a supporter ticket.
 
