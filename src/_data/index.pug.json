@@ -137,8 +137,8 @@
           {"time":"18:00", "type":"deadline", "description":"Deadline Demo+Intro Compos"},
           {"time":"18:00", "type":"compo", "description":"Graphic Competitions"},
           {"time":"19:00", "type":"compo", "description":"Wild+Animation and Three-Dee Compos"},
-		  {"time":"22:00", "type":"event", "id":"act_5", "description":"Live-Act: Zeigerkollektiv"},
-          {"time":"23:00", "type":"compo", "description":"Executable Demo Competitions"},
+		  {"time":"21:30", "type":"event", "id":"act_5", "description":"Live-Act: Zeigerkollektiv"},
+          {"time":"22:30", "type":"compo", "description":"Executable Demo Competitions"},
 		  {"time":"24:00", "type":"event", "id":"act_6", "description":"DJ-Set: Wayfinder"},
 		  {"time":"01:30", "type":"event", "id":"act_7", "description":"DJ-Set: BombJoe"}
         ]
